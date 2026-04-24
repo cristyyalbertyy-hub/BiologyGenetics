@@ -39,32 +39,32 @@ export type MediaByLeaf = {
  * Convenção por iniciais:
  * <CAPITULO>_<SUBCAPITULO>_<TIPO>.<ext>
  * Exemplo de CT dentro de CF:
- * CF_CT_V.mp4 / CF_CT_P.m4a / CF_CT_I.png / CF_CT_Q.pdf
+ * CF_CT_V.mp4 / CF_CT_P.m4a / CF_CT_I.png / CF_CT_Q.csv
  */
 const MEDIA_OVERRIDES: Record<string, MediaByLeaf> = {
   'biology-syllabus:cell-fundamentals:cell-theory': {
     video: '/media/CF_CT_V.mp4',
     podcast: '/media/CF_CT_P.m4a',
     infografic: '/media/CF_CT_I.png',
-    questionnaire: '/media/CF_CT_Q.pdf',
+    questionnaire: '/media/CF_CT_Q.csv',
   },
   'biology-syllabus:cell-fundamentals:macromolecules': {
     video: '/media/CF_M_V.mp4',
     podcast: '/media/CF_M_P.m4a',
     infografic: '/media/CF_M_I.png',
-    questionnaire: '/media/CF_M_Q.pdf',
+    questionnaire: '/media/CF_M_Q.csv',
   },
   'biology-syllabus:cell-fundamentals:prokaryotic-vs-eukaryotic': {
     video: '/media/CF_PE_V.mp4',
     podcast: '/media/CF_PE_P.m4a',
     infografic: '/media/CF_PE_I.png',
-    questionnaire: '/media/CF_PE_Q.pdf',
+    questionnaire: '/media/CF_PE_Q.csv',
   },
   'biology-syllabus:cell-fundamentals:viruses': {
     video: '/media/CF_V_V.mp4',
     podcast: '/media/CF_V_P.m4a',
     infografic: '/media/CF_V_I.png',
-    questionnaire: '/media/CF_V_Q.pdf',
+    questionnaire: '/media/CF_V_Q.csv',
   },
 }
 
