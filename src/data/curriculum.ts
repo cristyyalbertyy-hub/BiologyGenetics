@@ -22,8 +22,6 @@ export interface Chapter {
 /** URLs de demonstração — substitua pelos seus ficheiros ou links. */
 export const DEMO_MEDIA = {
   video: '/media/A_Estrutura_da_Vida.mp4',
-  audio:
-    'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   podcast: '/media/Podecast1.m4a',
   infografic: '/media/infographics1.png',
   questionnaire:

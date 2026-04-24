@@ -9,12 +9,7 @@ import {
 } from '../data/curriculum'
 import { useAuth } from '../context/AuthContext'
 
-type MediaTab =
-  | 'audio'
-  | 'video'
-  | 'podcast'
-  | 'infografic'
-  | 'questionnaire'
+type MediaTab = 'video' | 'podcast' | 'infografic' | 'questionnaire'
 
 export function MediaPage() {
   const { chapterId, groupId, leafId } = useParams<{
@@ -48,7 +43,7 @@ export function MediaPage() {
   }
 
   const videoSrc = DEMO_MEDIA.video
-  const audioSrc = tab === 'podcast' ? DEMO_MEDIA.podcast : DEMO_MEDIA.audio
+  const podcastSrc = DEMO_MEDIA.podcast
   const infograficSrc = DEMO_MEDIA.infografic
   const questionnaireSrc = DEMO_MEDIA.questionnaire
 
@@ -73,13 +68,12 @@ export function MediaPage() {
         </div>
       </header>
 
-      <div className="media-tabs" role="tablist" aria-label="Tipo de média">
+      <div className="media-tabs" role="tablist" aria-label="Content">
         {(
           [
-            ['video', 'Vídeo'],
-            ['audio', 'Áudio'],
+            ['video', 'Video'],
             ['podcast', 'Podcast'],
-            ['infografic', 'Infografic'],
+            ['infografic', 'Infographics'],
             ['questionnaire', 'Questionnaire'],
           ] as const
         ).map(([key, label]) => (
