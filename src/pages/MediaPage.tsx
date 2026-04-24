@@ -250,23 +250,6 @@ export function MediaPage() {
                 loading="lazy"
               />
             )}
-            <p className="media-caption">
-              Se o questionario nao abrir na pre-visualizacao, use os botoes em
-              baixo.
-            </p>
-            <div className="media-tabs">
-              <a
-                href={media.questionnaire}
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-media"
-              >
-                Open Questionnaire
-              </a>
-              <a href={media.questionnaire} download className="btn btn-media">
-                Download Questionnaire
-              </a>
-            </div>
           </div>
         )}
       </div>

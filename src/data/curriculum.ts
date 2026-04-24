@@ -66,6 +66,12 @@ const MEDIA_OVERRIDES: Record<string, MediaByLeaf> = {
     infografic: '/media/CF_V_I.png',
     questionnaire: '/media/CF_V_Q.csv',
   },
+  'biology-syllabus:cell-structure-function:plasma-membrane': {
+    video: '/media/CSF_PM_V.mp4',
+    podcast: '/media/CSF_PM_P.m4a',
+    infografic: '/media/CSF_PM_I.png',
+    questionnaire: '/media/CSF_PM_Q.csv',
+  },
 }
 
 export const chapters: Chapter[] = [
