@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {
   APP_TITLE,
@@ -10,6 +10,7 @@ import {
 import { useAuth } from '../context/AuthContext'
 
 type MediaTab = 'video' | 'podcast' | 'infografic' | 'questionnaire'
+type CsvQaRow = { question: string; answer: string }
 
 export function MediaPage() {
   const { chapterId, groupId, leafId } = useParams<{
@@ -43,6 +44,57 @@ export function MediaPage() {
   }
 
   const media = getMediaForLeaf(chapter.id, group.id, leaf.id)
+  const questionnaireIsPdf = media.questionnaire.toLowerCase().endsWith('.pdf')
+  const questionnaireIsCsv = media.questionnaire.toLowerCase().endsWith('.csv')
+  const [csvRows, setCsvRows] = useState<CsvQaRow[]>([])
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+  const [showAnswer, setShowAnswer] = useState(false)
+
+  useEffect(() => {
+    if (!questionnaireIsCsv) {
+      setCsvRows([])
+      return
+    }
+
+    let active = true
+    fetch(media.questionnaire)
+      .then((res) => {
+        if (!res.ok) throw new Error('CSV not reachable')
+        return res.text()
+      })
+      .then((text) => {
+        if (!active) return
+        const rows = text
+          .split(/\r?\n/)
+          .filter((line) => line.trim().length > 0)
+          .map((line) => {
+            const [question, ...answerParts] = line.split(',')
+            return {
+              question: question?.trim() ?? '',
+              answer: answerParts.join(',').trim(),
+            }
+          })
+          .filter((row) => row.question.length > 0)
+        setCsvRows(rows)
+        setCurrentQuestionIndex(0)
+        setShowAnswer(false)
+      })
+      .catch(() => {
+        if (!active) return
+        setCsvRows([])
+      })
+
+    return () => {
+      active = false
+    }
+  }, [media.questionnaire, questionnaireIsCsv])
+
+  useEffect(() => {
+    setShowAnswer(false)
+  }, [currentQuestionIndex, tab])
+
+  const currentQa = csvRows[currentQuestionIndex]
+  const totalQuestions = csvRows.length
 
   return (
     <div className="app-screen">
@@ -52,7 +104,7 @@ export function MediaPage() {
             to={`/app/${chapter.id}/${group.id}`}
             className="back-link"
           >
-            ? {group.title}
+            ← {group.title}
           </Link>
           <p className="eyebrow">{APP_TITLE}</p>
           <h1 className="screen-title">{title}</h1>
@@ -124,12 +176,97 @@ export function MediaPage() {
 
         {tab === 'questionnaire' && (
           <div className="video-wrap">
-            <iframe
-              title="Questionnaire"
-              src={media.questionnaire}
-              className="questionnaire-frame"
-              loading="lazy"
-            />
+            {questionnaireIsCsv ? (
+              <div className="csv-wrap">
+                {totalQuestions > 0 && currentQa ? (
+                  <div className="qa-card">
+                    <p className="qa-counter">
+                      {currentQuestionIndex + 1}/{totalQuestions}
+                    </p>
+                    <p className="qa-question">{currentQa.question}</p>
+                    {showAnswer && (
+                      <p className="qa-answer">
+                        <strong>Resposta:</strong> {currentQa.answer}
+                      </p>
+                    )}
+                    <div className="qa-controls">
+                      <button
+                        type="button"
+                        className="btn btn-media"
+                        onClick={() => setShowAnswer((prev) => !prev)}
+                      >
+                        {showAnswer ? 'Ocultar resposta' : 'Ver resposta'}
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-media"
+                        onClick={() =>
+                          setCurrentQuestionIndex((prev) =>
+                            Math.max(0, prev - 1),
+                          )
+                        }
+                        disabled={currentQuestionIndex === 0}
+                      >
+                        ← Anterior
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-media"
+                        onClick={() =>
+                          setCurrentQuestionIndex((prev) =>
+                            Math.min(totalQuestions - 1, prev + 1),
+                          )
+                        }
+                        disabled={currentQuestionIndex >= totalQuestions - 1}
+                      >
+                        Proxima →
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="media-caption">
+                    Nao foi possivel pre-visualizar o CSV aqui.
+                  </p>
+                )}
+              </div>
+            ) : questionnaireIsPdf ? (
+              <object
+                data={media.questionnaire}
+                type="application/pdf"
+                className="questionnaire-frame"
+              >
+                <iframe
+                  title="Questionnaire"
+                  src={media.questionnaire}
+                  className="questionnaire-frame"
+                  loading="lazy"
+                />
+              </object>
+            ) : (
+              <iframe
+                title="Questionnaire"
+                src={media.questionnaire}
+                className="questionnaire-frame"
+                loading="lazy"
+              />
+            )}
+            <p className="media-caption">
+              Se o questionario nao abrir na pre-visualizacao, use os botoes em
+              baixo.
+            </p>
+            <div className="media-tabs">
+              <a
+                href={media.questionnaire}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-media"
+              >
+                Open Questionnaire
+              </a>
+              <a href={media.questionnaire} download className="btn btn-media">
+                Download Questionnaire
+              </a>
+            </div>
           </div>
         )}
       </div>

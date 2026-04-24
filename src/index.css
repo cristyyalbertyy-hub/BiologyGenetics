@@ -424,6 +424,53 @@ a:hover {
   background: #fff;
 }
 
+.csv-wrap {
+  width: 100%;
+  overflow: auto;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.qa-card {
+  color: #1f2937;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.qa-counter {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.qa-question {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.qa-answer {
+  margin: 0;
+  padding: 10px 12px;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.qa-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.qa-controls .btn-media:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .audio-wrap {
   display: flex;
   flex-direction: column;
