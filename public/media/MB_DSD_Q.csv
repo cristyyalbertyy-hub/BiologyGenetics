@@ -1,0 +1,52 @@
+Name the three basic chemical components of a DNA nucleotide.,"A pentose sugar (deoxyribose), a phosphate group, and a nitrogenous base."
+"In terms of ring structure, how do purines differ from pyrimidines?","Purines consist of double carbon–nitrogen rings, while pyrimidines consist of a single ring."
+Which two nitrogenous bases found in DNA are classified as purines?,Adenine ($A$) and Guanine ($G$).
+Which two nitrogenous bases found in DNA are classified as pyrimidines?,Cytosine ($C$) and Thymine ($T$).
+What type of strong covalent bond links the sugar-phosphate backbone of a DNA strand?,Phosphodiester bond.
+How are the two strands of the DNA double helix held together between the nitrogenous bases?,By relatively weak hydrogen bonds.
+"According to the rules of complementary base pairing, Adenine always pairs with _____.",Thymine ($T$)
+"According to the rules of complementary base pairing, Guanine always pairs with _____.",Cytosine ($C$)
+Why is a $G-C$ base pair more stable than an $A-T$ base pair?,"$G-C$ pairs form three hydrogen bonds, whereas $A-T$ pairs form only two."
+Define the 'antiparallel' orientation of the two DNA strands in a double helix.,The strands run in opposite directions with opposite chemical polarities ($5'$ to $3'$ vs $3'$ to $5'$).
+The _____ end of a DNA strand carries a free phosphate group attached to the sugar ring.,$5'$ (five prime)
+The _____ end of a DNA strand carries an unlinked hydroxyl ($-OH$) group attached to the sugar ring.,$3'$ (three prime)
+How many base pairs are typically found in one full turn of the DNA double helix?,10 base pairs.
+What is the physical distance between adjacent nucleotide pairs along the axis of the DNA helix?,$0.34\text{ nm}$.
+Name the two grooves of differing widths created by the coiling of the DNA strands.,The major groove and the minor groove.
+"At the first level of DNA packaging, the molecule is wound around a histone protein core to form a _____.",Nucleosome
+Why is DNA replication described as 'semiconservative'?,Each daughter DNA molecule consists of one original parent strand and one newly synthesised strand.
+What is the function of 'replication origins' in a DNA molecule?,They are specific sequences where initiator proteins bind to begin prying the DNA strands apart.
+Describe the role of initiator proteins during the start of DNA replication.,They bind to the origin and break the hydrogen bonds between bases to unzip a short region of the helix.
+What name is given to the Y-shaped junctions where the replication machine moves along the DNA?,Replication forks.
+In which chemical direction does DNA polymerase always synthesise a new DNA strand?,The $5'$ to $3'$ direction.
+How does DNA polymerase determine which nucleotide to add to the growing strand?,By monitoring the complementary base pairing between the incoming nucleoside triphosphate and the template strand.
+What provides the energy required for the polymerisation of a new DNA strand?,The hydrolysis of high-energy phosphate bonds in the incoming deoxyribonucleoside triphosphates.
+Distinguish between the leading strand and the lagging strand at a replication fork.,"The leading strand is synthesised continuously, while the lagging strand is synthesised discontinuously in fragments."
+What are Okazaki fragments?,Short lengths of DNA synthesised discontinuously on the lagging strand.
+Why does DNA polymerase require an RNA primer to begin synthesis?,DNA polymerase can only add nucleotides to an existing $3'$ end; it cannot start a new strand from scratch.
+Which enzyme is responsible for synthesising short RNA primers on the lagging strand?,Primase.
+What is the primary function of DNA helicase at the replication fork?,It uses the energy of ATP hydrolysis to unwind the DNA double helix ahead of the replication machine.
+Describe the function of single-strand DNA-binding (SSB) proteins during replication.,They cling to exposed single strands to prevent them from re-forming base pairs or being degraded.
+What is the purpose of the 'sliding clamp' protein in the replication machine?,It keeps the DNA polymerase firmly attached to the template strand while allowing it to move forward.
+Which enzyme uses ATP hydrolysis to lock the sliding clamp onto the DNA molecule?,Clamp loader.
+How are RNA primers removed from the lagging strand once DNA synthesis is complete?,They are degraded by nucleases (such as RNase H).
+Which enzyme joins Okazaki fragments together by sealing the nicks in the sugar-phosphate backbone?,DNA ligase.
+Define 'proofreading' as performed by DNA polymerase.,The enzyme checks if the previously added nucleotide is correctly base-paired before adding the next one.
+In what direction does the exonuclease activity of DNA polymerase operate during proofreading?,The $3'$ to $5'$ direction.
+What is the role of the enzyme 'telomerase' in eukaryotic cells?,It replicates the ends of linear chromosomes (telomeres) to prevent them from shortening during each division cycle.
+Why is DNA replication in bacterial and eukaryotic chromosomes described as 'bidirectional'?,Two replication forks form at each origin and move away from each other in opposite directions.
+How many replication forks are typically active at a single replication origin?,Two.
+What is the approximate speed of replication fork movement in humans?,100 nucleotide pairs per second.
+DNA replication occurs during which phase of the eukaryotic cell cycle?,$S$ phase.
+The chemical linkage between the $3'$ hydroxyl group of one sugar and the $5'$ phosphate of the next is called a _____ bond.,Phosphodiester
+What is the total width of the DNA double helix?,$2\text{ nm}$.
+Which carbon atom of the deoxyribose sugar is the nitrogenous base attached to?,The $1'$ carbon.
+True or False: The lagging-strand DNA polymerase must be released and reattached for every Okazaki fragment.,True.
+What byproduct is released and then further hydrolysed when a dNTP is added to a DNA strand?,Pyrophosphate ($PP_{i}$).
+Why do replication origins typically have sequences rich in $A-T$ base pairs?,"$A-T$ pairs have fewer hydrogen bonds, making them easier for initiator proteins to pull apart."
+What happens to the RNA primer once it has been removed by nucleases?,It is replaced with DNA by a repair DNA polymerase.
+"In a human cell, approximately how many 'letters' (nucleotides) are copied during one round of division?",6 billion (in a diploid cell; 3 billion per haploid set).
+The 'backstitching' mechanism of DNA synthesis refers specifically to the replication of the _____ strand.,Lagging
+What term describes the large multienzyme complex that carries out DNA replication?,Replication machine.
+The repetitive DNA sequence added by telomerase provides a template for _____ to complete the lagging strand.,Primase
+What is the primary difference between the sugar in DNA and the sugar in RNA?,"DNA contains deoxyribose (lacks an $-OH$ group at the $2'$ position), while RNA contains ribose."
