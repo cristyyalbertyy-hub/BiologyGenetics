@@ -2,10 +2,10 @@ import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {
   APP_TITLE,
-  DEMO_MEDIA,
   findChapter,
   findGroup,
   findLeaf,
+  getMediaForLeaf,
 } from '../data/curriculum'
 import { useAuth } from '../context/AuthContext'
 
@@ -29,23 +29,20 @@ export function MediaPage() {
       : undefined
 
   const title = useMemo(() => {
-    if (group && leaf) return `${group.title} — ${leaf.title}`
-    return 'Conteúdo'
+    if (group && leaf) return `${group.title} - ${leaf.title}`
+    return 'Content'
   }, [group, leaf])
 
   if (!chapter || !group || !leaf) {
     return (
       <div className="app-screen">
-        <p>Tópico não encontrado.</p>
-        <Link to="/app">← Início</Link>
+        <p>Topic not found.</p>
+        <Link to="/app">Back</Link>
       </div>
     )
   }
 
-  const videoSrc = DEMO_MEDIA.video
-  const podcastSrc = DEMO_MEDIA.podcast
-  const infograficSrc = DEMO_MEDIA.infografic
-  const questionnaireSrc = DEMO_MEDIA.questionnaire
+  const media = getMediaForLeaf(chapter.id, group.id, leaf.id)
 
   return (
     <div className="app-screen">
@@ -55,7 +52,7 @@ export function MediaPage() {
             to={`/app/${chapter.id}/${group.id}`}
             className="back-link"
           >
-            ← {group.title}
+            ? {group.title}
           </Link>
           <p className="eyebrow">{APP_TITLE}</p>
           <h1 className="screen-title">{title}</h1>
@@ -71,10 +68,10 @@ export function MediaPage() {
       <div className="media-tabs" role="tablist" aria-label="Content">
         {(
           [
-            ['video', 'Video'],
-            ['podcast', 'Podcast'],
-            ['infografic', 'Infographics'],
-            ['questionnaire', 'Questionnaire'],
+            ['video', 'Video (V)'],
+            ['podcast', 'Podecast (P)'],
+            ['infografic', 'Infographics (I)'],
+            ['questionnaire', 'Questionnaire (Q)'],
           ] as const
         ).map(([key, label]) => (
           <button
@@ -94,47 +91,34 @@ export function MediaPage() {
         {tab === 'video' && (
           <div className="video-wrap">
             <video
-              key={videoSrc}
+              key={media.video}
               controls
               playsInline
               className="video-player"
               poster=""
             >
-              <source src={videoSrc} />
-              O seu navegador não suporta vídeo HTML5.
+              <source src={media.video} />
+              Your browser does not support HTML5 video.
             </video>
-            <p className="media-caption">
-              Vídeo de demonstração. Substitua o URL em{' '}
-              <code>src/data/curriculum.ts</code>.
-            </p>
           </div>
         )}
 
-        {(tab === 'audio' || tab === 'podcast') && (
+        {tab === 'podcast' && (
           <div className="audio-wrap">
-            <audio key={audioSrc} controls className="audio-player">
-              <source src={audioSrc} />
-              O seu navegador não suporta áudio HTML5.
+            <audio key={media.podcast} controls className="audio-player">
+              <source src={media.podcast} />
+              Your browser does not support HTML5 audio.
             </audio>
-            <p className="media-caption">
-              {tab === 'podcast'
-                ? 'Podcast de demonstração (URL em curriculum.ts).'
-                : 'Áudio de demonstração (URL em curriculum.ts).'}
-            </p>
           </div>
         )}
 
         {tab === 'infografic' && (
           <div className="video-wrap">
             <img
-              src={infograficSrc}
-              alt="Infografic"
+              src={media.infografic}
+              alt="Infographics"
               className="video-player"
             />
-            <p className="media-caption">
-              Infografic de demonstração. Substitua o URL em{' '}
-              <code>src/data/curriculum.ts</code>.
-            </p>
           </div>
         )}
 
@@ -142,17 +126,10 @@ export function MediaPage() {
           <div className="video-wrap">
             <iframe
               title="Questionnaire"
-              src={questionnaireSrc}
+              src={media.questionnaire}
               className="questionnaire-frame"
               loading="lazy"
             />
-            <p className="media-caption">
-              Questionnaire de demonstração. Pode também abrir em novo separador:{' '}
-              <a href={questionnaireSrc} target="_blank" rel="noreferrer">
-                Open Questionnaire
-              </a>
-              .
-            </p>
           </div>
         )}
       </div>

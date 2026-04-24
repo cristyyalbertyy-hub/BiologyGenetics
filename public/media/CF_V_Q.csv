@@ -1,0 +1,80 @@
+Why are viruses not considered truly 'living' organisms?,They lack the ability to reproduce independently and have no internal metabolism.
+What term describes the protein shell that encloses a viral genome?,Capsid
+"A complete, infectious virus particle is known as a _____.",Virion
+What is the origin of the lipid bilayer envelope found in some viruses?,It is acquired from the host cell plasma membrane during budding.
+Which enzyme allows retroviruses to copy their $RNA$ genome into $DNA$?,$Reverse\ transcriptase$
+"In the Hershey-Chase experiment, what radioactive isotope was used to label viral $DNA$?",$^{32}P$
+"In the Hershey-Chase experiment, what radioactive isotope was used to label viral proteins?",$^{35}S$
+What was the conclusion of the Hershey-Chase experiment regarding the genetic material of the T2 bacteriophage?,"Viral $DNA$ enters the host cell, demonstrating it is the genetic material."
+How did the $v-Src$ oncogene in the Rous sarcoma virus originate?,It was captured from the host genome ($c-Src$) and underwent mutation.
+What specific enzymatic activity does the protein encoded by $Src$ possess?,Tyrosine kinase activity
+Which human cancer is primarily associated with Papillomavirus infection?,Carcinoma of the uterine cervix
+Which virus is linked to both Burkitt's lymphoma and Nasopharyngeal carcinoma?,Epstein-Barr virus ($EBV$)
+What is the primary host-cell receptor used by $HIV$ for entry?,$CD4$
+Name the two major co-receptors required for $HIV$ infection of macrophages and helper $T$ cells.,$CCR5$ and $CXCR4$
+Which host-cell receptor does the SARS-CoV-2 spike protein bind to?,$ACE2$
+Why do most $RNA$ viruses mutate more rapidly than $DNA$ viruses?,Viral $RNA$ polymerases typically lack proofreading capabilities.
+What unique feature of the SARS-CoV-2 replication complex reduces its mutation rate compared to other $RNA$ viruses?,It possesses a $3'$-to-$5'$ exonuclease that provides proofreading ability.
+Define the 'prophage' state of a bacterial virus.,A state where viral $DNA$ is integrated into the bacterial chromosome and copied during cell division.
+What occurs during the 'lytic' state of a bacteriophage life cycle?,"Viral $DNA$ replicates many times, produces coat proteins, and bursts the host cell."
+Which viral transcription regulator maintains the prophage state in bacteria?,The repressor (product of the $cI$ gene)
+"In the context of bacteriophages, which protein promotes the switch to the lytic state by repressing the $cI$ gene?",$Cro$
+How do retroviruses integrate their $DNA$ copy into the host chromosome?,Using a virus-encoded enzyme called $integrase$.
+What is the integrated $DNA$ form of a retrovirus called?,$Provirus$
+Which ancient defense mechanism uses $siRNAs$ to target and inactivate specific viral $RNA$ in plants and worms?,$RNA$ interference ($RNAi$)
+What bacterial system provides an adaptive immune 'memory' by integrating short fragments of viral $DNA$ into the genome?,$CRISPR$
+"In the $CRISPR$ system, what is the role of $crRNAs$?",They guide $Cas$ proteins to seek out and destroy complementary invading viral genomes.
+How does Cytomegalovirus ($CMV$) evade detection by cytotoxic $T$ cells?,By down-regulating the expression of MHC class I molecules on the surface of infected cells.
+What mechanism does $CMV$ use to avoid attack by natural killer cells after down-regulating MHC class I?,It encodes a decoy cell-surface protein that mimics MHC class I molecules.
+The process by which influenza viruses steal $5'$ caps from host $mRNAs$ to use as primers for their own $mRNA$ synthesis is called _____.,$cap\ snatching$
+Which drug targets the viral $RNA$ replicase of SARS-CoV-2 by acting as a nucleoside triphosphate analogue?,$Remdesivir$
+What is the typical size of the SARS-CoV-2 $RNA$ genome in nucleotides?,"Approximately $30,000$ nucleotides."
+"How do neurotropic alphaherpesviruses, like the chickenpox virus, move within neurons?",By using motor proteins to travel along microtubules in axons.
+Define 'antigenic variation' in the context of viral evolution.,The alteration of surface proteins so the virus is no longer recognised by the host immune system.
+"Why must double-stranded $DNA$ viruses, like adenovirus, often drive host cells into S-phase?",To ensure a high supply of active $DNA$ polymerase and nucleotides for viral replication.
+Which two host-cell tumour suppressors are typically inactivated by DNA tumor viruses to promote cell cycle progression?,$Rb$ and $p53$
+What is the primary difference between a retrovirus and a retro-transposon?,Retroviruses possess genes for coat proteins that allow them to escape and move between cells.
+Which virus is the causative agent of Kaposi's sarcoma?,Human herpesvirus 8 ($HHV-8$)
+What mechanism allows non-enveloped viruses like poliovirus to enter the host cytosol?,Pore formation in the host cell membrane after receptor-mediated endocytosis.
+Which viral protein is responsible for the 'corona' appearance of SARS-CoV-2?,Spike protein
+"In $HIV$, which protein regulates the nuclear export of unspliced or partially spliced viral $RNA$?",$Rev$
+What is the function of the $HIV$ $Tat$ protein?,It acts as a transcriptional activator that prevents premature termination of viral $RNA$ synthesis.
+How does the Poliovirus protease inhibit host cell transcription?,By cleaving a TATA-binding component of the host's $TFIID$ complex.
+What is a 'zoonosis'?,An infectious disease that can be transmitted from animals to humans.
+Which $DNA$ virus is associated with liver cancer ($hepatocellular\ carcinoma$)?,Hepatitis-B virus
+Which $RNA$ virus is a major cause of liver cancer worldwide?,Hepatitis-C virus
+What determines whether a virus is 'enveloped' or 'non-enveloped'?,The presence or absence of a lipid-bilayer coat surrounding the protein capsid.
+Why is $PCR$ an effective method for detecting viral genomes in blood samples?,It can enormously amplify the signal from even single molecules of viral nucleic acid.
+How do viruses hijack the host's translation machinery to favour viral protein synthesis?,By encoding proteases that cleave host translation initiation factors or using Internal Ribosome Entry Sites ($IRES$).
+Which virus causes Adult $T$-cell leukaemia/lymphoma?,Human $T$-cell leukaemia virus type I ($HTLV-1$)
+What happens to the empty virus head in bacteriophage infection according to the Hershey-Chase model?,It remains attached to the outside of the bacterial host cell.
+Which viral genome type must first be copied into a complementary $RNA$ strand before it can be translated?,Negative-sense ($[-]$ strand) $RNA$ genomes.
+What is the role of the viral $RNA-dependent\ RNA\ polymerase$?,To replicate the viral $RNA$ genome and transcribe viral $mRNAs$.
+Which virus type uses 'macropinocytosis' to enter host cells?,"Large viruses that do not fit into clathrin-coated pits, such as poxviruses."
+"In the context of viral entry, what is 'uncoating'?",The release of the viral genome from the capsid into the host cell cytosol or nucleus.
+What determines the 'host range' of a virus?,The presence of specific surface receptors on host cells that the virus can bind to.
+How does the Influenza virus trigger membrane fusion in the endosome?,Low $pH$ in the endosome causes a conformational change in the viral surface glycoprotein.
+Which virus uses 'retrograde' axonal transport to reach the cell body of a neuron?,Herpesvirus
+What is the primary function of the $HIV$ $Gag$ gene?,It encodes proteins that form the viral capsid.
+Which $HIV$ gene encodes the envelope proteins $gp120$ and $gp41$?,$Env$
+How can a single $HIV$ transcript produce over $30$ different species of $mRNA$?,Through extensive alternative splicing of the viral $RNA$.
+What is the 'error-prone' nature of $HIV$ replication attributed to?,The lack of proofreading activity in $reverse\ transcriptase$.
+Why is it difficult to develop a vaccine against $HIV$?,Rapid mutation leads to extreme genetic plasticity and diverse viral variants.
+What is the function of the $SXT$ element in the evolution of $V.\ cholerae$?,It is a pathogenicity island that carries antibiotic resistance and virulence genes.
+Which virus is responsible for the 2015-2016 epidemic that caused birth defects in infants?,Zika virus
+How do 'opportunistic pathogens' differ from 'primary pathogens'?,They only cause disease in individuals with weakened immune systems or other underlying conditions.
+What was the significance of finding $v-Ras$ in human tumour cells?,It showed that human cancers can be driven by mutations in genes identical to those found in animal tumour viruses.
+How many genes are typically found in the simplest viruses?,As few as three genes.
+What defines the 'eclipse phase' of a viral life cycle? (Note: Inferred from disassembly description),The period between viral entry/disassembly and the appearance of new infectious progeny.
+Which type of $DNA$ genome is characteristic of the Hepatitis B virus?,"Partially single-stranded, partially double-stranded $DNA$."
+What is the main advantage of 'combination therapy' (using multiple drugs simultaneously) for $HIV$?,It greatly decreases the likelihood that a mutant virus resistant to all drugs will arise.
+Which viral family includes the viruses causing warts and cervical cancer?,$Papovavirus$ family
+Which viral family includes $EBV$ and $HHV-8$?,$Herpesvirus$ family
+How do enveloped viruses like $HIV$ exit the host cell without killing it immediately?,"By budding through the plasma membrane, taking a portion of the lipid bilayer with them."
+What is the typical diameter range for common human viruses?,$20\ nm$ to $300\ nm$.
+Which large $DNA$ virus replicates entirely in the host cell's cytoplasm?,$Poxvirus$
+What is the role of the 'nucleocapsid' in enveloped viruses?,It is the complex of the viral genome and the capsid proteins.
+How does the $HIV$ genome persist in a latent state?,By embedding itself as a provirus in the host's chromosomes.
+Which virus is the primary cause of 'serum hepatitis'?,Hepatitis B virus
+What term describes a virus that infects bacteria?,Bacteriophage
+Which viral enzyme is a prime target for $AIDS$ drugs because it is not used by human cells?,$Reverse\ transcriptase$

@@ -28,6 +28,46 @@ export const DEMO_MEDIA = {
     'https://docs.google.com/forms/d/e/1FAIpQLSd0v8v9F8Vqj0M7cPzER6gqJ5Jx7T8j7l4x1v9wA7B1xw2Q/viewform',
 } as const
 
+export type MediaByLeaf = {
+  video: string
+  podcast: string
+  infografic: string
+  questionnaire: string
+}
+
+/**
+ * Convenção por iniciais:
+ * <CAPITULO>_<SUBCAPITULO>_<TIPO>.<ext>
+ * Exemplo de CT dentro de CF:
+ * CF_CT_V.mp4 / CF_CT_P.m4a / CF_CT_I.png / CF_CT_Q.pdf
+ */
+const MEDIA_OVERRIDES: Record<string, MediaByLeaf> = {
+  'biology-syllabus:cell-fundamentals:cell-theory': {
+    video: '/media/CF_CT_V.mp4',
+    podcast: '/media/CF_CT_P.m4a',
+    infografic: '/media/CF_CT_I.png',
+    questionnaire: '/media/CF_CT_Q.pdf',
+  },
+  'biology-syllabus:cell-fundamentals:macromolecules': {
+    video: '/media/CF_M_V.mp4',
+    podcast: '/media/CF_M_P.m4a',
+    infografic: '/media/CF_M_I.png',
+    questionnaire: '/media/CF_M_Q.pdf',
+  },
+  'biology-syllabus:cell-fundamentals:prokaryotic-vs-eukaryotic': {
+    video: '/media/CF_PE_V.mp4',
+    podcast: '/media/CF_PE_P.m4a',
+    infografic: '/media/CF_PE_I.png',
+    questionnaire: '/media/CF_PE_Q.pdf',
+  },
+  'biology-syllabus:cell-fundamentals:viruses': {
+    video: '/media/CF_V_V.mp4',
+    podcast: '/media/CF_V_P.m4a',
+    infografic: '/media/CF_V_I.png',
+    questionnaire: '/media/CF_V_Q.pdf',
+  },
+}
+
 export const chapters: Chapter[] = [
   {
     id: 'biology-syllabus',
@@ -35,15 +75,15 @@ export const chapters: Chapter[] = [
     groups: [
       {
         id: 'cell-fundamentals',
-        title: 'Cell Fundamentals',
+        title: 'Cell Fundamentals (CF)',
         leaves: [
-          { id: 'cell-theory', title: 'Cell Theory' },
-          { id: 'macromolecules', title: 'Macromolecules' },
+          { id: 'cell-theory', title: 'Cell Theory (CT)' },
+          { id: 'macromolecules', title: 'Macromolecules (M)' },
           {
             id: 'prokaryotic-vs-eukaryotic',
-            title: 'Prokaryotic vs Eukaryotic',
+            title: 'Prokayotic vs Eukaryotic (PE)',
           },
-          { id: 'viruses', title: 'Viruses' },
+          { id: 'viruses', title: 'Viruses (V)' },
         ],
       },
       {
@@ -195,4 +235,20 @@ export function findLeaf(
 ): Leaf | undefined {
   const g = findGroup(chapterId, groupId)
   return g?.leaves.find((l) => l.id === leafId)
+}
+
+export function getMediaForLeaf(
+  chapterId: string,
+  groupId: string,
+  leafId: string,
+): MediaByLeaf {
+  const key = `${chapterId}:${groupId}:${leafId}`
+  return (
+    MEDIA_OVERRIDES[key] ?? {
+      video: DEMO_MEDIA.video,
+      podcast: DEMO_MEDIA.podcast,
+      infografic: DEMO_MEDIA.infografic,
+      questionnaire: DEMO_MEDIA.questionnaire,
+    }
+  )
 }
