@@ -1,0 +1,78 @@
+What is the primary functional difference between a proto-oncogene and a tumour suppressor gene?,"Proto-oncogenes promote cell proliferation, whereas tumour suppressor genes inhibit it."
+"At the cellular level, mutations in tumour suppressor genes generally act in a _____ manner.",Recessive
+How many copies of a tumour suppressor gene must typically be inactivated to promote cancer development?,Two
+Why is the first mutation in a tumour suppressor gene in a normal cell usually 'silent' in terms of cancer phenotype?,Because the remaining functional copy is sufficient to maintain normal cell cycle control.
+Which specific rare human cancer led to the discovery of the first tumour suppressor gene?,Retinoblastoma
+The _____ hypothesis explains why some cancers appear in families as an autosomal dominant trait despite being recessive at the cellular level.,Two-hit
+On which human chromosome is the $RB1$ gene located?,Chromosome 13
+"In hereditary retinoblastoma, what is the status of the $RB1$ gene in the somatic cells of the afflicted individual?",One copy is defective in every somatic cell.
+What distinguishes 'non-hereditary' retinoblastoma from the hereditary form regarding the frequency of the disease?,It is much rarer because it requires two independent somatic mutations in the same cell lineage.
+What is the primary function of the protein encoded by the $RB1$ gene (pRb)?,It acts as a negative regulator (brake) of the cell cycle at the $G_{1}$ to S phase transition.
+Which transcription factor complex does unphosphorylated pRb bind to and inhibit?,E2F
+Which enzymes are responsible for the phosphorylation and subsequent inactivation of pRb?,Cyclin-dependent kinases (CDKs)
+The release of _____ from pRb is required for a cell to progress into the S phase of the cell cycle.,E2F
+Name the tumour suppressor gene often referred to as the 'Guardian of the Genome'.,$TP53$ (p53)
+List three types of cellular stress that can activate the p53 protein.,"DNA damage, telomere shortening, and hypoxia."
+What are the three possible regulatory outcomes of p53 activation?,"Cell-cycle arrest, senescence, or apoptosis."
+"Which protein, induced by p53, directly binds to and inhibits Cdk complexes to halt the cell cycle?",$p21$
+Mutations in the _____ gene are found in nearly all human cancers.,$TP53$ (p53)
+Which hereditary cancer syndrome is caused by germline mutations in $TP53$?,Li–Fraumeni syndrome
+How does p53 trigger apoptosis in response to severe DNA damage?,By stimulating the expression of pro-apoptotic genes.
+The $APC$ protein is an inhibitory component of which major cell signalling pathway?,Wnt signalling pathway
+What is the primary target protein that $APC$ helps to degrade in the absence of Wnt signalling?,$\beta$-catenin
+"Loss of $APC$ function leads to an accumulation of $\beta$-catenin, which then travels to the _____ to drive cell proliferation.",Nucleus
+Which inherited disorder is characterised by the development of thousands of colorectal polyps due to $APC$ mutations?,Familial Adenomatous Polyposis (FAP)
+"Beyond Wnt signalling, what other cellular process does $APC$ loss affect, potentially leading to aneuploidy?",Chromosome segregation during mitosis (via spindle defects).
+What is the primary function of the $MLH1$ and $MSH2$ genes?,DNA mismatch repair
+Mutations in DNA mismatch repair genes like $MSH2$ predispose individuals to which condition?,Hereditary Non-polyposis Colorectal Cancer (HNPCC or Lynch syndrome)
+The inactivation of $BRCA1$ or $BRCA2$ proteins impairs the repair of which type of DNA damage?,Double-strand breaks
+What is 'Loss of Heterozygosity' (LOH) in the context of tumour suppressor genes?,The process by which the remaining functional allele of a gene is lost or inactivated in a cell.
+Which epigenetic modification of a tumour suppressor's promoter region can lead to its silencing?,Hypermethylation
+Contrast the typical methylation status of oncogenes versus tumour suppressors in cancer cells.,"Oncogenes are often hypomethylated (active), while tumour suppressor promoters are hypermethylated (silent)."
+What is the function of the $NF1$ tumour suppressor gene product?,It acts as a GTPase-activating protein (GAP) that down-regulates the Ras protein.
+Which tumour suppressor gene is a phosphatase that inhibits the PI3K signalling pathway?,$PTEN$
+The $VHL$ gene product is involved in the regulation of which transcription factor under hypoxic conditions?,HIF-$1\alpha$ (though the text highlights its role in regulating p53 and $NF\kappa B$)
+Which tumour suppressor acts as a CDK inhibitor to specifically block CDK4/6 activity?,$CDKN2A$ (p16)
+Why are oncogenes easier to identify using cell transformation assays than tumour suppressors?,"Oncogenes have a dominant gain-of-function effect, whereas tumour suppressors require two 'hits' to show a phenotype."
+"In the 'two-hit' model, what constitutes the 'first hit' in hereditary cancer syndromes?",A germline mutation inherited from a parent and present in all cells.
+Which tumour suppressor gene is associated with Wilms tumour?,$WT1$
+How does the drug imatinib (Gleevec) function in treating Chronic Myelogenous Leukemia (CML)?,It blocks the activity of the hyperactive Bcr-Abl tyrosine kinase.
+"What cellular process is permanently triggered when p53 levels rise in response to irreparable damage, stopping division without cell death?",Senescence
+The $DPC4$ ($SMAD4$) gene is a tumour suppressor involved in the transduction of signals from which growth factor?,TGF-$\beta$
+Name the condition caused by mutations in the $PTCH$ (Sonic hedgehog receptor) gene.,Gorlin syndrome
+Which tumour suppressor gene is associated with Cowden syndrome?,$PTEN$
+What is the typical consequence of a 'truncating mutation' in a tumour suppressor gene?,"Aborted protein synthesis leading to a non-functional, shortened product."
+Why does hypermethylation of microRNA genes contribute to tumorigenesis?,"It prevents the microRNA from inhibiting its mRNA targets, leading to the over-expression of those targets."
+Which enzyme do tumour cells often activate to escape the limit of cellular senescence caused by telomere shortening?,Telomerase
+"In colorectal cancer progression, which mutation typically occurs first: $APC$ inactivation or $p53$ inactivation?",$APC$ inactivation
+"The $CDH1$ gene encodes _____, a protein critical for cell-cell adhesion and a known tumour suppressor.",E-cadherin
+What is the biological role of the $CHEK2$ protein in the p53 pathway?,It is a kinase that phosphorylates and activates p53 in response to DNA damage.
+Why is $TP53$ mutation a useful prognostic indicator in breast and colon cancer?,Its presence often signals a more aggressive cancer with poorer survival prospects.
+Concept: Genetic Instability.,Definition: An increased rate of mutation or chromosomal change that often results from the loss of tumour suppressors involved in DNA repair.
+What is the significance of the $G_{1}$ checkpoint in the context of p53?,It is the stage where p53-induced $p21$ expression halts the cell cycle to allow for DNA repair.
+"In the Wnt pathway, what happens to $\beta$-catenin when the $APC$ protein is missing or defective?",It is not degraded and enters the nucleus to activate genes that promote the stem-cell state.
+Which tumour suppressor gene mutation is the most common 'culprit' identified in sporadic colorectal cancers?,$APC$
+Hereditary Non-polyposis Colorectal Cancer (HNPCC) is also known as _____ Syndrome.,Lynch
+Which tumour suppressor is specifically involved in regulating the mTOR signalling pathway?,$TSC2$
+"What is the relationship between MDM2 and p53 in a healthy, unstressed cell?",MDM2 binds to p53 and targets it for rapid degradation.
+Mutations in the _____ gene are specifically associated with Neurofibromatosis Type 1.,$NF1$
+Which form of DNA repair is defective in individuals with Xeroderma Pigmentosum?,Nucleotide excision repair ($XPA$)
+What is 'Enucleation' in the clinical management of retinoblastoma?,The surgical removal of the eye.
+The $ATM$ protein kinase phosphorylates which major repair protein in response to DNA damage?,BRCA1
+How does the 'recessive' nature of tumour suppressor mutations at the cellular level reconcile with 'dominant' inheritance in families?,Inheriting one mutation makes it highly likely that at least one cell out of millions will experience a second hit.
+"In the E2F-pRb model, what is the effect of Cyclin D-CDK4 on pRb?","It phosphorylates pRb, causing it to release E2F."
+Which type of mutation in a proto-oncogene leads to it becoming an oncogene?,Gain-of-function mutation
+Which tumour suppressor protein is defective in Neurofibromatosis Type 2?,Merlin (a cytoskeletal regulator encoded by $NF2$)
+What happens to the p53 protein concentration in a cell when DNA damage is detected?,It rises significantly because the protein is stabilised.
+Concept: Passenger Mutation.,Definition: A mutation that occurs in a cancer cell but does not contribute to the cancer's functional growth or survival.
+What is the 'Exome' in the context of cancer genome sequencing?,The portion of the genome consisting of all protein-coding sequences.
+Which tumour suppressor is often hypermethylated in hereditary forms of breast cancer?,$BRCA1$
+How does the loss of $APC$ affect intestinal crypts?,It leads to an uncontrolled expansion of the stem-cell population and the formation of polyps.
+"Which gene encodes the p16 protein, a common tumour suppressor lost in many cancers?",$CDKN2A$
+What is the role of p14 (ARF) in the p53 pathway?,"It inhibits MDM2, thereby stabilising and activating p53."
+"In Knudson's study, what was the average number of tumours observed in hereditary versus non-hereditary retinoblastoma?","Hereditary cases usually involve multiple tumours (often both eyes), while non-hereditary cases involve only one."
+Which transcription factor is activated by $\beta$-catenin following $APC$ loss?,Myc
+What is the primary diagnostic indicator found during routine colonoscopy for FAP?,The presence of hundreds or thousands of adenomatous polyps.
+"The _____ gene encodes a protein that inhibits the Ras GTPase, acting as a brake on Ras signalling.",$NF1$
+Why is the penetrance of retinoblastoma (90%) not 100% despite inheriting a 'first hit'?,Some individuals do not experience the necessary 'second hit' in any of their retinoblasts.
+What is the cellular consequence of a loss-of-function mutation in both copies of the $RB1$ gene?,Uncontrolled mitosis because the brake on the cell cycle is removed.

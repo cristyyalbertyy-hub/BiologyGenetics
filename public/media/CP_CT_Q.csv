@@ -1,0 +1,55 @@
+Which three mechanisms are used by eukaryotic cells to import proteins into membrane-enclosed organelles?,"Transport through nuclear pores, transport across membranes by protein translocators, and transport by vesicles."
+What determines the correct destination of a protein being synthesised in the cytosol?,A specific signal sequence within its amino acid sequence.
+In what folding state are proteins when they are transported from the cytosol into the nucleus?,They are transported in their fully folded conformation.
+What is the function of nuclear localisation signals (NLS)?,They are signal sequences that direct the active transport of proteins from the cytosol into the nucleus.
+The nuclear import receptor interacts with _____ to drive the transport of proteins into the nucleus.,Ran-GTP
+"Unlike nuclear transport, proteins moving into mitochondria or chloroplasts must _____ to pass through the membrane.",Unfold
+What is the role of the Signal-Recognition Particle (SRP) in protein sorting?,It recognises the ER signal sequence on a growing polypeptide and directs the ribosome to the ER membrane.
+Where is the SRP receptor located within the cell?,It is embedded in the membrane of the endoplasmic reticulum.
+How do transmembrane proteins remain anchored in the lipid bilayer during translocation into the ER?,They possess a hydrophobic stop-transfer sequence that halts translocation and remains in the membrane.
+Which signal sequence allows soluble proteins to be retained in the lumen of the endoplasmic reticulum?,The ER retention signal (often the KDEL sequence).
+What is the function of chaperone proteins located in the ER lumen?,They prevent misfolded or unassembled proteins from leaving the ER and help them fold properly.
+The _____ triggers an expansion of the ER and increases its folding capacity when misfolded proteins accumulate excessively.,Unfolded Protein Response (UPR)
+What are the two primary functions of the protein coat on a transport vesicle?,It shapes the membrane into a bud and captures specific cargo molecules for transport.
+Which protein is responsible for 'pinching off' clathrin-coated vesicles from the plasma membrane?,Dynamin
+What is the role of adaptins in clathrin-coated vesicle formation?,They secure the clathrin coat to the vesicle membrane and select specific cargo molecules by binding to cargo receptors.
+Which type of coated vesicles typically mediate transport from the ER to the Golgi apparatus?,COPII-coated vesicles.
+What is the function of monomeric GTPases known as Rab proteins in vesicle trafficking?,They serve as molecular markers on the vesicle surface to ensure docking with the correct target membrane.
+Vesicle docking is initiated when a Rab protein on a vesicle binds to a _____ on the target membrane.,Tethering protein
+What is the primary difference between v-SNAREs and t-SNAREs?,"v-SNAREs are located on the vesicle membrane, while t-SNAREs are found on the target membrane."
+How do SNARE proteins catalyse the fusion of two lipid bilayers?,"They wrap around each other tightly to pull the membranes close together, displacing water molecules from the hydrophilic surfaces."
+What is the role of the NSF protein after a vesicle fusion event?,It uses ATP hydrolysis to pry apart the paired v-SNAREs and t-SNAREs so they can be reused.
+How are most proteins chemically modified as they enter the ER lumen?,They are converted into glycoproteins by the covalent attachment of branched oligosaccharide side chains.
+"In the Golgi apparatus, the _____ network is positioned closest to the ER, while the _____ network faces the plasma membrane.",cis; trans
+Which exocytosis pathway operates continually in all eukaryotic cells to supply the plasma membrane with new lipids and proteins?,The constitutive exocytosis pathway.
+How does the regulated exocytosis pathway differ from the constitutive pathway?,It only operates in specialised secretory cells and requires an extracellular signal to trigger vesicle fusion.
+Under what ionic conditions do secretory proteins aggregate in the trans Golgi network?,In conditions of acidic pH and high $Ca^{2+}$ concentration.
+"Which form of endocytosis involves the ingestion of large particles, such as microorganisms, into large vesicles?",Phagocytosis
+Term: Pinocytosis,Definition: The indiscriminate ingestion of fluid and small molecules via vesicles smaller than $150$ nm in diameter.
+What is the main advantage of receptor-mediated endocytosis over simple pinocytosis?,It allows specific macromolecules to be concentrated and internalised more than $1000$-fold more efficiently.
+Low-density lipoprotein (LDL) enters the cell through which specific trafficking mechanism?,Receptor-mediated endocytosis.
+What happens to LDL receptors after they have delivered LDL to the endosomes?,They are typically recycled back to the plasma membrane for reuse.
+Which intracellular compartment serves as the main sorting station for the endocytic pathway?,Endosomes
+What determines the destination of a receptor once it reaches the endosome?,"It can be recycled to the same membrane, sent to the lysosome for degradation, or moved to a different membrane domain (transcytosis)."
+The interior of a lysosome is maintained at an acidic pH by a _____ in its membrane.,$H^{+}$ pump (V-type ATPase)
+Which chemical tag directs hydrolytic enzymes from the Golgi apparatus specifically to lysosomes?,Mannose 6-phosphate (M6P).
+Term: Autophagy,Definition: A trafficking pathway used by cells to degrade obsolete parts of themselves by enclosing them in a double-membraned autophagosome.
+How does the bacterium 'Listeria monocytogenes' avoid destruction by the endocytic pathway?,"It secretes a protein that disrupts the phagosomal membrane, allowing it to escape into the cytosol."
+Which mechanism do 'Mycobacterium tuberculosis' bacteria use to survive within macrophages?,They prevent the maturation of the endosome and its fusion with lysosomes.
+What specific lipids serve as molecular markers for different membrane compartments and help recruit adaptor proteins like AP2?,Phosphoinositides (PIPs).
+"A _____ is a sequence of events where one Rab protein recruits effectors that activate a different Rab protein, changing the identity of an organelle.",Rab cascade
+What is the function of the trans-SNARE complex?,It is a stable four-helix bundle formed by v-SNARE and t-SNARE helices that locks two membranes together for fusion.
+"In nerve terminals, which proteins 'freeze' SNAREs in a metastable state until a calcium signal arrives?",Complexins
+Which specialised protein on the surface of 'Legionella pneumophila' helps it hijack the cell's trafficking by preventing phagosome-lysosome fusion?,Effector proteins secreted via a type IV secretion system.
+How do viruses like Influenza acquire their lipid envelope?,By budding from the host-cell plasma membrane.
+Which protein complex on the cytosolic side of the ER membrane threads the growing polypeptide chain into the lumen?,The protein translocator.
+"The _____ is the site where proteins are sorted for delivery to lysosomes, the cell surface, or secretory vesicles.",trans Golgi network
+What happens to the protein coat of a vesicle immediately after it buds from the parent organelle?,It is rapidly shed (uncoating) to allow the vesicle to interact with its target membrane.
+Which mechanism do 'Salmonella enterica' use to enter non-phagocytic cells by inducing membrane ruffling?,The trigger mechanism (using a type III secretion system).
+"In the 'zipper mechanism' of bacterial invasion, which host-cell proteins are directly bound by bacterial invasins?",Cell-surface receptors such as integrins or cadherins.
+Which motor protein-mediated process is hijacked by neurotropic viruses like Herpes to reach the cell body of a neuron?,Retrograde axonal transport (using dynein).
+What is the fate of the autophagosome once it has enclosed a cytosolic organelle?,It fuses with a lysosome to allow the contents to be digested.
+Which Rab protein is specifically associated with early endosomes and clathrin-coated vesicles?,Rab5
+"The _____ model suggests that Golgi cisternae themselves migrate through the stack, maturing from cis to trans as they go.",Cisternal maturation
+What prevents membranes from fusing randomly within the cell?,The energetic cost of displacing water from the hydrophilic surface of the lipid bilayer.
+Which specialised phagocytic cell in humans is responsible for ingesting old red blood cells and pathogens?,Macrophages

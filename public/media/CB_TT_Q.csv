@@ -1,0 +1,80 @@
+Term: Neoplasm,"Definition: A mass of cells resulting from uncontrolled cell growth, commonly referred to as a tumour."
+What capacity distinguishes a malignant neoplasm from a benign one?,The ability to invade nearby tissues and metastasise to distant sites.
+"Cancer is described as a microevolutionary process because it results from repeated rounds of mutation, competition, and _____.",Natural selection
+What is the approximate estimated mutation rate per gene per cell division?,$10^{-6}$
+Why does the incidence of most cancers rise steeply with age?,The development of cancer typically requires the gradual accumulation of multiple independent mutations in a single cell lineage.
+Term: Tumor Progression,Definition: The process by which an initial mild disorder of cell behaviour evolves gradually into a full-blown cancer.
+A mutated cell that becomes the ancestor of a growing mutant clone is known as a _____.,Founder
+How do cancer stem cells contribute to tumour growth despite being a small part of the population?,They are capable of self-renewal and produce a much larger number of transit amplifying cells.
+Why are slowly dividing cancer stem cells particularly difficult to eliminate with radiotherapy?,"Radiotherapy selectively kills rapidly dividing cells, often sparing the slowly dividing stem cells that can later resurrect the tumour."
+Name one common hallmark of cancer related to cellular metabolism.,"Altered cellular metabolism, such as an increased reliance on glycolysis even in the presence of oxygen."
+Cancer cells often achieve immortality by reactivating the production of which enzyme?,Telomerase
+Term: Transformed Phenotype,"Definition: A set of abnormal properties in cultured cells, such as loss of contact inhibition and attachment independence, indicating cancerous potential."
+Mutations in proto-oncogenes are typically classified as _____ mutations.,Dominant gain-of-function
+Mutations in tumour suppressor genes generally act in a _____ manner.,Recessive loss-of-function
+What is the primary function of a proto-oncogene in a normal cell?,"To encode products that regulate cell growth, division, and differentiation."
+Term: Genetic Instability,Definition: A condition characterised by an increased mutation rate and abnormal chromosome numbers (aneuploidy) in cancer cells.
+How does global DNA hypomethylation contribute to tumorigenesis?,It can increase the activity of oncogenes and lead to chromosomal instability and fragility.
+Hypermethylation of the promoter regions of _____ genes is a common epigenetic alteration in cancer.,Tumour suppressor
+Term: Driver Mutation,Definition: A mutation that has a causal role in the development and progression of cancer.
+What are 'passenger' mutations in a cancer cell genome?,Mutations that have occurred by chance and do not contribute to the selective advantage of the cancer cell.
+Which gene is typically the first to be inactivated in the progression of colorectal cancer?,$APC$ (adenomatous polyposis coli)
+"Following the loss of $APC$, which proto-oncogene is frequently activated in colorectal cancer progression?",$Ras$ (specifically $KRAS$)
+The inactivation of which tumour suppressor gene is often a late-stage event leading to invasive adenocarcinoma?,$p53$ ($TP53$)
+Term: Epithelial-to-Mesenchymal Transition (EMT),Definition: A developmental program subverted by cancer cells to lose adhesion and acquire migratory properties for metastasis.
+Why is the $p53$ pathway inactivated in nearly all human cancers?,Its inactivation allows genetically damaged cells to escape apoptosis and continue proliferating.
+Knudson’s 'multi-hit' concept was first proposed following the analysis of which disease?,Retinoblastoma
+What role does the 'Philadelphia chromosome' play in chronic myeloid leukaemia?,It is a chromosome translocation that upregulates an oncogene to drive unregulated cell growth.
+How does a 'selective advantage' drive the evolution of a tumour?,"It allows a mutant cell to grow and divide more vigorously or survive more readily than its neighbours, leading to clonal expansion."
+Term: Angiogenesis,"Definition: The formation of new blood vessels, which a tumour requires to obtain nourishment and grow."
+Which hallmark of cancer describes the ability of cells to survive and proliferate in foreign territories?,Metastasis
+The abnormal use of glycolysis for ATP production by cancer cells is known as the _____ effect.,Warburg
+Which type of mutation in the $Ras$ gene causes it to become an oncogene?,An activating mutation that causes constant intracellular signalling for proliferation.
+"In Knudson's hypothesis, hereditary retinoblastoma is often bilateral because the first 'hit' is _____.",Inherited in all somatic cells
+Term: Metastasis,Definition: The spread of cancer cells from a primary tumour to colonise distant sites in the body.
+What creates the high levels of heterogeneity often observed within a single human tumour?,"The accumulation of additional, different mutations within sub-clones as the tumour grows and evolves."
+How do cancer cells manipulate their microenvironment to support survival?,By secreting signals that influence surrounding connective tissue to become more hospitable for tumour growth.
+"Which category of genes, including $CDK4$ and $RET$, can occasionally exhibit germline mutations causing inherited cancer?",Proto-oncogenes
+A mutation in a single copy of a proto-oncogene is described as _____ because it is sufficient to promote cell transformation.,Dominant
+The loss of which cell adhesion molecules helps cancer cells become abnormally invasive?,Cadherins
+Why are germline mutations in tumour suppressor genes more commonly associated with inherited cancer syndromes than oncogenes?,Germline oncogene mutations are often lethal or severely impede normal embryonic development.
+Term: Aneuploidy,"Definition: The presence of an abnormal number of chromosomes in a cell, a common feature of genetic instability in cancer."
+How does the loss of $p53$ function typically occur at the genetic level?,Through the sequential inactivation of both copies of the $p53$ tumour suppressor gene.
+"In the microevolution of cancer, selective pressure within a tumour is often created by low levels of _____ and scarce nutrients.",Oxygen
+What is the primary function of genome maintenance genes?,"To maintain the integrity of the genome, often by repairing DNA or regulating chromosome segregation."
+Term: Clonal Evolution,Definition: The process where a tumour develops through repeated rounds of mutation followed by the proliferation of the best-adapted sub-clones.
+What is the Greek meaning of the word 'neoplasm'?,New formation
+How many driver mutations must typically accumulate in a cell before cancer sets in?,"Far more than two, as indicated by the steep age-incidence curve."
+Which epigenetic alteration can lead to the inappropriate activation of an oncogene?,Hypomethylation of the gene's promoter region.
+The ability of cancer cells to survive in the absence of signals from other cells is an example of reduced _____.,Social control
+Why is the Warburg effect useful for cells in the interior of a tumour?,"Interior cells are often oxygen-deprived, making glycolysis a necessary alternative for ATP production."
+Term: Organoid,Definition: A three-dimensional cell culture grown from adult stem cells that mimics the realistic microanatomy of an organ.
+How does an activating mutation in $Ras$ cause a 'faulty doorbell' effect in cell signalling?,It sends a constant intracellular signal for proliferation even when the extracellular growth signal is absent.
+"Which gene family, when mutated, can lead to the 'hallmark' of evading cell-death signals?","Apoptosis-regulating genes (e.g., $p53$ or $Bcl2$ family)."
+What happens to the rate of tumour progression as the number of tumour cells increases?,"It accelerates, because the higher number of cells increases the chance that one will undergo a favourable mutation."
+Term: Adenocarcinoma,"Definition: A malignant tumour originating from glandular epithelial tissue, such as the lining of the colon."
+"In the context of cancer, what is meant by 'socially responsible' cell behaviour?","Cells only growing, dividing, or dying as needed for the good of the organism."
+Which type of mutation in a proto-oncogene results in 'gene amplification'?,"The production of increased numbers of the gene, for example through trisomy."
+How does the inactivation of tumour suppressors like $APC$ lead to polyps?,"It causes the excessive proliferation of mutant epithelial cells, creating small benign tumours."
+What distinguishes the 'dominant' nature of oncogenes at the cellular level?,Only a single mutated copy of the gene is required to contribute to tumour progression.
+Term: Cell Senescence,Definition: The permanent cessation of cell division that occurs when normal somatic cells reach a limited number of divisions.
+Which hallmark of cancer involves subverting the body's natural limits to cell proliferation?,"Bypass of normal limits to cell proliferation (e.g., reactivating telomerase)."
+What is the typical time lag between an increase in smoking and an increase in lung cancer death rates?,Approximately 20 years.
+Mutations in the _____ gene are found in many cancers and typically result in the failure to demethlyate DNA.,$IDH$ (isocitrate dehydrogenase)
+Term: Adenoma,"Definition: A benign tumour of epithelial origin, such as the polyps found in early colorectal cancer."
+Why is the study of rare cancer syndromes medically significant for understanding common cancers?,They help identify tumour suppressor genes and pathways that are also mutated in sporadic (non-inherited) cancers.
+How do cancer cells use their altered metabolism to support fast growth?,They use glycolysis to quickly generate ATP and provide building blocks for new cell components.
+The process of a cancer cell entering the bloodstream to form secondary tumours is called _____.,Metastasis
+What is the primary danger posed by the 'multi-hit' requirement of carcinogenesis being met?,"The cell achieves all the abnormalities required for full-blown, invasive cancer."
+Which gene rearrangement leads to the production of the 'Philadelphia chromosome'?,Translocation between chromosomes 9 and 22.
+Term: Clonal Expansion,Definition: The proliferation of a specific mutant cell into a dominant population within a tumour due to a selective advantage.
+How do 'passenger' mutations contribute to the genetic profile of a tumour?,They create genetic diversity (heterogeneity) but do not drive the cancerous behaviour of the cells.
+Which hallmark of cancer involves the escape from home tissues and proliferation in foreign sites?,Metastasis
+Why do cancer cells often lack certain cell adhesion molecules like cadherins?,The loss of these molecules allows cells to detach from their home tissue and become invasive.
+Term: Tumorigenesis,"Definition: The complex, multi-step process of tumour formation."
+"In cancer biology, what does the 'multi-hit' concept imply about the number of mutations needed?",Multiple independent genetic or epigenetic events are required for a cell to become malignant.
+Which tumour suppressor gene acts as a 'gatekeeper' in the colonic epithelium to prevent polyp formation?,$APC$
+What is the consequence of the inactivation of both copies of a third tumour suppressor gene like $p53$ in colorectal cancer?,"The tumour typically becomes an invasive, malignant cancer."
+How does the 'social control' of cells ensure tissue homeostasis?,"Through an elaborate set of extracellular signals that direct cells to rest, grow, differentiate, or die as needed."
+Term: Selective Advantage,Definition: A characteristic gained by a mutant cell that allows it to outcompete its neighbours for survival and growth.
+Which enzyme reactivation allows cancer cells to maintain telomere length indefinitely?,Telomerase

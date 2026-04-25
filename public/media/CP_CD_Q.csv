@@ -1,0 +1,55 @@
+What is the term for the molecularly distinct form of programmed cell death used to eliminate unwanted or damaged cells?,Apoptosis.
+How does cell death by necrosis differ morphologically from apoptosis regarding cell volume?,"Cells undergoing necrosis swell and burst, whereas apoptotic cells shrink and condense."
+What is the primary reason that apoptosis does not trigger a damaging inflammatory response?,The cell's contents are neatly packaged into apoptotic bodies and rapidly engulfed by phagocytes before they can spill.
+Which irregular protrusions often form on the surface of a cell during the middle stages of apoptosis?,Blebs.
+What is the biochemical characteristic of caspases that gives them their name?,They have a cysteine at their active site and cleave target proteins at specific aspartic acids.
+"In what form are caspases normally present in healthy, non-apoptotic cells?",As inactive precursors called procaspases.
+Which class of caspases is first activated by an apoptotic signal to trigger the proteolytic cascade?,Initiator caspases.
+Which class of caspases is responsible for the widespread protein cleavage that kills the cell?,Executioner caspases.
+How are initiator caspases typically activated at the start of apoptosis?,An apoptotic signal triggers the assembly of adaptor proteins that bring together and activate initiator caspase monomers through dimerisation.
+How are executioner caspases activated by initiator caspases?,"Initiator caspases cleave the executioner procaspases at specific sites, causing an activating conformational change."
+What effect does the cleavage of nuclear lamins by executioner caspases have on the cell?,It causes the irreversible breakdown of the nuclear envelope.
+What is the role of the protein $iCAD$ in healthy cells?,"It acts as an inhibitor, preventing the endonuclease $CAD$ from cutting chromosomal DNA."
+How does caspase activation lead to DNA fragmentation during apoptosis?,"Executioner caspases cleave $iCAD$, releasing the active $CAD$ endonuclease to cut DNA between nucleosomes."
+Which intracellular pathway of apoptosis is typically triggered by internal signals such as DNA damage or oxidative stress?,The intrinsic (or mitochondrial) pathway.
+Which major family of intracellular proteins regulates the activation of caspases in the intrinsic pathway?,The $Bcl2$ family.
+What is the function of the $Bcl2$ family proteins $Bax$ and $Bak$?,They promote apoptosis by inducing the release of cytochrome $c$ from mitochondria into the cytosol.
+How does the $Bcl2$ protein itself inhibit the apoptotic programme?,It prevents $Bax$ and $Bak$ from releasing cytochrome $c$ from the mitochondria.
+"What large, seven-armed protein complex is formed in the cytosol to recruit and activate initiator procaspases?",The apoptosome.
+Which specific protein must be released from the mitochondrial intermembrane space to trigger apoptosome assembly?,Cytochrome $c$.
+What extracellular pathway is triggered when signals from other cells activate death receptors on the cell surface?,The extrinsic pathway.
+Which well-known death receptor is activated by the $Fas$ ligand on the surface of killer lymphocytes?,$Fas$.
+What is the purpose of survival factors secreted by other cells?,They suppress apoptosis and ensure cells only survive where they are needed.
+How do survival factors often inhibit the pro-apoptotic $BH3$-only protein $Bad$?,"They activate $Akt$ kinase, which phosphorylates and inactivates $Bad$, freeing $Bcl2$ to inhibit apoptosis."
+Which phospholipid acts as an 'eat me' signal when it is translocated from the inner to the outer leaflet of the plasma membrane?,Phosphatidylserine ($PS$).
+Which enzyme is activated by executioner caspases to non-specifically flip phospholipids between membrane leaflets in apoptotic cells?,A phospholipid scramblase.
+Why is the inactivation of the $ATP$-dependent flippase crucial during apoptosis?,"It prevents the enzyme from returning phosphatidylserine to the inner leaflet, ensuring the 'eat me' signal remains on the cell surface."
+What transcription regulator accumulates in response to DNA damage and can induce apoptosis if repair is impossible?,$p53$.
+How does the loss of $p53$ function contribute to tumorigenesis?,It allows cells with damaged DNA to evade apoptosis and continue proliferating.
+"Which genetic disease is caused by a defect in $ATM$, a kinase activated by DNA damage that typically leads to $p53$ activation?",Ataxia telangiectasia.
+What is the phenomenon where normal cells stop dividing after a fixed number of populations and enter a non-dividing state?,Replicative cell senescence.
+What structural changes at the ends of chromosomes are responsible for replicative senescence in human fibroblasts?,Progressive shortening of the telomeres.
+Which enzyme do most cancer cells reactivate to bypass replicative senescence and achieve immortality?,Telomerase.
+"In the context of cancer, how do mutations in the $BCL2$ gene typically lead to lymphomas?","A chromosomal translocation causes excessive production of $Bcl2$ protein, abnormally prolonging cell survival by inhibiting apoptosis."
+"Which type of cell death involves the cell taking an active part in its own destruction, such as necroptosis or pyroptosis?",Active forms of cell necrosis.
+What is the primary role of initiator caspase-9 in the intrinsic pathway?,It is recruited by the apoptosome to activate executioner caspases.
+How does the cleavage of actin regulators by executioner caspases assist the apoptotic process?,"It helps the apoptotic cell round up and detach from its neighbours, facilitating engulfment."
+What is the consequence of $Mdm2$ binding to $p53$ in undamaged cells?,It acts as a ubiquitin ligase that targets $p53$ for destruction by proteasomes.
+Which $CKI$ protein is transcribed by $p53$ to arrest the cell cycle in $G_{1}$ before a cell commits to apoptosis?,$p21$.
+"What happens to a unicellular organism, like budding yeast, if DNA damage cannot be repaired?","The cell cycle resumes eventually, even if repair is incomplete, as the health of the individual cell is paramount."
+Why is apoptosis preferred over necrosis in multicellular organisms for disposing of damaged cells?,It prevents the release of potentially toxic cell contents that could damage surrounding healthy tissues.
+What is the result of the 'DNA ladder' pattern seen in gel electrophoresis of apoptotic cells?,Cleavage of DNA into fragments of discrete sizes equivalent to multiples of nucleosome spacing.
+Which pathway uses adaptor proteins like $FADD$ to link death receptors to initiator caspases?,The extrinsic pathway.
+How do survival factors influence the production of anti-apoptotic $Bcl2$ family proteins?,They stimulate signaling pathways that activate transcription regulators for genes encoding these proteins.
+What is the significance of the 'all-or-none' nature of the apoptotic programme?,"Once a cell passes a certain critical point in caspase activation, the process becomes irreversible."
+"Which class of $Bcl2$ family proteins, including $Bad$, $Bim$, and $Puma$, acts exclusively by inhibiting anti-apoptotic $Bcl2$ proteins?",$BH3$-only proteins.
+How does the virus responsible for most cervical cancers (HPV) promote cell survival and growth?,It inactivates both the tumor suppressor proteins $pRb$ and $p53$.
+What is the purpose of angiogenesis in the development of a large tumor?,To provide a new blood supply for the nourishment of the growing cell mass.
+Why are some breast and ovarian cancers particularly vulnerable to drugs that inhibit alternative DNA repair mechanisms?,"They lack $Brca1$ or $Brca2$, making them entirely dependent on the remaining repair pathways to avoid lethal chromosome fragmentation."
+What is the effect of the drug imatinib (Gleevec) on chronic myeloid leukemia cells?,It blocks a hyperactive mutant tyrosine kinase that otherwise promotes abnormal cell survival and proliferation.
+Which cellular process involves the degradation of a cell's own components by lysosomes and can serve as a survival mechanism or a form of cell death?,Autophagy.
+What determines whether a cell lives or dies when both pro-apoptotic and anti-apoptotic $Bcl2$ proteins are present?,The balance between the activities of the two opposing groups of proteins.
+"Which initiator caspases are commonly associated with the extrinsic and intrinsic pathways, respectively?",Caspase-8 (extrinsic) and Caspase-9 (intrinsic).
+What happens to the nuclear DNA of a cell during the final stages of apoptosis?,It is broken up into fragments by nucleases.
+Which specialized immune cells use $Fas$ ligand to induce apoptosis in unwanted immune cells?,Killer lymphocytes.
+What is the characteristic fate of apoptotic bodies in a tissue?,They are rapidly taken up and digested by neighbouring cells or macrophages.

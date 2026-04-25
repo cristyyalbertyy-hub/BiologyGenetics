@@ -1,0 +1,75 @@
+The process by which the information encoded in a DNA sequence is converted into a functional product is known as _____.,Gene expression
+In which level of gene expression control is the synthesis of unnecessary intermediates most effectively avoided?,Transcriptional control
+What is the primary function of a transcription regulator protein?,It binds to specific regulatory DNA sequences to switch a gene on or off.
+How does a transcriptional repressor protein typically inhibit gene expression in bacteria?,It binds to an operator sequence to physically block the binding of RNA polymerase.
+"In bacteria, a cluster of genes that are co-ordinately transcribed from a single promoter as one long mRNA is called an _____.",Operon
+What environmental condition triggers the activation of the tryptophan repressor in $E. coli$?,A high concentration of tryptophan in the cell.
+The specific DNA sequence within a promoter that is recognised by a bacterial repressor is called the _____.,Operator
+How does the bacterial Catabolite Activator Protein (CAP) promote transcription?,It binds to DNA and recruits RNA polymerase to the promoter.
+Which small intracellular molecule must bind to CAP before the protein can attach to DNA?,Cyclic AMP ($cAMP$)
+Under what dual conditions is the $Lac$ operon expressed at a high level?,Glucose must be absent and lactose must be present.
+What occurs to the $Lac$ repressor when lactose is present in the environment?,"It binds a lactose derivative and dissociates from the operator, allowing transcription."
+"Distant DNA sites in eukaryotes that, when bound by activators, increase the rate of transcription are termed _____.",Enhancers
+How can enhancer sequences function effectively even when located thousands of nucleotide pairs away from a promoter?,The intervening DNA loops out to bring the activator protein into contact with the promoter.
+What is the role of the Mediator complex in eukaryotic gene regulation?,"It serves as a bridge, co-ordinating the interaction between transcription regulators and RNA polymerase."
+How do eukaryotic transcription activators modify chromatin to facilitate gene expression?,They recruit chromatin-remodelling complexes or histone-modifying enzymes to increase DNA accessibility.
+The term describing the way groups of transcription regulators work together to determine the expression of a single gene is _____.,Combinatorial control
+How can a single transcription regulator switch on a whole set of different genes simultaneously?,By binding to the same regulatory DNA sequence present in the control regions of each gene.
+Which eukaryotic gene in fruit fly embryos is regulated with high spatial precision to produce seven distinct stripes of expression?,The $Eve$ gene (Even-skipped)
+What experimental tool allows researchers to track the timing and location of a gene's expression by replacing its coding sequence?,A reporter gene
+"Which master transcription regulator in $Drosophila$ triggers the formation of an entire organ, even if expressed in the leg?",The $Ey$ (Eyeless) protein
+The property by which a proliferating cell maintains and passes on its identity to daughter cells is called _____.,Cell memory
+How does a positive feedback loop reinforce cell identity during division?,"A master transcription regulator activates the transcription of its own gene, ensuring its presence in progeny."
+Which covalent modification of cytosine bases in vertebrate DNA is used to silence gene expression?,DNA methylation
+How are DNA methylation patterns inherited by daughter cells after DNA replication?,An enzyme recognises methylated sites on the parent strand and methylates the corresponding daughter strand.
+What term refers to the inheritance of gene expression patterns that does not involve changes to the DNA nucleotide sequence?,Epigenetic inheritance
+Which level of gene expression control occurs after a messenger RNA has been fully synthesised?,Post-transcriptional control
+How do microRNAs ($miRNAs$) regulate the expression of specific protein-coding genes?,"They base-pair with target $mRNAs$, leading to their degradation or translational inhibition."
+What is the name of the protein complex that packages a mature $miRNA$ to patrol the cytosol for complementary $mRNAs$?,RISC (RNA-induced silencing complex)
+The cellular defence mechanism that uses $siRNAs$ to destroy 'foreign' double-stranded RNA is known as _____.,RNA interference ($RNAi$)
+Which type of noncoding RNA is often longer than 200 nucleotides and can act as a scaffold for protein complexes?,Long noncoding RNA ($lncRNA$)
+How do bacterial translational repressors inhibit the production of specific proteins?,"They bind to the $mRNAs$ $5'$ untranslated region, preventing the ribosome from locating the start codon."
+Which eukaryotic process can produce multiple different proteins from a single primary RNA transcript?,Alternative RNA splicing
+Why is the half-life of an $mRNA$ molecule in the cytosol a significant point of gene regulation?,It determines how long the $mRNA$ is available for translation into protein.
+What is the effect of the steroid hormone cortisol on gene expression in liver cells?,"It induces the production of enzymes, such as tyrosine aminotransferase, to increase glucose synthesis."
+What is the primary difference between a neuron and a liver cell given that they share the same genome?,They express different sets of $RNAs$ and proteins.
+Approximately what percentage of protein-coding genes in a typical eukaryotic cell code for transcription regulators?,$10 \%$
+"In the absence of tryptophan, what is the state of the tryptophan repressor in $E. coli$?",It is inactive and unable to bind to the operator.
+How does the binding of an activator protein to DNA assist in initiating transcription?,It increases the affinity of RNA polymerase for the promoter.
+The core set of genes expressed in all cells of a multicellular organism for basic maintenance is called _____.,Housekeeping genes
+"How can a single transcription regulator, like the Ey protein, co-ordinate the development of a complex three-dimensional organ?",By triggering a cascade of secondary transcription regulators that work in combination.
+What effect does histone acetylation typically have on the transcription of nearby genes?,"It loosens chromatin structure, promoting the initiation of transcription."
+Which set of transcription regulators is used to reprogramme differentiated cells into induced pluripotent stem ($iPS$) cells?,"$Oct4$, $Sox2$, and $Klf4$"
+What is the function of the enzyme Dicer in the $RNAi$ pathway?,It cleaves double-stranded foreign RNA into small interfering RNAs ($siRNAs$).
+"How do $lncRNAs$, such as $Xist$, contribute to gene silencing on a chromosomal scale?",They coat the chromosome and recruit histone-modifying enzymes to form highly condensed heterochromatin.
+Which DNA element in eukaryotes is the recognition site for the general transcription factor $TFIID$?,The TATA box
+How does the cellular level of glucose inversely affect the activity of the $Lac$ operon via $cAMP$?,"Low glucose levels increase $cAMP$, which activates CAP to stimulate transcription."
+"In eukaryotic cells, where are regulatory DNA sequences typically located relative to the gene they control?","They can be located upstream, downstream, or even within the introns of a gene."
+What prevents a transcription activator from acting on every gene in its vicinity?,Specific DNA sequences called insulators or the organisation of DNA into topologically associated domains ($TADs$).
+The deliberate inactivation of a specific gene in an organism to study its function is called a _____.,Gene knockout
+What determines which cells in a $Drosophila$ embryo will express the $Eve$ stripe 2 regulatory segment?,"The specific combination and concentration of four positional transcription regulators ($Bicoid$, $Hunchback$, $Giant$, $Kr\ddot{u}ppel$)."
+"In the $Eve$ stripe 2 regulatory segment, which two proteins act as transcriptional activators?",$Bicoid$ and $Hunchback$
+"In the $Eve$ stripe 2 regulatory segment, which two proteins act as transcriptional repressors?",$Giant$ and $Kr\ddot{u}ppel$
+Which level of control involves the selective degradation of specific protein molecules to regulate their activity levels?,Protein degradation control
+What role does the $5'$ cap of a eukaryotic $mRNA$ play in translational control?,It is the site where the small ribosomal subunit binds to begin scanning for the start codon.
+Which general transcription factor family is required for RNA polymerase II to load onto a promoter?,"$TFII$ proteins (e.g. $TFIID$, $TFIIB$)"
+How does a 'combination lock' analogy explain eukaryotic gene activation?,"Transcription only occurs when the specific, full set of required regulators is present and bound to the control region."
+Which mechanism allows a single $mRNA$ to be translated only when it is located in a specific part of the cytoplasm?,$m$RNA transport and localisation control
+What is the approximate size of the $E. coli$ genome in nucleotide pairs?,$4.6 \times 10^6$
+"What molecular mechanism is responsible for the rapid evolution of species' body plans, according to the source material?",Innovations and changes in regulatory DNA sequences.
+How can a point mutation in a regulatory sequence lead to malaria resistance in humans?,By preventing the expression of the $P. vivax$ receptor on the surface of red blood cells.
+The assembly of general transcription factors and RNA polymerase at the TATA box is called the _____.,Transcription initiation complex
+Which regulatory RNA molecule is approximately 22 nucleotides long and derived from endogenous genes?,MicroRNA ($miRNA$)
+What happens to a target $mRNA$ if it has an extensive match with an $miRNA$ in the RISC complex?,It is immediately degraded by a nuclease within the RISC.
+How do $siRNAs$ 'guide' the destruction of specific $mRNAs$?,"They base-pair with complementary $mRNA$ sequences, marking them for cleavage by RISC."
+What is the primary difference in the transcription of co-ordinated genes between bacteria and eukaryotes?,"Bacteria use operons for co-ordinated transcription, whereas eukaryotes regulate each gene individually."
+Which enzyme is responsible for copying DNA methylation patterns during DNA replication?,Maintenance methyltransferase
+What is the typical length of the regulatory segment that specifies $Eve$ stripe 2 in $Drosophila$?,480 base pairs
+Why is the control of transcription initiation considered the 'paramount' point of gene regulation?,It ensures the cell does not waste energy or resources synthesising unnecessary RNA or protein intermediates.
+The process where a cell changes from one type to another by artificially expressing a new set of regulators is called _____.,Reprogramming
+How does the $miRNA$ pathway achieve 'efficiency' in silencing multiple gene transcripts?,A single $miRNA$-bearing RISC can target and eliminate many $mRNA$ molecules sequentially.
+What is the role of 'spacer DNA' in eukaryotic gene control regions?,It provides the physical distance allowing the DNA to fold and bring distant regulators to the promoter.
+Which small molecule acts as an 'allosteric effector' to allow the tryptophan repressor to bind to the operator?,Tryptophan
+What is the function of the $3'$ untranslated region ($UTR$) in $mRNA$ degradation control?,It contains sequences that attract nucleases to regulate the rate of $mRNA$ breakdown.
+How does a repressor protein in eukaryotes differ from its bacterial counterpart in its method of action?,It can inhibit transcription by modifying chromatin or interfering with the assembly of general transcription factors.
+The binding of a transcription regulator to DNA typically occurs in which structural feature of the double helix?,The major groove

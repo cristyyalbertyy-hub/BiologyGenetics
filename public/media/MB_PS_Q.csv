@@ -1,0 +1,60 @@
+What is the fundamental principle describing the flow of genetic information from $DNA$ to $RNA$ to protein?,The Central Dogma.
+"Which molecule acts as an intermediary, carrying information from $DNA$ to the ribosome for protein synthesis?",Messenger $RNA$ ($mRNA$).
+In which cellular compartment does transcription occur in eukaryotic cells?,The nucleus.
+In which cellular compartment does translation occur in both prokaryotes and eukaryotes?,The cytoplasm (or cytosol).
+"Which sugar is found in $RNA$ nucleotides, distinguishing it from $DNA$?",Ribose.
+Which nitrogenous base is used in $RNA$ instead of the thymine found in $DNA$?,Uracil ($U$).
+What is the specific name of the enzyme that catalyses the synthesis of $mRNA$ from a $DNA$ template?,$RNA$ polymerase II.
+What is the term for the specific $DNA$ nucleotide sequence where $RNA$ polymerase binds to initiate transcription?,A promoter.
+"In eukaryotic protein-coding genes, what are the non-coding regions that interrupt the coding sequences called?",Introns.
+What process removes introns and joins exons together to form a mature $mRNA$ transcript?,$RNA$ splicing.
+Which modification is added to the $5^{\prime}$ end of a eukaryotic pre-$mRNA$ during transcription?,A $5^{\prime}$ cap.
+The addition of a long sequence of adenine nucleotides to the $3^{\prime}$ end of eukaryotic $mRNA$ is called _____.,Polyadenylation.
+How many consecutive nucleotides make up a single codon in the genetic code?,Three.
+How many different amino acids are typically used by organisms to build proteins?,20.
+What is the total number of possible nucleotide triplets (codons) in the standard genetic code?,64.
+Which specific codon serves as the initiation signal for translation in almost all $mRNA$ molecules?,$AUG$.
+Which amino acid is specified by the start codon $AUG$?,Methionine.
+Name one of the three stop codons that signal the end of protein synthesis.,"$UAA$ (or $UAG$, or $UGA$)."
+The genetic code is described as _____ because most amino acids are specified by more than one codon.,Redundant (or degenerate).
+"What could occur if the translation process begins at the wrong nucleotide, causing every subsequent codon to be misread?",A reading frame shift.
+Which molecules act as adaptors by matching amino acids to their corresponding codons on $mRNA$?,Transfer $RNAs$ ($tRNAs$).
+At which end of the $tRNA$ molecule is the specific amino acid covalently attached?,The $3^{\prime}$ end.
+What is the three-nucleotide sequence on $tRNA$ that base-pairs with a complementary $mRNA$ codon?,The anticodon.
+Which enzyme group is responsible for covalently linking the correct amino acid to its corresponding $tRNA$ molecule?,Aminoacyl-$tRNA$ synthetases.
+"What type of chemical bond is formed between the $tRNA$ and its amino acid, providing the energy for later peptide bond formation?",A high-energy covalent bond.
+What are the two primary components that make up a ribosome?,Proteins and ribosomal $RNAs$ ($rRNAs$).
+Which ribosomal subunit is responsible for matching $tRNAs$ to the codons of the $mRNA$?,The small ribosomal subunit.
+Which ribosomal subunit catalyses the formation of peptide bonds between amino acids?,The large ribosomal subunit.
+"What term describes an $RNA$ molecule, such as $rRNA$, that possesses catalytic activity?",Ribozyme.
+List the three binding sites for $tRNA$ molecules found within a ribosome.,"The A site, the P site, and the E site."
+"During elongation, which ribosomal site does a newly charged $tRNA$ first enter?",The A site.
+In which ribosomal site is the $tRNA$ attached to the growing polypeptide chain primarily held?,The P site.
+What happens to a spent $tRNA$ molecule at the E site of the ribosome?,It is ejected from the ribosome.
+In which direction is an $mRNA$ molecule always translated by a ribosome?,The $5^{\prime}$-to-$3^{\prime}$ direction.
+Proteins are synthesised beginning with the _____ terminus and ending at the _____ terminus.,Amino ($N$); carboxyl ($C$).
+Which proteins are required to help a ribosome properly assemble at the $AUG$ start codon?,Translation initiation factors.
+Which protein binds to a stop codon in the A site to trigger the termination of translation?,A release factor.
+What is the structural term for a single $mRNA$ molecule being translated by multiple ribosomes simultaneously?,A polyribosome (or polysome).
+Why can prokaryotic ribosomes begin translating an $mRNA$ before its transcription is finished?,Because prokaryotes lack a nucleus to separate these processes.
+Which class of proteins assists newly synthesised polypeptides in folding into their correct three-dimensional conformations?,Chaperone proteins.
+"What are the chemical changes, such as phosphorylation or glycosylation, that occur to a protein after translation called?",Post-translational modifications.
+Which large protein complex is responsible for degrading damaged or misfolded proteins in the cytosol?,The proteasome.
+What small protein tag is attached to other proteins to mark them for destruction by the proteasome?,Ubiquitin.
+Which enzyme in the ribosome catalyses the formation of peptide bonds?,Peptidyl transferase.
+"During translation, the movement of the ribosome three nucleotides forward along the $mRNA$ is known as _____.",Translocation.
+How many possible reading frames exist for any given $mRNA$ sequence?,Three.
+What is the approximate length of a $tRNA$ molecule?,80 nucleotides.
+"Which organelles, containing their own $DNA$, exhibit slight variations from the universal genetic code?",Mitochondria.
+Which end of the polypeptide chain carries a free carboxyl group ($-COOH$)?,The $C$-terminus.
+What molecule provides the energy needed for $RNA$ polymerase to pull $DNA$ strands apart and initiate transcription?,$ATP$.
+What is the functional difference between an exon and an intron?,"Exons are coding sequences, whereas introns are non-coding sequences removed during splicing."
+Which part of the $tRNA$ molecule ensures the correct amino acid is placed according to the $mRNA$ sequence?,The anticodon.
+"In eukaryotes, where must $mRNA$ be transported before it can be translated into protein?",From the nucleus to the cytosol (cytoplasm).
+What type of bond covalently links the amino acids in a polypeptide chain?,A peptide bond.
+What is the primary function of ribosomal $RNA$ ($rRNA$)?,To form the core structure of the ribosome and catalyse protein synthesis.
+How does the redundancy of the genetic code protect against some $DNA$ mutations?,"A mutation may change a codon to another that specifies the same amino acid, resulting in no change to the protein."
+What is the fate of the two ribosomal subunits after a protein has been fully synthesised and released?,They separate and can assemble on another $mRNA$ molecule.
+Which ribosomal site is occupied by the $tRNA$ carrying the polypeptide chain just before the large subunit shifts during translocation?,The P site.
+What provides the high-energy bond used to drive the addition of an amino acid to a growing polypeptide chain?,The charging of $tRNA$ by aminoacyl-$tRNA$ synthetase using $ATP$.
+What determines the unique three-dimensional shape and chemistry of a protein?,The specific sequence of its 20 different amino acid subunits.

@@ -1,0 +1,75 @@
+What are the three chemical components of a ribonucleotide?,"A ribose sugar, a phosphate group, and a nitrogenous base."
+How does the sugar in RNA differ from the sugar found in DNA?,"RNA contains ribose, which has an additional hydroxyl group compared to the deoxyribose in DNA."
+"Which nitrogenous base is unique to RNA, replacing the thymine found in DNA?",Uracil ($U$).
+What structural feature of RNA allows it to fold into complex three-dimensional shapes unlike the DNA double helix?,Its single-stranded nature allows for internal complementary base-pairing.
+The flow of genetic information from DNA to RNA to protein is fundamentally known as the _____.,Central Dogma
+What is the primary function of messenger RNA ($mRNA$)?,It carries the genetic instructions from DNA to the ribosome to direct protein synthesis.
+Which type of RNA forms the structural and catalytic core of the ribosomes?,Ribosomal RNA ($rRNA$).
+What is the role of transfer RNA ($tRNA$) in the process of translation?,It acts as an adaptor that selects specific amino acids and holds them in place on the ribosome.
+Define the term 'transcription' in the context of molecular biology.,The process by which an RNA polymerase uses a DNA strand as a template to synthesise a complementary RNA sequence.
+In which direction is an RNA chain always synthesised by RNA polymerase?,$5^{\prime}$ to $3^{\prime}$.
+"Unlike DNA polymerase, why is RNA polymerase able to start an RNA chain without a primer?",Transcription does not require a pre-existing $3^{\prime}$ end to begin polymerisation.
+What is the DNA sequence called that signals the starting point for RNA synthesis to RNA polymerase?,The promoter.
+"In bacteria, which specific subunit is required for RNA polymerase to recognise and bind to a promoter?",The $\sigma$ (sigma) factor.
+What happens to the $\sigma$ factor once bacterial RNA polymerase has synthesised about 10 nucleotides of RNA?,It is released from the polymerase.
+The DNA sequence that signals the end of transcription in bacteria is known as the _____.,Terminator
+Which eukaryotic RNA polymerase is responsible for transcribing the vast majority of protein-coding genes?,RNA polymerase $II$.
+What are the primary products of eukaryotic RNA polymerase $I$?,Ribosomal RNAs ($rRNAs$).
+Which eukaryotic RNA polymerase synthesises transfer RNAs ($tRNAs$) and the $5S$ ribosomal RNA?,RNA polymerase $III$.
+What is the collective name for the proteins required by eukaryotic RNA polymerases to initiate transcription at a promoter?,General transcription factors.
+The DNA sequence found in many eukaryotic promoters that is recognised by the general transcription factor TFIID is the _____.,TATA box
+Which general transcription factor contains a protein kinase subunit that phosphorylates the 'tail' of RNA polymerase $II$?,TFIIH.
+Why must the tail of RNA polymerase $II$ be phosphorylated to begin transcription elongation?,It triggers the release of the polymerase from the general transcription factors so it can move along the DNA.
+Where does transcription take place in a eukaryotic cell?,The nucleus.
+Define 'RNA capping' as a post-transcriptional modification.,The addition of a methylated guanine nucleotide to the $5^{\prime}$ end of an RNA transcript.
+What is 'polyadenylation' at the $3^{\prime}$ end of a eukaryotic $mRNA$?,The addition of a repeated sequence of adenine nucleotides (a poly-A tail) after the transcript is cleaved.
+What are 'introns' in the context of eukaryotic gene structure?,Intervening non-coding sequences that are removed from the primary RNA transcript.
+The coding regions of a eukaryotic gene that are joined together to form the mature $mRNA$ are called _____.,Exons
+What is the functional purpose of RNA splicing?,To remove introns and join exons into a continuous coding sequence for translation.
+Which large assembly of RNA and protein molecules carries out RNA splicing in the nucleus?,The spliceosome.
+What are small nuclear RNAs ($snRNAs$) and what is their role in the spliceosome?,They are small RNA molecules that recognise splice-site sequences and catalyse the splicing reaction.
+How does 'alternative splicing' benefit an organism?,It allows different proteins to be produced from the same gene by varying which exons are included in the final $mRNA$.
+What must occur to a eukaryotic $mRNA$ before it is considered 'mature' and ready for export to the cytosol?,"It must undergo $5^{\prime}$ capping, $3^{\prime}$ polyadenylation, and splicing."
+What is a 'ribozyme'?,An RNA molecule that possesses catalytic activity.
+How do microRNAs ($miRNAs$) regulate gene expression?,They base-pair with specific $mRNAs$ to trigger their degradation or inhibit their translation.
+What is the name of the protein complex that facilitates $miRNA$ search and destruction of target $mRNAs$?,The RNA-induced silencing complex (RISC).
+What is 'RNA interference' ($RNAi$)?,A cellular mechanism that uses small interfering RNAs ($siRNAs$) to destroy foreign double-stranded RNA molecules.
+Define 'long non-coding RNAs' ($lncRNAs$).,RNA molecules longer than 200 nucleotides that do not code for proteins but serve regulatory roles.
+What is the role of 'transcription regulators' (or transcription factors) in a cell?,They are proteins that bind to specific DNA sequences to switch genes on or off.
+"In eukaryotes, what is an 'enhancer' sequence?",A regulatory DNA sequence that can stimulate transcription even when located thousands of base pairs away from a promoter.
+What is the function of the 'Mediator' complex in eukaryotic transcription initiation?,"It acts as a go-between, linking activator proteins at distant enhancers to the transcription initiation complex at the promoter."
+Concept: Transcriptional Repressor,Definition: A protein that binds to a specific regulatory DNA sequence to prevent the assembly of the transcription initiation complex.
+How do eukaryotic transcription regulators physically interact with a promoter located far away on the DNA strand?,"The intervening DNA loops out, bringing the regulator and the promoter into close proximity."
+Which enzyme converts a double-stranded DNA sequence into a complementary RNA sequence?,RNA polymerase.
+Why is the error rate of RNA polymerase higher than that of DNA polymerase?,RNA polymerase does not possess the same highly accurate proofreading mechanisms as DNA polymerase.
+What determines which of the two DNA strands is used as a template for transcription?,The orientation and position of the promoter sequence.
+What is the role of small nucleolar RNAs ($snoRNAs$)?,They help to process and chemically modify ribosomal RNAs ($rRNAs$).
+What are 'piwi-interacting RNAs' ($piRNAs$)?,RNAs that protect the animal germ line from the activity of transposable elements.
+What defines 'gene expression' in molecular biology?,"The entire process by which a gene's information is converted into a functional product, such as a protein or RNA."
+Which nitrogenous bases in RNA follow the rule of complementary base-pairing with DNA?,"$G$ pairs with $C$, and $A$ pairs with $U$ (in RNA) or $T$ (in DNA)."
+What is the importance of the 'reading frame' in translation?,"It determines how the sequence of nucleotides in $mRNA$ is divided into consecutive, non-overlapping triplets (codons)."
+Explain the significance of the $5^{\prime}$ cap for eukaryotic $mRNA$.,"It aids in export from the nucleus, protects the $mRNA$ from degradation, and helps the ribosome identify the start of the message."
+How does the 'poly-A tail' contribute to $mRNA$ stability?,It protects the $3^{\prime}$ end of the $mRNA$ from premature enzymatic degradation.
+What is a 'codon'?,A set of three consecutive nucleotides in $mRNA$ that specifies a single amino acid.
+The set of rules by which the nucleotide sequence of a gene is translated into the amino acid sequence of a protein is the _____.,Genetic code
+Which enzyme group is responsible for covalently linking amino acids to their appropriate $tRNA$ molecules?,Aminoacyl-tRNA synthetases.
+Define the 'anticodon' of a $tRNA$ molecule.,A three-nucleotide sequence that recognises and base-pairs with a complementary codon in $mRNA$.
+What is the start codon for protein synthesis in most organisms?,$AUG$ (coding for methionine).
+Name the three stop codons used to terminate translation.,"$UAA$, $UAG$, and $UGA$."
+Where does translation of $mRNA$ into protein occur within a cell?,The cytoplasm (specifically on ribosomes).
+"In the 'RNA world' hypothesis, what were the dual roles of RNA before DNA and proteins evolved?",Storing genetic information and catalysing chemical reactions.
+What are 'nuclear pore complexes'?,Channels that regulate the export of mature $mRNAs$ from the nucleus to the cytosol.
+Explain the concept of 'operons' as found in bacterial genomes.,Clusters of adjacent genes that are transcribed as a single $mRNA$ molecule from a single promoter.
+"How do eukaryotic cells prevent immature, incorrectly spliced $mRNAs$ from being translated?",Only fully processed $mRNAs$ associated with specific proteins are allowed to exit the nucleus through nuclear pores.
+Which protein complex is responsible for degrading $mRNAs$ that are no longer needed by the cell?,The exosome.
+Describe the 'wobble' base-pairing in $tRNA$.,The ability of the third position in some $tRNA$ anticodons to pair with more than one kind of nucleotide in $mRNA$.
+What is the function of 'translation initiation factors'?,Proteins that help assemble the ribosome at the start codon to begin translation.
+Which ribosomal subunit contains the catalytic site for peptide bond formation?,The large ribosomal subunit.
+What term describes a single $mRNA$ molecule being translated by multiple ribosomes simultaneously?,Polyribosome (or polysome).
+Which post-translational mechanism degrades damaged or misfolded proteins in the cytosol?,The ubiquitin-proteasome pathway.
+What is the primary significance of the 'RNA-Seq' technique?,It allows for the direct determination of the nucleotide sequence and quantity of a collection of RNAs.
+Define 'epigenetic inheritance'.,The transmission of a heritable state of gene expression that does not involve changes to the DNA sequence itself.
+How does 'DNA methylation' influence transcription?,It typically acts to repress gene expression by attracting proteins that block transcription initiation.
+What is the role of 'housekeeping genes'?,Genes that code for proteins necessary for basic cell functions and are expressed in almost all cell types.
+How can a single 'master transcription regulator' trigger the development of an entire organ?,It initiates a cascade of gene expression changes by activating other transcription regulators.
+What is the function of the 'TBP' (TATA-binding protein)?,"A subunit of TFIID that binds directly to the TATA box, bending the DNA to facilitate the assembly of other factors."

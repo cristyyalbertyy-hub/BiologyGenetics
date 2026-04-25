@@ -1,0 +1,60 @@
+"In the context of cell biology, what is the primary outcome of mitosis regarding the daughter cells?",Two genetically identical diploid daughter cells.
+The specialized cell division process that produces haploid gametes from a diploid cell is known as _____.,Meiosis
+During which phase of the cell cycle is chromosomal DNA replicated?,S phase
+Identify the period that encompasses both nuclear division (mitosis) and cytoplasmic division (cytokinesis).,M phase
+What protein complexes hold sister chromatids together along their length after DNA replication?,Cohesins
+Name the five traditionally defined stages of mitosis in their correct sequence.,"Prophase, prometaphase, metaphase, anaphase, and telophase."
+During which stage of mitosis do the duplicated chromosomes first condense and become visible?,Prophase
+What cytoskeletal structure is responsible for pulling duplicated chromosomes apart during mitosis?,Mitotic spindle
+"In animal cells, what is the mitotic spindle primarily composed of?",Microtubules
+At which stage of mitosis do chromosomes align at the equator of the spindle?,Metaphase
+What specific site on a chromosome serves as the attachment point for spindle microtubules?,Kinetochore
+"During anaphase, what event triggers the synchronous separation of sister chromatids?",Proteolytic cleavage of cohesin proteins.
+Which phase of mitosis is characterized by the re-formation of the nuclear envelope around two sets of segregated chromosomes?,Telophase
+The division of the cytoplasm that results in two separate cells is called _____.,Cytokinesis
+"In animal cells, what transient structure facilitates cytokinesis?",Contractile ring
+Which two types of protein filaments primarily compose the contractile ring in animal cells?,Actin and myosin
+What is the primary role of condensins during the onset of M phase?,Helping individual chromatids coil into a compact form.
+How many rounds of DNA replication occur during the entire process of meiosis?,One
+How many successive rounds of nuclear division occur during meiosis?,Two
+What term describes the pairing of duplicated maternal and paternal homologs during meiotic prophase I?,Synapsis (or pairing)
+A structure consisting of four sister chromatids (two duplicated homologous chromosomes) is called a _____.,Bivalent (or tetrad)
+The process by which segments of DNA are exchanged between non-sister chromatids during meiosis I is known as _____.,Crossing-over (or genetic recombination)
+What is the physical manifestation of a crossover between homologous chromosomes called?,Chiasma
+"During anaphase I of meiosis, what specific structures are segregated to opposite poles?",Duplicated homologous chromosomes
+How does the behavior of kinetochores in meiosis I differ from mitosis?,Sister-chromatid kinetochores function as a single unit and attach to the same spindle pole.
+What is the major mechanical role of chiasmata during metaphase I?,Holding maternal and paternal homologs together against the pull of the spindle.
+"In meiosis II, what structures are pulled apart during anaphase?",Sister chromatids
+Why is meiosis I often referred to as 'reduction division'?,It reduces the chromosome number from diploid ($2n$) to haploid ($n$).
+"If an organism has a haploid number of $n = 3$, how many different gamete combinations can be produced by independent assortment alone?",$2^3 = 8$
+What term refers to the failure of chromosomes to separate properly during meiosis?,Nondisjunction
+Which medical condition is typically caused by an extra copy of chromosome 21 resulting from nondisjunction?,Down syndrome
+"In human females, at what stage does meiosis I arrest for years before completion?",Diplotene (within prophase I)
+What is the function of the cell-cycle control system?,To ensure cell cycle events occur in the correct sequence and each process is complete before the next begins.
+The transition from G2 to M phase is regulated to ensure that what process is complete?,DNA replication
+What type of protein kinases are the core components of the cell-cycle control system?,Cyclin-dependent kinases (Cdks)
+How does the spindle assembly checkpoint prevent aneuploidy?,It delays anaphase until all chromosomes are properly attached to the mitotic spindle.
+During which phase of the cell cycle do centrosomes duplicate?,S phase
+What happens to the nuclear envelope during prometaphase?,It breaks down into small fragments.
+Contrast the genetic similarity of daughter cells in mitosis versus meiosis.,Mitosis produces identical cells; meiosis produces genetically distinct cells.
+What occurs during the 'equational division' of meiosis?,"Sister chromatids separate, similar to mitosis, but in haploid cells."
+What is the purpose of the 'G0' state in animal cells?,A specialized resting state entered when environmental conditions are unfavourable for proliferation.
+Identify the protein that acts as a 'molecular brake' at the G1 to S transition by blocking gene expression.,Retinoblastoma (Rb) protein
+What is the specific role of M-Cdk?,It triggers entry into M phase (mitosis).
+"During meiosis I, where does the crossover of genetic material specifically occur?",Between non-sister chromatids of homologous chromosomes.
+"In human meiosis, what is the total number of chromatids present at the start of meiosis I?",92 chromatids (46 duplicated chromosomes)
+"What initiates the destruction of M cyclin, leading to the exit from mitosis?",APC/C (Anaphase-Promoting Complex/Cyclosome)
+How does cytokinesis in plant cells differ from that in animal cells?,Plant cells form a new cell wall (cell plate) instead of using a contractile ring.
+What is the outcome of a single diploid germ-line cell completing the full meiotic cycle?,Four haploid nuclei.
+What structure ensures that duplicated chromosomes are aligned midway between the spindle poles during metaphase?,The metaphase plate
+Which regulatory protein prevents entry into S phase if DNA is damaged?,$p53$
+What is the typical average length of a microtubule during mitosis compared to interphase?,Microtubules are significantly shorter and more dynamic in mitosis (roughly $1\mu m$ vs $20\mu m$).
+"In humans, which meiotic division results in the formation of polar bodies in females?",Both meiosis I and meiosis II.
+What is 'synapsis'?,The tight side-by-side pairing of homologous chromosomes during prophase I.
+Why is the interphase between meiosis I and meiosis II unique?,There is no DNA replication during this interphase.
+Which mechanism in meiosis ensures that each gamete receives a unique mixture of maternal and paternal chromosomes?,Independent assortment and crossing-over.
+"Identify the phase: Nuclear membranes form around 46 chromosomes, and spindle fibers disappear.",Telophase (of mitosis)
+What is the consequence of mitotic crossing-over?,It is extremely rare and not a standard feature of the mitotic cycle.
+During which phase of mitosis do kinetochore microtubules shorten?,Anaphase
+What happens to gene expression when chromosomes condense during mitosis?,Gene expression largely ceases.
+Name the protein complex that triggers the transition from metaphase to anaphase.,APC/C

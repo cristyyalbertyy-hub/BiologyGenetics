@@ -1,0 +1,65 @@
+Define the term 'proto-oncogene'.,"A normal gene that, when altered by mutation or over-expression, can contribute to the development of cancer."
+How many copies of a proto-oncogene must be mutated to promote the development of cancer?,Only one copy must undergo a gain-of-function mutation.
+What is the typical effect of a gain-of-function mutation in a proto-oncogene on its inheritance pattern at the cellular level?,It acts in a dominant manner.
+Which mechanism of proto-oncogene activation involves a small change in DNA sequence that produces a hyperactive protein in normal amounts?,Deletion or point mutation within the coding sequence.
+How does gene amplification convert a proto-oncogene into an oncogene?,"It creates extra gene copies, leading to the overproduction of a normal protein."
+What is the functional result of a regulatory mutation in a proto-oncogene?,A normal protein is greatly overproduced due to changes in the DNA sequence controlling its expression.
+"Which activation mechanism involves placing a proto-oncogene under the control of a highly active, nearby regulatory DNA sequence?",Chromosomal rearrangement.
+What type of protein is produced when a chromosomal rearrangement fuses a proto-oncogene with an actively transcribed gene?,A hyperactive fusion protein.
+The proto-oncogene $Ras$ encodes a protein that belongs to which functional class?,GTPases (involved in signal transduction).
+Approximately what percentage of human cancers contain activating mutations in a $Ras$ gene?,$30\%$.
+What specific biochemical failure occurs in mutant $Ras$ proteins to keep them continuously active?,They lose their GTPase activity and cannot shut themselves off by hydrolysing bound GTP.
+How does a deletion in the extracellular domain of the Epidermal Growth Factor (EGF) receptor lead to oncogenesis?,It produces a truncated receptor that triggers intracellular signalling even in the absence of a growth factor.
+The Philadelphia chromosome involves a specific translocation between which two chromosomes?,Chromosomes 9 and 22.
+Which proto-oncogene is activated by the Philadelphia chromosome translocation to produce chronic myelogenous leukaemia?,$ABL$.
+What are the four broad categories of proteins encoded by proto-oncogenes?,"Growth factors, growth factor receptors, signal transduction molecules, and nuclear transcription factors."
+The $SIS$ proto-oncogene encodes the $\beta$ subunit of which growth factor?,Platelet-derived growth factor (PDGF).
+Which growth factor receptor proto-oncogene is frequently amplified in glioblastomas and breast carcinomas?,$ERBB$ (EGF receptor).
+The $NEU$ ($ERBB2$) proto-oncogene is a receptor protein kinase commonly associated with which types of cancer?,Neuroblastoma and breast carcinoma.
+Which signal transduction proto-oncogene encodes a serine/threonine kinase often mutated in malignant melanoma and colon cancer?,$BRAF$.
+The proto-oncogenes $NMYC$ and $MYB$ encode which type of protein?,DNA-binding proteins (nuclear transcription factors).
+How does the over-expression of the $MYC$ transcription factor promote cancer?,It causes the inappropriate transcription of genes that drive cell proliferation.
+What epigenetic change can increase the activity of a proto-oncogene by increasing its rate of transcription?,Hypomethylation of the $5'$ region.
+"Unlike tumour suppressor genes, germ-line mutations in proto-oncogenes that cause inherited cancer syndromes are _____.",uncommon.
+Name one of the few proto-oncogenes in which germ-line mutations lead to inherited cancer syndromes.,"$RET$ (or $MET$, $KIT$, $CDK4$)."
+Germ-line gain-of-function mutations in the $RET$ proto-oncogene cause which inherited condition?,Multiple endocrine neoplasia.
+What is the result of a loss-of-function mutation in the $RET$ proto-oncogene during embryonic development?,Hirschsprung disease.
+The $MET$ proto-oncogene encodes a receptor tyrosine kinase associated with which hereditary cancer?,Hereditary papillary renal carcinoma.
+"Which signal transduction proto-oncogene encodes a cyclin-dependent kinase that, when activated, down-regulates pRb to cause melanoma?",$CDK4$.
+How does an activating mutation in $\beta$-catenin contribute to unregulated cell proliferation?,"It makes the protein resistant to degradation, allowing it to continuously stimulate signalling pathways."
+The $FOS$ proto-oncogene product interacts with the product of which other oncogene to regulate transcription?,$JUN$.
+What type of protein is encoded by the $SRC$ proto-oncogene?,Tyrosine kinase (signal transduction protein).
+"In the 'faulty doorbell' analogy of cancer signalling, what does the doorbell represent?","A mutant growth factor receptor (e.g., EGF receptor) that signals without a ligand."
+Which proto-oncogene mechanism involves the breakage and rejoining of DNA helices to alter a gene's protein-coding or regulatory sequence?,Chromosomal rearrangement.
+Why are driver mutations in proto-oncogenes more significant than passenger mutations in tumorigenesis?,Driver mutations directly confer a selective growth advantage to the cancer cell.
+What is the term for a normal form of a gene involved in the four basic regulators of normal cell growth?,Proto-oncogene.
+Which growth factor proto-oncogene is specifically associated with Kaposi sarcoma?,$KS3$ (Fibroblast growth factor).
+The $ERBA$ proto-oncogene encodes a receptor for which substance?,Thyroid hormone.
+What is the consequence of $ERBB2$ ($HER2/NEU$) amplification in invasive breast carcinomas?,It is associated with increased cell proliferation and is a target for specific therapies.
+What role does the $BCR$ gene play in the Philadelphia chromosome translocation?,It fuses with the $ABL$ gene to enhance tyrosine kinase activity.
+How are proto-oncogenes often identified through the study of retroviruses?,Retroviruses can carry altered versions of host growth-promoting genes (oncogenes) into new cells.
+Transfection assays identify proto-oncogenes by their ability to _____ normal mouse cells.,transform.
+Which proto-oncogene encodes a receptor protein kinase associated with gastrointestinal stromal tumour syndrome?,$KIT$.
+How does the 'multi-hit concept' apply to proto-oncogenes in cancer progression?,Activation of one oncogene is a step in a series of mutations required for a cell to become fully malignant.
+The 'driver mutations' in many individual tumours often affect a small number of key _____.,"regulatory pathways (e.g., cell proliferation, survival)."
+Cloze: A gain-of-function mutation in a single copy of a _____ can drive a cell toward cancer.,proto-oncogene
+What is the biological definition of 'cell transformation' in the context of cancer?,"The transition of a cell from a regulated growth state to an unregulated, proliferative state."
+"In colorectal cancer, which proto-oncogene is mutated in approximately $50\%$ of cases, typically after the loss of $APC$?",$KRAS$.
+What is the normal biological role of the protein encoded by the $ABL$ proto-oncogene?,It is a tyrosine kinase that functions in intracellular signalling.
+Gene amplification converts a proto-oncogene into an oncogene by causing an _____ in the gene's function.,increase.
+"Cloze: Activating mutations in $Ras$ render the $Ras$ protein continuously active, promoting cell _____.",proliferation
+How does the over-expression of a growth factor proto-oncogene like $SIS$ lead to tumour formation?,It stimulates inappropriate cell division by constantly activating growth factor receptors.
+"In the Philadelphia chromosome fusion, the $5'$ end of the $ABL$ gene is replaced by a portion of the _____ gene.",$BCR$.
+"Which signal transduction proto-oncogene is a GTPase often mutated in colon, lung, and pancreatic carcinomas?",$KRAS$ (or $HRAS$).
+What specific epigenetic mechanism describes the activation of an oncogene through the removal of inhibitory methyl groups from its promoter region?,DNA hypomethylation.
+How can a mutation in a regulatory DNA sequence (non-coding region) activate a proto-oncogene?,It can cause the normal protein product to be expressed at inappropriately high levels.
+The proto-oncogene $MYC$ is located on which human chromosome?,Chromosome 8.
+Why are gain-of-function mutations in intracellular signalling proteins considered dangerous?,They can relay growth signals to the nucleus even in the absence of external growth factors.
+What is the primary functional distinction between a proto-oncogene and a tumour suppressor gene?,"Proto-oncogenes promote cell growth/proliferation, while tumour suppressors inhibit it."
+Cloze: A _____ is an enzyme that phosphorylates specific amino acid residues in proteins to relay signals.,protein kinase
+"In acute promyelocytic leukaemia, the $t(15;17)$ translocation fuses the $RARA$ gene with which other gene?",The $PML$ gene.
+Name the proto-oncogene that encodes a fibroblast growth factor often associated with stomach carcinoma.,$HST$.
+What is the primary consequence of a 'regulatory mutation' on the protein product of a proto-oncogene?,The protein is overproduced but remains structurally normal.
+Which proto-oncogene family is mutated in about $30\%$ of all human cancers?,"The $Ras$ family ($HRAS$, $KRAS$, $NRAS$)."
+Term: Proto-oncogene. b: Definition: A normal gene involved in regulating cell growth that can become a cancer-promoting oncogene if mutated.,Definition: A normal gene involved in regulating cell growth that can become a cancer-promoting oncogene if mutated.
+Why is only one mutated allele of a proto-oncogene sufficient to drive a cell toward cancer?,Because the mutation typically results in a 'gain-of-function' that is dominant over the normal allele.

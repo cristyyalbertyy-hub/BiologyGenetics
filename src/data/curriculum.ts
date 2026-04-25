@@ -96,6 +96,66 @@ const MEDIA_OVERRIDES: Record<string, MediaByLeaf> = {
     infografic: '/media/MB_DSD_I.png',
     questionnaire: '/media/MB_DSD_Q.csv',
   },
+  'biology-syllabus:molecular-biology:rna-transcription': {
+    video: '/media/MB_RT_V.mp4',
+    podcast: '/media/MB_RT_P.m4a',
+    infografic: '/media/MB_RT_I.png',
+    questionnaire: '/media/MB_RT_Q.csv',
+  },
+  'biology-syllabus:molecular-biology:protein-synthesis': {
+    video: '/media/MB_PS_V.mp4',
+    podcast: '/media/MB_PS_P.m4a',
+    infografic: '/media/MB_PS_I.png',
+    questionnaire: '/media/MB_PS_Q.csv',
+  },
+  'biology-syllabus:molecular-biology:gene-expression-control': {
+    video: '/media/MB_GEC_V.mp4',
+    podcast: '/media/MB_GEC_P.m4a',
+    infografic: '/media/MB_GEC_I.png',
+    questionnaire: '/media/MB_GEC_Q.csv',
+  },
+  'biology-syllabus:cellular-processes:cell-trafficking': {
+    video: '/media/CP_CT_V.mp4',
+    podcast: '/media/CP_CT_P.m4a',
+    infografic: '/media/CP_CT_I.png',
+    questionnaire: '/media/CP_CT_Q.csv',
+  },
+  'biology-syllabus:cellular-processes:mitosis-meiosis': {
+    video: '/media/CP_MM_V.mp4',
+    podcast: '/media/CP_MM_P.m4a',
+    infografic: '/media/CP_MM_I.png',
+    questionnaire: '/media/CP_MM_Q.csv',
+  },
+  'biology-syllabus:cellular-processes:cell-death': {
+    video: '/media/CP_CD_V.mp4',
+    podcast: '/media/CP_CD_P.m4a',
+    infografic: '/media/CP_CD_I.png',
+    questionnaire: '/media/CP_CD_Q.csv',
+  },
+  'biology-syllabus:cellular-processes:cell-signaling': {
+    video: '/media/CP_S_V.mp4',
+    podcast: '/media/CP_S_P.m4a',
+    infografic: '/media/CP_S_I.png',
+    questionnaire: '/media/CP_S_Q.csv',
+  },
+  'biology-syllabus:cancer-biology:proto-oncogenes': {
+    video: '/media/CB_P_V.mp4',
+    podcast: '/media/CB_P_P.m4a',
+    infografic: '/media/CB_P_I.png',
+    questionnaire: '/media/CB_P_Q.csv',
+  },
+  'biology-syllabus:cancer-biology:tumour-transformation': {
+    video: '/media/CB_TT_V.mp4',
+    podcast: '/media/CB_TT_P.m4a',
+    infografic: '/media/CB_TT_I.png',
+    questionnaire: '/media/CB_TT_Q.csv',
+  },
+  'biology-syllabus:cancer-biology:tumour-suppressors': {
+    video: '/media/CB_TS_V.mp4',
+    podcast: '/media/CB_TS_P.m4a',
+    infografic: '/media/CB_TS_I.png',
+    questionnaire: '/media/CB_TS_Q.csv',
+  },
 }
 
 export const chapters: Chapter[] = [

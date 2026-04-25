@@ -1,0 +1,60 @@
+The process by which a target cell converts an extracellular signal into a specific intracellular response is known as _____.,Signal transduction
+In which form of intercellular signalling are hormones carried through the bloodstream to reach distant target cells?,Endocrine signalling
+What term describes signalling molecules that act locally on cells in the immediate environment of the signalling cell?,Local mediators
+Which signalling style requires direct physical contact between the signal molecule in the plasma membrane of one cell and the receptor in another?,Contact-dependent signalling
+Why do responses involving changes in gene expression and protein synthesis typically take minutes to hours to occur?,They require the slow processes of transcription and translation rather than just altering existing protein function.
+"How do small, hydrophobic signal molecules like steroid hormones typically reach their intracellular receptors?",They diffuse directly across the target cell's plasma membrane.
+What is the primary function of a nuclear receptor when activated by a hormone ligand?,It acts as a transcription regulator that binds to DNA to promote or inhibit gene expression.
+Which intracellular signalling function involves increasing the strength of a signal so that a few extracellular molecules evoke a large response?,Amplification
+"In cell signalling, 'coincidence detectors' are proteins that perform which specific function?",Integration of signals from multiple pathways before relaying the information onward.
+Proteins that toggle between an active and inactive state in response to a signal are broadly referred to as _____.,Molecular switches
+Which class of enzymes is responsible for removing a phosphate group from a protein to switch it off?,Protein phosphatases
+What are the two main types of protein kinases involved in eukaryotic intracellular signalling?,Serine/threonine kinases and tyrosine kinases.
+Monomeric GTPases are switched from an 'off' to an 'on' state by which type of regulatory protein?,Guanine nucleotide exchange factors (GEFs)
+What intrinsic enzymatic activity allows G proteins to eventually switch themselves off?,GTP hydrolysis activity (GTPase activity).
+Which cell-surface receptor class acts by opening or closing in response to the binding of a neurotransmitter?,Ion-channel-coupled receptors
+"The largest family of cell-surface receptors, which mediate responses to an enormous diversity of extracellular signals, are the _____.",G-protein-coupled receptors (GPCRs)
+What is the characteristic structural feature of all GPCRs regarding their passage through the lipid bilayer?,A single polypeptide chain that passes back and forth across the lipid bilayer seven times.
+A trimeric G protein is composed of which three specific subunits?,"The $\alpha$, $\beta$, and $\gamma$ subunits."
+"In the inactive state, which nucleotide is bound to the $\alpha$ subunit of a trimeric G protein?",GDP
+Binding of an extracellular signal to a GPCR triggers the $\alpha$ subunit to exchange GDP for _____.,GTP
+Which G protein subunit typically dissociates from the others to interact directly with target enzymes following activation?,The $\alpha$ subunit (though the $\beta\gamma$ complex can also relay signals).
+"Name the enzyme that, when activated by a G protein, converts ATP into the second messenger cyclic AMP.",Adenylyl cyclase
+Cyclic AMP exerts most of its effects in the cell by activating which specific enzyme?,Cyclic-AMP-dependent protein kinase (PKA).
+Which membrane-bound enzyme is activated by $G_{q}$ proteins to trigger the inositol phospholipid signalling pathway?,Phospholipase C
+Phospholipase C cleaves a membrane phospholipid to generate which two small intracellular signalling molecules?,"Inositol 1,4,5-trisphosphate ($IP_{3}$) and diacylglycerol (DAG)."
+What is the primary role of $IP_{3}$ once it is released into the cytosol?,"It opens $Ca^{2+}$ channels in the endoplasmic reticulum membrane, releasing $Ca^{2+}$ into the cytosol."
+Diacylglycerol (DAG) remains in the plasma membrane to help activate which $Ca^{2+}$-dependent enzyme?,Protein kinase C (PKC)
+Which ubiquitous intracellular $Ca^{2+}$ receptor undergoes a conformational change that allows it to wrap around target proteins like CaM-kinases?,Calmodulin
+How does the gas nitric oxide (NO) trigger smooth muscle relaxation in blood vessels?,It enters the cell and activates guanylyl cyclase to produce cyclic GMP.
+Term: Adaptation (or Desensitisation),Definition: A decrease in a cell's response to a signal due to prolonged or repeated exposure to that signal.
+Which class of cell-surface receptors functions as enzymes or associates directly with enzymes inside the cell?,Enzyme-coupled receptors
+"The largest class of enzyme-coupled receptors, characterised by an intracellular domain that phosphorylates specific tyrosines, are called _____.",Receptor tyrosine kinases (RTKs)
+What is the initial step in the activation of RTKs upon ligand binding?,Dimerisation of two receptor molecules.
+What occurs during RTK 'autophosphorylation' following dimerisation?,The two kinase domains phosphorylate each other on specific tyrosine residues.
+What is the purpose of the phosphorylated tyrosines on an activated RTK?,They serve as docking sites for a variety of intracellular signalling proteins.
+"Most RTKs activate a small, monomeric GTP-binding protein called _____.",Ras
+The Ras protein initiates a three-kinase signalling module known as the _____.,MAP-kinase signalling module
+What is the final kinase in the MAP-kinase module that phosphorylates transcription regulators to alter gene expression?,MAP kinase
+RTKs can promote cell survival and growth by activating which enzyme that phosphorylates inositol phospholipids?,Phosphoinositide 3-kinase (PI 3-kinase).
+"Which protein kinase is recruited to the plasma membrane by $PI(3,4,5)P_{3}$ to mediate cell survival signals?",Akt (also known as protein kinase B).
+How does activated Akt promote cell survival regarding the protein Bad?,"It phosphorylates and inactivates Bad, which otherwise promotes apoptosis (cell death)."
+The large serine/threonine kinase that stimulates cells to grow by enhancing protein synthesis and inhibiting degradation is called _____.,mTOR
+"In the JAK-STAT pathway, which proteins are phosphorylated by Janus kinases (JAKs) and then migrate to the nucleus?",Signal transducers and activators of transcription (STATs).
+Receptors for the $TGF\beta$ superfamily are characterised by having which type of intracellular kinase domain?,Serine/threonine kinase domain
+Which transcription regulators are directly activated by $TGF\beta$ receptors?,Smad proteins
+The Notch signalling pathway is unusual because the receptor itself is _____ to release a fragment that enters the nucleus.,Proteolytically cleaved
+"In contact-dependent signalling, the 'Delta' ligand on one cell binding to the 'Notch' receptor on another is a classic example of _____.",Lateral inhibition
+What is the role of 'scaffold proteins' in intracellular signalling complexes?,They hold specific signalling proteins together in close proximity to enhance the speed and efficiency of the response.
+"Which signalling molecule is a small, hydrophobic gas that can diffuse across membranes to target internal enzymes without a receptor?",Nitric oxide (NO)
+"The ability of a cell to integrate different signals to perform a complex task, like differentiation, is often achieved through _____.",Cross-talk between different signalling pathways.
+Which second messenger is specifically destroyed by the enzyme cyclic AMP phosphodiesterase?,Cyclic AMP (cAMP)
+What is the main function of Regulator of G protein signalling (RGS) proteins?,They act as $\alpha$-subunit-specific GTPase-activating proteins (GAPs) to shut off G-protein-mediated responses.
+"In skeletal muscle, which neurotransmitter binds to an ion-channel-coupled receptor to trigger contraction?",Acetylcholine
+"Which intracellular signalling component acts as a molecular 'hub', such as Ras or Akt, to distribute signals to multiple downstream targets?",Distributor (or node)
+What is the effect of cholera toxin on the $G_{s}$ protein $\alpha$ subunit?,"It modifies the $\alpha$ subunit so that it cannot hydrolyse GTP, keeping adenylyl cyclase permanently active."
+Which signalling pathway involves the direct cleavage of a latent transcription regulator from the cell's plasma membrane?,The Notch signalling pathway.
+How do enzyme-coupled receptors differ from GPCRs in terms of their transmembrane structure?,Enzyme-coupled receptors usually have only one transmembrane segment per polypeptide chain.
+What is the role of 'Src homology 2' (SH2) domains in signalling proteins?,They allow proteins to recognise and bind to specific phosphorylated tyrosines on activated RTKs.
+Which specific phospholipid is the substrate for PI 3-kinase?,Inositol phospholipid
+The pathway triggered by 'Survival Factors' typically involves the activation of which specific kinase to inhibit apoptosis?,Akt (Protein Kinase B)
