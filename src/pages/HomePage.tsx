@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { chapters, APP_TITLE } from '../data/curriculum'
-import { useAuth } from '../context/AuthContext'
 
 export function HomePage() {
-  const { logout } = useAuth()
   const [openChapters, setOpenChapters] = useState<Record<string, boolean>>({
     [chapters[0]?.id ?? '']: true,
   })
@@ -23,14 +21,6 @@ export function HomePage() {
     <div className="app-screen">
       <header className="top-bar top-bar--home">
         <h1 className="home-brand-title">{APP_TITLE}</h1>
-        <button
-          type="button"
-          className="btn btn-ghost btn-exit"
-          onClick={logout}
-          aria-label="Logout"
-        >
-          Logout
-        </button>
       </header>
 
       <nav className="tree-root" aria-label="Curriculum">

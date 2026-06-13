@@ -7,7 +7,6 @@ import {
   findLeaf,
   getMediaForLeaf,
 } from '../data/curriculum'
-import { useAuth } from '../context/AuthContext'
 
 type MediaTab = 'video' | 'podcast' | 'infografic' | 'questionnaire'
 type CsvQaRow = { question: string; answer: string }
@@ -18,7 +17,6 @@ export function MediaPage() {
     groupId: string
     leafId: string
   }>()
-  const { userEmail, logout } = useAuth()
   const [tab, setTab] = useState<MediaTab>('video')
 
   const chapter = chapterId ? findChapter(chapterId) : undefined
@@ -108,12 +106,6 @@ export function MediaPage() {
           </Link>
           <p className="eyebrow">{APP_TITLE}</p>
           <h1 className="screen-title">{title}</h1>
-        </div>
-        <div className="top-bar-actions">
-          <span className="user-pill">{userEmail}</span>
-          <button type="button" className="btn btn-ghost" onClick={logout}>
-            Logout
-          </button>
         </div>
       </header>
 
