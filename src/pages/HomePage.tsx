@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { chapters, APP_TITLE } from '../data/curriculum'
+import { AppLayout } from '../components/AppLayout'
+import { ProgressLink } from '../components/ProgressLink'
+import { chapters } from '../data/curriculum'
 
 export function HomePage() {
   const [openChapters, setOpenChapters] = useState<Record<string, boolean>>({
@@ -18,10 +20,36 @@ export function HomePage() {
   }
 
   return (
-    <div className="app-screen">
-      <header className="top-bar top-bar--home">
-        <h1 className="home-brand-title">{APP_TITLE}</h1>
-      </header>
+    <AppLayout
+      showHomeButton={false}
+      hideHeaderOnMobile={false}
+      footerTagline="Cell biology · Molecular biology · Cancer biology"
+    >
+      <section className="overview-intro" aria-label="Course overview">
+        <p className="overview-lead">
+          Explore cell biology from fundamentals through molecular processes and
+          cancer biology. Open a chapter below, pick a topic, then choose video,
+          podcast, infographic, or questionnaire.
+        </p>
+        <ul className="overview-chapters">
+          {chapters.map((ch) => (
+            <li
+              key={ch.id}
+              className="overview-chapters__item"
+              style={{ borderLeftColor: ch.color }}
+            >
+              <strong>{ch.title}</strong>
+              <span>
+                {ch.groups.length} themes ·{' '}
+                {ch.groups.reduce((n, g) => n + g.leaves.length, 0)} topics
+              </span>
+            </li>
+          ))}
+        </ul>
+        <p className="overview-progress">
+          Already enrolled? <ProgressLink className="progress-link--inline" />
+        </p>
+      </section>
 
       <nav className="tree-root" aria-label="Curriculum">
         {chapters.map((ch) => (
@@ -29,6 +57,7 @@ export function HomePage() {
             <button
               type="button"
               className="btn btn-chapter tree-toggle"
+              style={{ backgroundColor: ch.color }}
               onClick={() => toggleChapter(ch.id)}
               aria-expanded={!!openChapters[ch.id]}
             >
@@ -82,6 +111,6 @@ export function HomePage() {
           </div>
         ))}
       </nav>
-    </div>
+    </AppLayout>
   )
 }

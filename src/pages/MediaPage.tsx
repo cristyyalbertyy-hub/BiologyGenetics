@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { AppLayout } from '../components/AppLayout'
 import {
-  APP_TITLE,
   findChapter,
   findGroup,
   findLeaf,
@@ -28,28 +28,22 @@ export function MediaPage() {
       : undefined
 
   const title = useMemo(() => {
-    if (group && leaf) return `${group.title} - ${leaf.title}`
+    if (group && leaf) return `${group.title} — ${leaf.title}`
     return 'Content'
   }, [group, leaf])
 
-  if (!chapter || !group || !leaf) {
-    return (
-      <div className="app-screen">
-        <p>Topic not found.</p>
-        <Link to="/app">Back</Link>
-      </div>
-    )
-  }
+  const media = chapter && group && leaf
+    ? getMediaForLeaf(chapter.id, group.id, leaf.id)
+    : null
+  const questionnaireIsPdf = media?.questionnaire.toLowerCase().endsWith('.pdf') ?? false
+  const questionnaireIsCsv = media?.questionnaire.toLowerCase().endsWith('.csv') ?? false
 
-  const media = getMediaForLeaf(chapter.id, group.id, leaf.id)
-  const questionnaireIsPdf = media.questionnaire.toLowerCase().endsWith('.pdf')
-  const questionnaireIsCsv = media.questionnaire.toLowerCase().endsWith('.csv')
   const [csvRows, setCsvRows] = useState<CsvQaRow[]>([])
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [showAnswer, setShowAnswer] = useState(false)
 
   useEffect(() => {
-    if (!questionnaireIsCsv) {
+    if (!media || !questionnaireIsCsv) {
       setCsvRows([])
       return
     }
@@ -85,166 +79,192 @@ export function MediaPage() {
     return () => {
       active = false
     }
-  }, [media.questionnaire, questionnaireIsCsv])
+  }, [media, questionnaireIsCsv])
 
   useEffect(() => {
     setShowAnswer(false)
   }, [currentQuestionIndex, tab])
 
+  if (!chapter || !group || !leaf || !media) {
+    return (
+      <AppLayout showHomeButton>
+        <div className="content-panel">
+          <p>Topic not found.</p>
+          <Link to="/app">Back to course overview</Link>
+        </div>
+      </AppLayout>
+    )
+  }
+
   const currentQa = csvRows[currentQuestionIndex]
   const totalQuestions = csvRows.length
+  const atStart = currentQuestionIndex === 0
+  const atEnd = currentQuestionIndex >= totalQuestions - 1
 
   return (
-    <div className="app-screen">
-      <header className="top-bar">
-        <div>
-          <Link
-            to={`/app/${chapter.id}/${group.id}`}
-            className="back-link"
-          >
-            ← {group.title}
-          </Link>
-          <p className="eyebrow">{APP_TITLE}</p>
-          <h1 className="screen-title">{title}</h1>
-        </div>
-      </header>
+    <AppLayout
+      mobileLessonBar={{
+        chapterTitle: group.title,
+        subTitle: leaf.title,
+        backTo: `/app/${chapter.id}/${group.id}`,
+        backLabel: '← Topics',
+        accentColor: chapter.color,
+      }}
+      footerTagline={`${group.title} · ${leaf.title}`}
+    >
+      <div className="content-panel">
+        <p className="eyebrow">{group.title}</p>
+        <h1 className="screen-title">{title}</h1>
 
-      <div className="media-tabs" role="tablist" aria-label="Content">
-        {(
-          [
-            ['video', 'Video (V)'],
-            ['podcast', 'Podecast (P)'],
-            ['infografic', 'Infographics (I)'],
-            ['questionnaire', 'Questionnaire (Q)'],
-          ] as const
-        ).map(([key, label]) => (
-          <button
-            key={key}
-            type="button"
-            role="tab"
-            aria-selected={tab === key}
-            className={`btn btn-media ${tab === key ? 'active' : ''}`}
-            onClick={() => setTab(key)}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
-
-      <div className="media-panel" role="tabpanel">
-        {tab === 'video' && (
-          <div className="video-wrap">
-            <video
-              key={media.video}
-              controls
-              playsInline
-              className="video-player"
-              poster=""
+        <div className="media-tabs" role="tablist" aria-label="Content">
+          {(
+            [
+              ['video', 'Video'],
+              ['podcast', 'Podcast'],
+              ['infografic', 'Infographic'],
+              ['questionnaire', 'Questionnaire'],
+            ] as const
+          ).map(([key, label]) => (
+            <button
+              key={key}
+              type="button"
+              role="tab"
+              aria-selected={tab === key}
+              className={`btn btn-media ${tab === key ? 'active' : ''}`}
+              onClick={() => setTab(key)}
             >
-              <source src={media.video} />
-              Your browser does not support HTML5 video.
-            </video>
-          </div>
-        )}
+              {label}
+            </button>
+          ))}
+        </div>
 
-        {tab === 'podcast' && (
-          <div className="audio-wrap">
-            <audio key={media.podcast} controls className="audio-player">
-              <source src={media.podcast} />
-              Your browser does not support HTML5 audio.
-            </audio>
-          </div>
-        )}
+        <div className="media-panel" role="tabpanel">
+          {tab === 'video' && (
+            <div className="video-wrap">
+              <video
+                key={media.video}
+                controls
+                playsInline
+                className="video-player"
+              >
+                <source src={media.video} />
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+          )}
 
-        {tab === 'infografic' && (
-          <div className="video-wrap">
-            <img
-              src={media.infografic}
-              alt="Infographics"
-              className="video-player"
-            />
-          </div>
-        )}
+          {tab === 'podcast' && (
+            <div className="audio-wrap">
+              <audio key={media.podcast} controls className="audio-player">
+                <source src={media.podcast} />
+                Your browser does not support HTML5 audio.
+              </audio>
+            </div>
+          )}
 
-        {tab === 'questionnaire' && (
-          <div className="video-wrap">
-            {questionnaireIsCsv ? (
-              <div className="csv-wrap">
-                {totalQuestions > 0 && currentQa ? (
-                  <div className="qa-card">
-                    <p className="qa-counter">
-                      {currentQuestionIndex + 1}/{totalQuestions}
+          {tab === 'infografic' && (
+            <div className="video-wrap">
+              <img
+                src={media.infografic}
+                alt={`${leaf.title} infographic`}
+                className="video-player"
+              />
+            </div>
+          )}
+
+          {tab === 'questionnaire' && (
+            <div className="video-wrap">
+              {questionnaireIsCsv ? (
+                totalQuestions > 0 && currentQa ? (
+                  <div className="questionnaire">
+                    <p className="questionnaire__progress">
+                      Question {currentQuestionIndex + 1} of {totalQuestions}
                     </p>
-                    <p className="qa-question">{currentQa.question}</p>
-                    {showAnswer && (
-                      <p className="qa-answer">
-                        <strong>Resposta:</strong> {currentQa.answer}
-                      </p>
-                    )}
-                    <div className="qa-controls">
+
+                    <div className="questionnaire__nav-row">
                       <button
                         type="button"
-                        className="btn btn-media"
-                        onClick={() => setShowAnswer((prev) => !prev)}
+                        className="questionnaire__arrow"
+                        onClick={() => {
+                          setCurrentQuestionIndex((prev) => Math.max(0, prev - 1))
+                          setShowAnswer(false)
+                        }}
+                        disabled={atStart}
+                        aria-label="Previous question"
                       >
-                        {showAnswer ? 'Ocultar resposta' : 'Ver resposta'}
+                        ←
                       </button>
+
+                      <div className="questionnaire__card">
+                        <p className="questionnaire__question">
+                          {currentQa.question}
+                        </p>
+                        {showAnswer && (
+                          <div className="questionnaire__answer">
+                            <span className="questionnaire__answer-label">
+                              Answer
+                            </span>
+                            <p>{currentQa.answer}</p>
+                          </div>
+                        )}
+                      </div>
+
                       <button
                         type="button"
-                        className="btn btn-media"
-                        onClick={() =>
-                          setCurrentQuestionIndex((prev) =>
-                            Math.max(0, prev - 1),
-                          )
-                        }
-                        disabled={currentQuestionIndex === 0}
-                      >
-                        ← Anterior
-                      </button>
-                      <button
-                        type="button"
-                        className="btn btn-media"
-                        onClick={() =>
+                        className="questionnaire__arrow"
+                        onClick={() => {
                           setCurrentQuestionIndex((prev) =>
                             Math.min(totalQuestions - 1, prev + 1),
                           )
-                        }
-                        disabled={currentQuestionIndex >= totalQuestions - 1}
+                          setShowAnswer(false)
+                        }}
+                        disabled={atEnd}
+                        aria-label="Next question"
                       >
-                        Proxima →
+                        →
                       </button>
                     </div>
+
+                    {!showAnswer && (
+                      <button
+                        type="button"
+                        className="questionnaire__reveal"
+                        onClick={() => setShowAnswer(true)}
+                      >
+                        Show answer
+                      </button>
+                    )}
                   </div>
                 ) : (
                   <p className="media-caption">
-                    Nao foi possivel pre-visualizar o CSV aqui.
+                    Could not load the questionnaire here.
                   </p>
-                )}
-              </div>
-            ) : questionnaireIsPdf ? (
-              <object
-                data={media.questionnaire}
-                type="application/pdf"
-                className="questionnaire-frame"
-              >
+                )
+              ) : questionnaireIsPdf ? (
+                <object
+                  data={media.questionnaire}
+                  type="application/pdf"
+                  className="questionnaire-frame"
+                >
+                  <iframe
+                    title="Questionnaire"
+                    src={media.questionnaire}
+                    className="questionnaire-frame"
+                    loading="lazy"
+                  />
+                </object>
+              ) : (
                 <iframe
                   title="Questionnaire"
                   src={media.questionnaire}
                   className="questionnaire-frame"
                   loading="lazy"
                 />
-              </object>
-            ) : (
-              <iframe
-                title="Questionnaire"
-                src={media.questionnaire}
-                className="questionnaire-frame"
-                loading="lazy"
-              />
-            )}
-          </div>
-        )}
+              )}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </AppLayout>
   )
 }

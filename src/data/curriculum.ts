@@ -16,8 +16,12 @@ export interface TopicGroup {
 export interface Chapter {
   id: string
   title: string
+  /** Chapter bar colour (HA palette). */
+  color: string
   groups: TopicGroup[]
 }
+
+const CHAPTER_COLORS = ['#14213d', '#2d4636', '#d36b31'] as const
 
 /** URLs de demonstração — substitua pelos seus ficheiros ou links. */
 export const DEMO_MEDIA = {
@@ -165,25 +169,25 @@ export const chapters: Chapter[] = [
     groups: [
       {
         id: 'cell-fundamentals',
-        title: 'Cell Fundamentals (CF)',
+        title: 'Cell Fundamentals',
         leaves: [
-          { id: 'cell-theory', title: 'Cell Theory (CT)' },
-          { id: 'macromolecules', title: 'Macromolecules (M)' },
+          { id: 'cell-theory', title: 'Cell Theory' },
+          { id: 'macromolecules', title: 'Macromolecules' },
           {
             id: 'prokaryotic-vs-eukaryotic',
-            title: 'Prokayotic vs Eukaryotic (PE)',
+            title: 'Prokaryotic vs Eukaryotic',
           },
-          { id: 'viruses', title: 'Viruses (V)' },
+          { id: 'viruses', title: 'Viruses' },
         ],
       },
       {
         id: 'cell-structure-function',
         title: 'Cell Structure & Function',
         leaves: [
-          { id: 'plasma-membrane', title: 'Plasma Membrane (PM)' },
-          { id: 'organelles', title: 'Organelles (O)' },
-          { id: 'cytoskeleton', title: 'Cytoskeleton (CY)' },
-          { id: 'mitochondria', title: 'Mitochondria (MI)' },
+          { id: 'plasma-membrane', title: 'Plasma Membrane' },
+          { id: 'organelles', title: 'Organelles' },
+          { id: 'cytoskeleton', title: 'Cytoskeleton' },
+          { id: 'mitochondria', title: 'Mitochondria' },
         ],
       },
       {
@@ -192,13 +196,13 @@ export const chapters: Chapter[] = [
         leaves: [
           {
             id: 'dna-structure-duplication',
-            title: 'DNA Structure & Duplication (DSD)',
+            title: 'DNA Structure & Duplication',
           },
-          { id: 'rna-transcription', title: 'RNA & Transcription (RT)' },
-          { id: 'protein-synthesis', title: 'Protein Synthesis (PS)' },
+          { id: 'rna-transcription', title: 'RNA & Transcription' },
+          { id: 'protein-synthesis', title: 'Protein Synthesis' },
           {
             id: 'gene-expression-control',
-            title: 'Gene Expression Control (GEC)',
+            title: 'Gene Expression Control',
           },
         ],
       },
@@ -206,10 +210,10 @@ export const chapters: Chapter[] = [
         id: 'cellular-processes',
         title: 'Cellular Processes',
         leaves: [
-          { id: 'cell-trafficking', title: 'Cell Trafficking (CTR)' },
-          { id: 'mitosis-meiosis', title: 'Mitosis & Meiosis (MM)' },
-          { id: 'cell-death', title: 'Cell Death (CD)' },
-          { id: 'cell-signaling', title: 'Cell Signaling (CS)' },
+          { id: 'cell-trafficking', title: 'Cell Trafficking' },
+          { id: 'mitosis-meiosis', title: 'Mitosis & Meiosis' },
+          { id: 'cell-death', title: 'Cell Death' },
+          { id: 'cell-signaling', title: 'Cell Signaling' },
         ],
       },
       {
@@ -218,15 +222,18 @@ export const chapters: Chapter[] = [
         leaves: [
           {
             id: 'tumour-transformation',
-            title: 'Tumour Transformation (TT)',
+            title: 'Tumour Transformation',
           },
-          { id: 'proto-oncogenes', title: 'Proto-oncogenes (PO)' },
-          { id: 'tumour-suppressors', title: 'Tumour Suppressors (TS)' },
+          { id: 'proto-oncogenes', title: 'Proto-oncogenes' },
+          { id: 'tumour-suppressors', title: 'Tumour Suppressors' },
         ],
       },
     ],
   },
-]
+].map((chapter, index) => ({
+  ...chapter,
+  color: CHAPTER_COLORS[index % CHAPTER_COLORS.length],
+}))
 
 export function findChapter(chapterId: string): Chapter | undefined {
   return chapters.find((c) => c.id === chapterId)
