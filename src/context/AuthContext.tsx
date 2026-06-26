@@ -2,43 +2,173 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useState,
   type ReactNode,
 } from 'react'
-import { getStoredEmail, login as authLogin, logout as authLogout } from '../auth'
+import {
+  onAuthStateChanged,
+  sendSignInLinkToEmail,
+  isSignInWithEmailLink,
+  signInWithEmailLink,
+  signOut,
+  type User,
+} from 'firebase/auth'
+import {
+  authContinueUrl,
+  EMAIL_FOR_SIGN_IN_KEY,
+  getFirebaseAuth,
+  isFirebaseConfigured,
+} from '../lib/firebase'
+import { fetchActiveEntitlement, type Entitlement } from '../lib/entitlements'
 
 type AuthContextValue = {
+  loading: boolean
+  user: User | null
   userEmail: string | null
-  login: (email: string, password: string) => boolean
-  logout: () => void
+  entitlement: Entitlement | null
+  entitlementLoading: boolean
+  hasAccess: boolean
+  configured: boolean
+  sendMagicLink: (email: string) => Promise<{ error: string | null }>
+  logout: () => Promise<void>
+  refreshEntitlement: () => Promise<void>
 }
 
 const AuthContext = createContext<AuthContextValue | null>(null)
 
+function cleanEmailLinkFromUrl(): void {
+  const url = new URL(window.location.href)
+  if (!url.searchParams.has('apiKey') && !url.searchParams.has('oobCode')) return
+  url.searchParams.delete('apiKey')
+  url.searchParams.delete('oobCode')
+  url.searchParams.delete('mode')
+  url.searchParams.delete('lang')
+  const hash = url.hash || '#/app'
+  window.history.replaceState(null, '', `${url.pathname}${hash}`)
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [userEmail, setUserEmail] = useState<string | null>(() =>
-    getStoredEmail(),
-  )
+  const [loading, setLoading] = useState(isFirebaseConfigured)
+  const [user, setUser] = useState<User | null>(null)
+  const [entitlement, setEntitlement] = useState<Entitlement | null>(null)
+  const [entitlementLoading, setEntitlementLoading] = useState(false)
 
-  const login = useCallback((email: string, password: string) => {
-    const ok = authLogin(email, password)
-    if (ok) setUserEmail(getStoredEmail())
-    return ok
+  const refreshEntitlement = useCallback(async () => {
+    if (!user) {
+      setEntitlement(null)
+      return
+    }
+    setEntitlementLoading(true)
+    try {
+      const active = await fetchActiveEntitlement(user.uid)
+      setEntitlement(active)
+    } catch {
+      setEntitlement(null)
+    } finally {
+      setEntitlementLoading(false)
+    }
+  }, [user])
+
+  useEffect(() => {
+    if (!isFirebaseConfigured) {
+      setLoading(false)
+      return
+    }
+
+    const auth = getFirebaseAuth()
+    let mounted = true
+
+    async function bootstrap() {
+      try {
+        if (isSignInWithEmailLink(auth, window.location.href)) {
+          let email = window.localStorage.getItem(EMAIL_FOR_SIGN_IN_KEY)
+          if (!email) {
+            email = window.prompt(
+              'Confirme o email usado para pedir o link de acesso',
+            )
+          }
+          if (email) {
+            await signInWithEmailLink(auth, email, window.location.href)
+            window.localStorage.removeItem(EMAIL_FOR_SIGN_IN_KEY)
+            cleanEmailLinkFromUrl()
+          }
+        }
+      } catch {
+        // Mantém fluxo de login normal se o link expirou ou falhou.
+      }
+    }
+
+    void bootstrap()
+
+    const unsubscribe = onAuthStateChanged(auth, (nextUser) => {
+      if (!mounted) return
+      setUser(nextUser)
+      setLoading(false)
+    })
+
+    return () => {
+      mounted = false
+      unsubscribe()
+    }
   }, [])
 
-  const logout = useCallback(() => {
-    authLogout()
-    setUserEmail(null)
+  useEffect(() => {
+    if (!user) {
+      setEntitlement(null)
+      setEntitlementLoading(false)
+      return
+    }
+    void refreshEntitlement()
+  }, [user, refreshEntitlement])
+
+  const sendMagicLink = useCallback(async (email: string) => {
+    if (!isFirebaseConfigured) {
+      return { error: 'Autenticação indisponível — contacte o suporte.' }
+    }
+    const auth = getFirebaseAuth()
+    try {
+      await sendSignInLinkToEmail(auth, email.trim(), {
+        url: authContinueUrl(),
+        handleCodeInApp: true,
+      })
+      window.localStorage.setItem(EMAIL_FOR_SIGN_IN_KEY, email.trim())
+      return { error: null }
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Erro ao enviar link.'
+      return { error: message }
+    }
   }, [])
 
-  const value = useMemo(
+  const logout = useCallback(async () => {
+    if (!isFirebaseConfigured) return
+    await signOut(getFirebaseAuth())
+    setEntitlement(null)
+  }, [])
+
+  const value = useMemo<AuthContextValue>(
     () => ({
-      userEmail,
-      login,
+      loading,
+      user,
+      userEmail: user?.email ?? null,
+      entitlement,
+      entitlementLoading,
+      hasAccess: Boolean(entitlement),
+      configured: isFirebaseConfigured,
+      sendMagicLink,
       logout,
+      refreshEntitlement,
     }),
-    [userEmail, login, logout],
+    [
+      loading,
+      user,
+      entitlement,
+      entitlementLoading,
+      sendMagicLink,
+      logout,
+      refreshEntitlement,
+    ],
   )
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>

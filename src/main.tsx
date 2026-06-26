@@ -4,6 +4,7 @@ import { HashRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import { ErrorBoundary } from './components/ErrorBoundary'
+import { AuthProvider } from './context/AuthContext'
 
 const rootEl = document.getElementById('root')
 if (!rootEl) {
@@ -14,7 +15,9 @@ createRoot(rootEl).render(
   <StrictMode>
     <ErrorBoundary>
       <HashRouter>
-        <App />
+        <AuthProvider>
+          <App />
+        </AuthProvider>
       </HashRouter>
     </ErrorBoundary>
   </StrictMode>,

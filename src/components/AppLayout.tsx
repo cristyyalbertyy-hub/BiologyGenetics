@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { APP_TITLE } from '../data/curriculum'
+import { useAuth } from '../context/AuthContext'
 import { ProgressLink } from './ProgressLink'
 
 const OVERVIEW_IMAGE = '/Biology.png'
@@ -28,6 +29,7 @@ export function AppLayout({
   mobileLessonBar,
   footerTagline,
 }: AppLayoutProps) {
+  const { userEmail, logout } = useAuth()
   const headerClass = hideHeaderOnMobile
     ? 'app-header app-header--compact-mobile'
     : 'app-header'
@@ -57,7 +59,23 @@ export function AppLayout({
           </Link>
         ) : null}
         <h1>{APP_TITLE}</h1>
-        <ProgressLink className="progress-link--header" compact />
+        <div className="app-header__actions">
+          {userEmail ? (
+            <div className="auth-account">
+              <span className="auth-account__email" title={userEmail}>
+                {userEmail}
+              </span>
+              <button
+                type="button"
+                className="btn-ghost"
+                onClick={() => void logout()}
+              >
+                Sair
+              </button>
+            </div>
+          ) : null}
+          <ProgressLink className="progress-link--header" compact />
+        </div>
       </header>
 
       {mobileLessonBar ? (

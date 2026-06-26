@@ -1,66 +1,107 @@
-import { useState, type FormEvent } from 'react'
+import { useState, useEffect, type FormEvent } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
-import { DEMO_EMAIL } from '../auth'
 import { APP_TITLE } from '../data/curriculum'
 
 export function LoginPage() {
-  const { login } = useAuth()
+  const { sendMagicLink, configured, loading, user } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
   const from = (location.state as { from?: { pathname: string } })?.from
     ?.pathname
 
   const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
+  const [sent, setSent] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
 
-  function onSubmit(e: FormEvent) {
+  useEffect(() => {
+    if (!loading && user) {
+      navigate(from && from !== '/login' ? from : '/app', { replace: true })
+    }
+  }, [loading, user, from, navigate])
+
+  async function onSubmit(e: FormEvent) {
     e.preventDefault()
     setError(null)
-    const ok = login(email.trim(), password)
-    if (ok) {
-      navigate(from && from !== '/login' ? from : '/app', { replace: true })
-    } else {
-      setError('Email ou palavra-passe incorretos.')
+    setSubmitting(true)
+    const { error: authError } = await sendMagicLink(email)
+    setSubmitting(false)
+    if (authError) {
+      setError(authError)
+      return
     }
+    setSent(true)
   }
 
   return (
     <div className="auth-layout">
       <div className="auth-card">
         <h1 className="app-brand">{APP_TITLE}</h1>
-        <p className="auth-hint">Inicie sessão para aceder ao conteúdo.</p>
-        <form className="auth-form" onSubmit={onSubmit}>
-          <label>
-            <span>Email</span>
-            <input
-              type="email"
-              autoComplete="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              placeholder={DEMO_EMAIL}
-            />
-          </label>
-          <label>
-            <span>Palavra-passe</span>
-            <input
-              type="password"
-              autoComplete="current-password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </label>
-          {error && <p className="form-error" role="alert">{error}</p>}
-          <button type="submit" className="btn btn-primary">
-            Entrar
-          </button>
-        </form>
+        <p className="auth-hint">
+          Compre o módulo no site Medical Science e use o mesmo email para
+          receber um link de acesso válido durante 1 ano.
+        </p>
+
+        {!configured ? (
+          <p className="form-error" role="alert">
+            Login temporariamente indisponível. Tente mais tarde ou contacte o
+            suporte.
+          </p>
+        ) : sent ? (
+          <div className="auth-sent">
+            <p>
+              Enviámos um link para <strong>{email.trim()}</strong>.
+            </p>
+            <p className="auth-hint">
+              Abra o email e clique no link para entrar. Pode fechar este
+              separador — o acesso abre automaticamente no browser.
+            </p>
+            <button
+              type="button"
+              className="btn btn-secondary"
+              onClick={() => setSent(false)}
+            >
+              Usar outro email
+            </button>
+          </div>
+        ) : (
+          <form className="auth-form" onSubmit={onSubmit}>
+            <label>
+              <span>Email</span>
+              <input
+                type="email"
+                autoComplete="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                placeholder="o email usado na compra"
+              />
+            </label>
+            {error && (
+              <p className="form-error" role="alert">
+                {error}
+              </p>
+            )}
+            <button
+              type="submit"
+              className="btn btn-primary"
+              disabled={submitting}
+            >
+              {submitting ? 'A enviar…' : 'Enviar link de acesso'}
+            </button>
+          </form>
+        )}
+
         <p className="demo-note">
-          Conta de demonstração: use o email sugerido e a palavra-passe
-          definida no projeto (ver <code>src/auth.ts</code>).
+          Ainda não comprou?{' '}
+          <a
+            href="https://medical-science-lilac.vercel.app/precos/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver preços e planos
+          </a>
         </p>
       </div>
     </div>
