@@ -137,6 +137,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       return { error: null }
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Erro ao enviar link.'
+      if (message.includes('auth/quota-exceeded')) {
+        return {
+          error:
+            'Limite diário de emails atingido. Tente amanhã ou abra a app num separador onde já tenha sessão.',
+        }
+      }
       return { error: message }
     }
   }, [])
