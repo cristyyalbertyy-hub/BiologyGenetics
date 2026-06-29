@@ -13,6 +13,9 @@ import {
   isSignInWithEmailLink,
   signInWithEmailLink,
   signOut,
+  signInWithCustomToken,
+  setPersistence,
+  browserLocalPersistence,
   type User,
 } from 'firebase/auth'
 import {
@@ -29,6 +32,7 @@ type AuthContextValue = {
   userEmail: string | null
   entitlement: Entitlement | null
   entitlementLoading: boolean
+  entitlementError: string | null
   hasAccess: boolean
   configured: boolean
   sendMagicLink: (email: string) => Promise<{ error: string | null }>
@@ -54,6 +58,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [entitlement, setEntitlement] = useState<Entitlement | null>(null)
   const [entitlementLoading, setEntitlementLoading] = useState(false)
+  const [entitlementError, setEntitlementError] = useState<string | null>(null)
 
   const refreshEntitlement = useCallback(async () => {
     if (!user) {
@@ -61,11 +66,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       return
     }
     setEntitlementLoading(true)
+    setEntitlementError(null)
     try {
       const active = await fetchActiveEntitlement(user.uid)
       setEntitlement(active)
-    } catch {
+      if (!active) {
+        setEntitlementError(
+          'Nenhum entitlement activo para este módulo. Confirme Firestore → entitlements com o vosso UID e package_id correcto.',
+        )
+      }
+    } catch (err) {
       setEntitlement(null)
+      const message =
+        err instanceof Error ? err.message : 'Erro ao ler entitlements.'
+      setEntitlementError(message)
     } finally {
       setEntitlementLoading(false)
     }
@@ -82,6 +96,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     async function bootstrap() {
       try {
+        const auth = getFirebaseAuth()
+        await setPersistence(auth, browserLocalPersistence)
+
+        const params = new URLSearchParams(window.location.search)
+        const handoff = params.get('studio9_handoff')
+        if (handoff) {
+          await signInWithCustomToken(auth, handoff)
+          params.delete('studio9_handoff')
+          const rest = params.toString()
+          window.history.replaceState(
+            null,
+            '',
+            `${window.location.pathname}${rest ? `?${rest}` : ''}${window.location.hash || '#/app'}`,
+          )
+        }
+
         if (isSignInWithEmailLink(auth, window.location.href)) {
           let email = window.localStorage.getItem(EMAIL_FOR_SIGN_IN_KEY)
           if (!email) {
@@ -160,6 +190,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       userEmail: user?.email ?? null,
       entitlement,
       entitlementLoading,
+      entitlementError,
       hasAccess: Boolean(entitlement),
       configured: isFirebaseConfigured,
       sendMagicLink,
@@ -171,6 +202,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       user,
       entitlement,
       entitlementLoading,
+      entitlementError,
       sendMagicLink,
       logout,
       refreshEntitlement,

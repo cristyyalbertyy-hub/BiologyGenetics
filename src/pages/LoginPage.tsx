@@ -39,6 +39,17 @@ export function LoginPage() {
       <div className="auth-card">
         <h1 className="app-brand">{APP_TITLE}</h1>
         <p className="auth-hint">
+          Recomendado: entre uma vez em{' '}
+          <a
+            href="https://medical-science-lilac.vercel.app/acesso/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            A minha conta Studio9
+          </a>{' '}
+          e abra os pacotes de lá — evita pedir magic link em cada app.
+        </p>
+        <p className="auth-hint">
           Compre o módulo no site Medical Science e use o mesmo email para
           receber um link de acesso válido durante 1 ano.
         </p>

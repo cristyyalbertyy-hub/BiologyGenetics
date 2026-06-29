@@ -3,7 +3,7 @@ import { STORE_URL } from '../lib/firebase'
 import { APP_TITLE } from '../data/curriculum'
 
 export function NoAccessPage() {
-  const { userEmail, logout, refreshEntitlement, entitlementLoading } =
+  const { userEmail, user, logout, refreshEntitlement, entitlementLoading, entitlementError } =
     useAuth()
 
   return (
@@ -18,6 +18,16 @@ export function NoAccessPage() {
           Após a compra, o acesso online fica disponível durante 1 ano. Se acabou
           de pagar, aguarde alguns minutos e tente novamente.
         </p>
+        {user?.uid ? (
+          <p className="auth-hint">
+            UID da sessão: <code>{user.uid}</code>
+          </p>
+        ) : null}
+        {entitlementError ? (
+          <p className="form-error" role="alert">
+            {entitlementError}
+          </p>
+        ) : null}
         <div className="auth-actions">
           <a className="btn btn-primary" href={STORE_URL}>
             Comprar acesso
