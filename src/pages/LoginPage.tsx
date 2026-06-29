@@ -41,7 +41,7 @@ export function LoginPage() {
         <p className="auth-hint">
           Recomendado: entre uma vez em{' '}
           <a
-            href="https://medical-science-lilac.vercel.app/acesso/"
+            href="https://medical-science-lilac.vercel.app/conta/"
             target="_blank"
             rel="noopener noreferrer"
           >
