@@ -70,6 +70,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       const active = await fetchActiveEntitlement(user.uid)
       setEntitlement(active)
+      if (active) {
+        sessionStorage.removeItem('studio9_from_conta')
+      }
       if (!active) {
         setEntitlementError(
           'Nenhum entitlement activo para este módulo. Confirme Firestore → entitlements com o vosso UID e package_id correcto.',
@@ -102,6 +105,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         const params = new URLSearchParams(window.location.search)
         const handoff = params.get('studio9_handoff')
         if (handoff) {
+          sessionStorage.setItem('studio9_from_conta', '1')
           await signInWithCustomToken(auth, handoff)
           params.delete('studio9_handoff')
           const rest = params.toString()
