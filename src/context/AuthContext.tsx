@@ -23,6 +23,7 @@ import {
   EMAIL_FOR_SIGN_IN_KEY,
   getFirebaseAuth,
   isFirebaseConfigured,
+  ACCOUNT_URL,
 } from '../lib/firebase'
 import { fetchActiveEntitlement, type Entitlement } from '../lib/entitlements'
 
@@ -183,8 +184,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const logout = useCallback(async () => {
     if (!isFirebaseConfigured) return
+    sessionStorage.removeItem('studio9_from_conta')
     await signOut(getFirebaseAuth())
     setEntitlement(null)
+    window.location.assign(ACCOUNT_URL)
   }, [])
 
   const value = useMemo<AuthContextValue>(
