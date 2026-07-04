@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 import { useAuth } from '../context/AuthContext'
 import { getFirestoreDb, PACKAGE_ID } from '../lib/firebase'
-import { recordWatchComplete, type AutoResource } from '../lib/progress-client'
+import { progressDocId, recordWatchComplete, type AutoResource } from '../lib/progress-client'
 
 export function useMediaProgress(itemKey: string | undefined) {
   const { user, hasAccess } = useAuth()
@@ -19,7 +19,8 @@ export function useMediaProgress(itemKey: string | undefined) {
         )
         console.info('Progress saved:', { packageId: PACKAGE_ID, itemKey, resource, level })
       } catch (err) {
-        console.warn('Could not save watch progress:', err)
+        const id = progressDocId(user.uid, PACKAGE_ID, itemKey, resource)
+        console.warn('Could not save watch progress:', { id, packageId: PACKAGE_ID, itemKey, resource, err })
       }
     },
     [user, hasAccess, itemKey],

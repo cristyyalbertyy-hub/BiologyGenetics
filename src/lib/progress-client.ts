@@ -41,7 +41,7 @@ export async function recordWatchComplete(
     current = 0
   }
 
-  const next = Math.min(MAX_PROGRESS_LEVEL, current + 1)
+  const next = Math.min(MAX_PROGRESS_LEVEL, current + 1) as 0 | 1 | 2 | 3
 
   await setDoc(
     ref,
