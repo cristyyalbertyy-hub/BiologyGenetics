@@ -10,13 +10,14 @@ export function useMediaProgress(itemKey: string | undefined) {
     async (resource: AutoResource) => {
       if (!user || !hasAccess || !itemKey) return
       try {
-        await recordWatchComplete(
+        const level = await recordWatchComplete(
           getFirestoreDb(),
           user.uid,
           PACKAGE_ID,
           itemKey,
           resource,
         )
+        console.info('Progress saved:', { packageId: PACKAGE_ID, itemKey, resource, level })
       } catch (err) {
         console.warn('Could not save watch progress:', err)
       }

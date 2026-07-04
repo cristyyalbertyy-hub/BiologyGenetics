@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { AppLayout } from '../components/AppLayout'
 import {
@@ -7,6 +7,7 @@ import {
   findLeaf,
   getMediaForLeaf,
 } from '../data/curriculum'
+import { bindPlaybackProgress } from '../lib/playbackProgress'
 import { useMediaProgress } from '../hooks/useMediaProgress'
 
 type MediaTab = 'video' | 'podcast' | 'infografic' | 'questionnaire'
@@ -37,6 +38,8 @@ export function MediaPage() {
     ? getMediaForLeaf(chapter.id, group.id, leaf.id)
     : null
   const { trackWatchComplete } = useMediaProgress(leaf?.id)
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const audioRef = useRef<HTMLAudioElement>(null)
   const questionnaireIsPdf = media?.questionnaire.toLowerCase().endsWith('.pdf') ?? false
   const questionnaireIsCsv = media?.questionnaire.toLowerCase().endsWith('.csv') ?? false
 
@@ -86,6 +89,18 @@ export function MediaPage() {
   useEffect(() => {
     setShowAnswer(false)
   }, [currentQuestionIndex, tab])
+
+  useEffect(() => {
+    const el = videoRef.current
+    if (!el || tab !== 'video') return
+    return bindPlaybackProgress(el, () => void trackWatchComplete('V'))
+  }, [tab, media?.video, trackWatchComplete])
+
+  useEffect(() => {
+    const el = audioRef.current
+    if (!el || tab !== 'podcast') return
+    return bindPlaybackProgress(el, () => void trackWatchComplete('P'))
+  }, [tab, media?.podcast, trackWatchComplete])
 
   if (!chapter || !group || !leaf || !media) {
     return (
@@ -145,10 +160,10 @@ export function MediaPage() {
             <div className="video-wrap">
               <video
                 key={media.video}
+                ref={videoRef}
                 controls
                 playsInline
                 className="video-player"
-                onEnded={() => void trackWatchComplete('V')}
               >
                 <source src={media.video} />
                 Your browser does not support HTML5 video.
@@ -160,9 +175,9 @@ export function MediaPage() {
             <div className="audio-wrap">
               <audio
                 key={media.podcast}
+                ref={audioRef}
                 controls
                 className="audio-player"
-                onEnded={() => void trackWatchComplete('P')}
               >
                 <source src={media.podcast} />
                 Your browser does not support HTML5 audio.
