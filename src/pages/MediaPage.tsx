@@ -7,6 +7,7 @@ import {
   findLeaf,
   getMediaForLeaf,
 } from '../data/curriculum'
+import { useMediaProgress } from '../hooks/useMediaProgress'
 
 type MediaTab = 'video' | 'podcast' | 'infografic' | 'questionnaire'
 type CsvQaRow = { question: string; answer: string }
@@ -35,6 +36,7 @@ export function MediaPage() {
   const media = chapter && group && leaf
     ? getMediaForLeaf(chapter.id, group.id, leaf.id)
     : null
+  const { trackWatchComplete } = useMediaProgress(leaf?.id)
   const questionnaireIsPdf = media?.questionnaire.toLowerCase().endsWith('.pdf') ?? false
   const questionnaireIsCsv = media?.questionnaire.toLowerCase().endsWith('.csv') ?? false
 
@@ -146,6 +148,7 @@ export function MediaPage() {
                 controls
                 playsInline
                 className="video-player"
+                onEnded={() => void trackWatchComplete('V')}
               >
                 <source src={media.video} />
                 Your browser does not support HTML5 video.
@@ -155,7 +158,12 @@ export function MediaPage() {
 
           {tab === 'podcast' && (
             <div className="audio-wrap">
-              <audio key={media.podcast} controls className="audio-player">
+              <audio
+                key={media.podcast}
+                controls
+                className="audio-player"
+                onEnded={() => void trackWatchComplete('P')}
+              >
                 <source src={media.podcast} />
                 Your browser does not support HTML5 audio.
               </audio>
