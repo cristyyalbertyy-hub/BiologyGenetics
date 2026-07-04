@@ -2,7 +2,6 @@ import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { APP_TITLE } from '../data/curriculum'
 import { useAuth } from '../context/AuthContext'
-import { ProgressLink } from './ProgressLink'
 
 const OVERVIEW_IMAGE = '/Biology.png'
 
@@ -74,7 +73,6 @@ export function AppLayout({
               </button>
             </div>
           ) : null}
-          <ProgressLink className="progress-link--header" compact />
         </div>
       </header>
 
@@ -107,7 +105,6 @@ export function AppLayout({
       <main className="app-main">{children}</main>
 
       <footer className="app-footer">
-        <ProgressLink className="progress-link--footer" />
         {footerTagline ? (
           <p className="app-footer__tagline">{footerTagline}</p>
         ) : null}

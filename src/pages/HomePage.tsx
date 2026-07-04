@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { AppLayout } from '../components/AppLayout'
-import { ProgressLink } from '../components/ProgressLink'
 import { chapters } from '../data/curriculum'
 
 export function HomePage() {
@@ -46,9 +45,6 @@ export function HomePage() {
             </li>
           ))}
         </ul>
-        <p className="overview-progress">
-          Already enrolled? <ProgressLink className="progress-link--inline" />
-        </p>
       </section>
 
       <nav className="tree-root" aria-label="Curriculum">
