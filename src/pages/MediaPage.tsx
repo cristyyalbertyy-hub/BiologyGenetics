@@ -155,13 +155,14 @@ export function MediaPage() {
           ))}
         </div>
 
-        <div className="media-panel" role="tabpanel">
+        <div className="media-panel" role="tabpanel" onContextMenu={(event) => event.preventDefault()}>
           {tab === 'video' && (
             <div className="video-wrap">
               <video
                 key={media.video}
                 ref={videoRef}
                 controls
+                controlsList="nodownload"
                 playsInline
                 className="video-player"
               >
@@ -177,6 +178,7 @@ export function MediaPage() {
                 key={media.podcast}
                 ref={audioRef}
                 controls
+                controlsList="nodownload"
                 className="audio-player"
               >
                 <source src={media.podcast} />
