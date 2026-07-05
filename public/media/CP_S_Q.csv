@@ -15,17 +15,17 @@ What intrinsic enzymatic activity allows G proteins to eventually switch themsel
 Which cell-surface receptor class acts by opening or closing in response to the binding of a neurotransmitter?,Ion-channel-coupled receptors
 "The largest family of cell-surface receptors, which mediate responses to an enormous diversity of extracellular signals, are the _____.",G-protein-coupled receptors (GPCRs)
 What is the characteristic structural feature of all GPCRs regarding their passage through the lipid bilayer?,A single polypeptide chain that passes back and forth across the lipid bilayer seven times.
-A trimeric G protein is composed of which three specific subunits?,"The $\alpha$, $\beta$, and $\gamma$ subunits."
-"In the inactive state, which nucleotide is bound to the $\alpha$ subunit of a trimeric G protein?",GDP
-Binding of an extracellular signal to a GPCR triggers the $\alpha$ subunit to exchange GDP for _____.,GTP
-Which G protein subunit typically dissociates from the others to interact directly with target enzymes following activation?,The $\alpha$ subunit (though the $\beta\gamma$ complex can also relay signals).
+A trimeric G protein is composed of which three specific subunits?,"The \alpha, \beta, and \gamma subunits."
+"In the inactive state, which nucleotide is bound to the \alpha subunit of a trimeric G protein?",GDP
+Binding of an extracellular signal to a GPCR triggers the \alpha subunit to exchange GDP for _____.,GTP
+Which G protein subunit typically dissociates from the others to interact directly with target enzymes following activation?,The \alpha subunit (though the \beta\gamma complex can also relay signals).
 "Name the enzyme that, when activated by a G protein, converts ATP into the second messenger cyclic AMP.",Adenylyl cyclase
 Cyclic AMP exerts most of its effects in the cell by activating which specific enzyme?,Cyclic-AMP-dependent protein kinase (PKA).
-Which membrane-bound enzyme is activated by $G_{q}$ proteins to trigger the inositol phospholipid signalling pathway?,Phospholipase C
-Phospholipase C cleaves a membrane phospholipid to generate which two small intracellular signalling molecules?,"Inositol 1,4,5-trisphosphate ($IP_{3}$) and diacylglycerol (DAG)."
-What is the primary role of $IP_{3}$ once it is released into the cytosol?,"It opens $Ca^{2+}$ channels in the endoplasmic reticulum membrane, releasing $Ca^{2+}$ into the cytosol."
-Diacylglycerol (DAG) remains in the plasma membrane to help activate which $Ca^{2+}$-dependent enzyme?,Protein kinase C (PKC)
-Which ubiquitous intracellular $Ca^{2+}$ receptor undergoes a conformational change that allows it to wrap around target proteins like CaM-kinases?,Calmodulin
+Which membrane-bound enzyme is activated by G_{q} proteins to trigger the inositol phospholipid signalling pathway?,Phospholipase C
+Phospholipase C cleaves a membrane phospholipid to generate which two small intracellular signalling molecules?,"Inositol 1,4,5-trisphosphate (IP_{3}) and diacylglycerol (DAG)."
+What is the primary role of IP_{3} once it is released into the cytosol?,"It opens Ca^{2+} channels in the endoplasmic reticulum membrane, releasing Ca^{2+} into the cytosol."
+Diacylglycerol (DAG) remains in the plasma membrane to help activate which Ca^{2+}-dependent enzyme?,Protein kinase C (PKC)
+Which ubiquitous intracellular Ca^{2+} receptor undergoes a conformational change that allows it to wrap around target proteins like CaM-kinases?,Calmodulin
 How does the gas nitric oxide (NO) trigger smooth muscle relaxation in blood vessels?,It enters the cell and activates guanylyl cyclase to produce cyclic GMP.
 Term: Adaptation (or Desensitisation),Definition: A decrease in a cell's response to a signal due to prolonged or repeated exposure to that signal.
 Which class of cell-surface receptors functions as enzymes or associates directly with enzymes inside the cell?,Enzyme-coupled receptors
@@ -37,22 +37,22 @@ What is the purpose of the phosphorylated tyrosines on an activated RTK?,They se
 The Ras protein initiates a three-kinase signalling module known as the _____.,MAP-kinase signalling module
 What is the final kinase in the MAP-kinase module that phosphorylates transcription regulators to alter gene expression?,MAP kinase
 RTKs can promote cell survival and growth by activating which enzyme that phosphorylates inositol phospholipids?,Phosphoinositide 3-kinase (PI 3-kinase).
-"Which protein kinase is recruited to the plasma membrane by $PI(3,4,5)P_{3}$ to mediate cell survival signals?",Akt (also known as protein kinase B).
+"Which protein kinase is recruited to the plasma membrane by PI(3,4,5)P_{3} to mediate cell survival signals?",Akt (also known as protein kinase B).
 How does activated Akt promote cell survival regarding the protein Bad?,"It phosphorylates and inactivates Bad, which otherwise promotes apoptosis (cell death)."
 The large serine/threonine kinase that stimulates cells to grow by enhancing protein synthesis and inhibiting degradation is called _____.,mTOR
 "In the JAK-STAT pathway, which proteins are phosphorylated by Janus kinases (JAKs) and then migrate to the nucleus?",Signal transducers and activators of transcription (STATs).
-Receptors for the $TGF\beta$ superfamily are characterised by having which type of intracellular kinase domain?,Serine/threonine kinase domain
-Which transcription regulators are directly activated by $TGF\beta$ receptors?,Smad proteins
+Receptors for the TGF\beta superfamily are characterised by having which type of intracellular kinase domain?,Serine/threonine kinase domain
+Which transcription regulators are directly activated by TGF\beta receptors?,Smad proteins
 The Notch signalling pathway is unusual because the receptor itself is _____ to release a fragment that enters the nucleus.,Proteolytically cleaved
 "In contact-dependent signalling, the 'Delta' ligand on one cell binding to the 'Notch' receptor on another is a classic example of _____.",Lateral inhibition
 What is the role of 'scaffold proteins' in intracellular signalling complexes?,They hold specific signalling proteins together in close proximity to enhance the speed and efficiency of the response.
 "Which signalling molecule is a small, hydrophobic gas that can diffuse across membranes to target internal enzymes without a receptor?",Nitric oxide (NO)
 "The ability of a cell to integrate different signals to perform a complex task, like differentiation, is often achieved through _____.",Cross-talk between different signalling pathways.
 Which second messenger is specifically destroyed by the enzyme cyclic AMP phosphodiesterase?,Cyclic AMP (cAMP)
-What is the main function of Regulator of G protein signalling (RGS) proteins?,They act as $\alpha$-subunit-specific GTPase-activating proteins (GAPs) to shut off G-protein-mediated responses.
+What is the main function of Regulator of G protein signalling (RGS) proteins?,They act as \alpha-subunit-specific GTPase-activating proteins (GAPs) to shut off G-protein-mediated responses.
 "In skeletal muscle, which neurotransmitter binds to an ion-channel-coupled receptor to trigger contraction?",Acetylcholine
 "Which intracellular signalling component acts as a molecular 'hub', such as Ras or Akt, to distribute signals to multiple downstream targets?",Distributor (or node)
-What is the effect of cholera toxin on the $G_{s}$ protein $\alpha$ subunit?,"It modifies the $\alpha$ subunit so that it cannot hydrolyse GTP, keeping adenylyl cyclase permanently active."
+What is the effect of cholera toxin on the G_{s} protein \alpha subunit?,"It modifies the \alpha subunit so that it cannot hydrolyse GTP, keeping adenylyl cyclase permanently active."
 Which signalling pathway involves the direct cleavage of a latent transcription regulator from the cell's plasma membrane?,The Notch signalling pathway.
 How do enzyme-coupled receptors differ from GPCRs in terms of their transmembrane structure?,Enzyme-coupled receptors usually have only one transmembrane segment per polypeptide chain.
 What is the role of 'Src homology 2' (SH2) domains in signalling proteins?,They allow proteins to recognise and bind to specific phosphorylated tyrosines on activated RTKs.

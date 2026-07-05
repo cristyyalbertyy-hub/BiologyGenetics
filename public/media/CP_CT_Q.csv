@@ -23,15 +23,15 @@ How are most proteins chemically modified as they enter the ER lumen?,They are c
 "In the Golgi apparatus, the _____ network is positioned closest to the ER, while the _____ network faces the plasma membrane.",cis; trans
 Which exocytosis pathway operates continually in all eukaryotic cells to supply the plasma membrane with new lipids and proteins?,The constitutive exocytosis pathway.
 How does the regulated exocytosis pathway differ from the constitutive pathway?,It only operates in specialised secretory cells and requires an extracellular signal to trigger vesicle fusion.
-Under what ionic conditions do secretory proteins aggregate in the trans Golgi network?,In conditions of acidic pH and high $Ca^{2+}$ concentration.
+Under what ionic conditions do secretory proteins aggregate in the trans Golgi network?,In conditions of acidic pH and high Ca^{2+} concentration.
 "Which form of endocytosis involves the ingestion of large particles, such as microorganisms, into large vesicles?",Phagocytosis
-Term: Pinocytosis,Definition: The indiscriminate ingestion of fluid and small molecules via vesicles smaller than $150$ nm in diameter.
-What is the main advantage of receptor-mediated endocytosis over simple pinocytosis?,It allows specific macromolecules to be concentrated and internalised more than $1000$-fold more efficiently.
+Term: Pinocytosis,Definition: The indiscriminate ingestion of fluid and small molecules via vesicles smaller than 150 nm in diameter.
+What is the main advantage of receptor-mediated endocytosis over simple pinocytosis?,It allows specific macromolecules to be concentrated and internalised more than 1000-fold more efficiently.
 Low-density lipoprotein (LDL) enters the cell through which specific trafficking mechanism?,Receptor-mediated endocytosis.
 What happens to LDL receptors after they have delivered LDL to the endosomes?,They are typically recycled back to the plasma membrane for reuse.
 Which intracellular compartment serves as the main sorting station for the endocytic pathway?,Endosomes
 What determines the destination of a receptor once it reaches the endosome?,"It can be recycled to the same membrane, sent to the lysosome for degradation, or moved to a different membrane domain (transcytosis)."
-The interior of a lysosome is maintained at an acidic pH by a _____ in its membrane.,$H^{+}$ pump (V-type ATPase)
+The interior of a lysosome is maintained at an acidic pH by a _____ in its membrane.,H^{+} pump (V-type ATPase)
 Which chemical tag directs hydrolytic enzymes from the Golgi apparatus specifically to lysosomes?,Mannose 6-phosphate (M6P).
 Term: Autophagy,Definition: A trafficking pathway used by cells to degrade obsolete parts of themselves by enclosing them in a double-membraned autophagosome.
 How does the bacterium 'Listeria monocytogenes' avoid destruction by the endocytic pathway?,"It secretes a protein that disrupts the phagosomal membrane, allowing it to escape into the cytosol."

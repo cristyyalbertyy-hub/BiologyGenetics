@@ -7,15 +7,15 @@ Which organelle is described as an irregular maze of interconnected membrane-enc
 What structural feature distinguishes the rough endoplasmic reticulum?,The presence of ribosomes on its cytosolic surface.
 What is the primary function of the rough endoplasmic reticulum?,The synthesis of proteins destined for secretion or distribution to other organelles.
 What is a major metabolic role of the smooth endoplasmic reticulum?,The synthesis of most lipids.
-"Besides lipid synthesis, what ion does the smooth endoplasmic reticulum sequester for cell signalling?",$Ca^{2+}$ ions.
+"Besides lipid synthesis, what ion does the smooth endoplasmic reticulum sequester for cell signalling?",Ca^{2+} ions.
 "Which organelle consists of stacks of flattened, membrane-enclosed sacs called cisternae?",The Golgi apparatus.
-What is the name of the entry face of the Golgi apparatus that receives vesicles from the ER?,The $cis$ Golgi network (CGN).
-What is the name of the exit face of the Golgi apparatus responsible for protein sorting?,The $trans$ Golgi network (TGN).
+What is the name of the entry face of the Golgi apparatus that receives vesicles from the ER?,The cis Golgi network (CGN).
+What is the name of the exit face of the Golgi apparatus responsible for protein sorting?,The trans Golgi network (TGN).
 "Which organelle modifies, sorts, and packages molecules for secretion or delivery to other compartments?",The Golgi apparatus.
 What is the primary function of lysosomes?,Intracellular digestion and the breakdown of unwanted molecules.
 Why is the internal environment of a lysosome kept acidic?,To provide the optimal pH for the activation of acid hydrolases.
 Which organelle uses hydrogen peroxide to inactivate toxic molecules?,The peroxisome.
-What is the metabolic byproduct characteristic of peroxisomal oxidative reactions?,Hydrogen peroxide ($H_{2}O_{2}$).
+What is the metabolic byproduct characteristic of peroxisomal oxidative reactions?,Hydrogen peroxide (H_{2}O_{2}).
 Which organelle is the primary site of ATP synthesis via oxidative phosphorylation?,The mitochondrion.
 How many separate membrane compartments are found in a single mitochondrion?,Two (the inner and outer membranes).
 What are the internal folds of the mitochondrial inner membrane called?,Cristae.
@@ -38,7 +38,7 @@ Which linker proteins bridge the nuclear envelope to connect the nucleus to the 
 What is the evolutionary origin theory for mitochondria and chloroplasts?,The endosymbiotic theory (origin from bacteria engulfed by ancestral eukaryotic cells).
 Where are the enzymes for the light-dependent reactions of photosynthesis located in the chloroplast?,In the thylakoid membrane.
 Where does the glycosylation of proteins typically begin?,In the endoplasmic reticulum.
-The site of $N$-linked oligosaccharide attachment is an _____ residue.,Asparagine
+The site of N-linked oligosaccharide attachment is an _____ residue.,Asparagine
 What is the process by which a cell digests its own worn-out organelles?,Autophagy.
 What defines the 'lumen' of an organelle?,The internal space enclosed by the organelle's membrane.
 How are Golgi fragments distributed to daughter cells during telophase?,They associate with spindle poles and are carried to opposite ends of the dividing cell.
@@ -54,7 +54,7 @@ What is the function of stress granules in the cytosol?,Temporary storage of tra
 Where are Balbiani bodies located and what is their role?,In the cytosol; they function in the localisation and inheritance of mRNAs and organelles.
 What is the function of Cajal bodies in the nucleus?,mRNA processing.
 Where are paraspeckles found?,In the nucleus.
-What is the function of the pyrenoid in algae?,Carbon fixation from $CO_{2}$.
+What is the function of the pyrenoid in algae?,Carbon fixation from CO_{2}.
 Which bacterial pathogen modifies its phagosome to resemble the rough ER?,Legionella pneumophila.
 What is the specialized compartment where Salmonella enterica resides within a host cell?,The Salmonella-containing vacuole.
 What is the name of the membrane-enclosed compartment occupied by Toxoplasma gondii?,The parasitophorous vacuole.
@@ -63,10 +63,10 @@ Which technique is used to separate subcellular components based on their buoyan
 What term describes the sum total of chemical reactions in a cell?,Metabolism.
 What is the function of the mitotic spindle?,The segregation of chromosomes during cell division.
 Which organelle is continuous with the outer nuclear membrane?,The endoplasmic reticulum.
-What protein complex nucleates the assembly of new microtubules?,The $\gamma$-tubulin ring complex ($\gamma$-TuRC).
+What protein complex nucleates the assembly of new microtubules?,The \gamma-tubulin ring complex (\gamma-TuRC).
 What is the role of P-granules in Caenorhabditis elegans?,RNA metabolism and the inheritance of germline characteristics.
 Which organelle is particularly enlarged in cells specialised for protein secretion?,The endoplasmic reticulum.
-What are the two sub-compartments of the Golgi apparatus involved in protein sorting?,The $cis$ Golgi network and the $trans$ Golgi network.
+What are the two sub-compartments of the Golgi apparatus involved in protein sorting?,The cis Golgi network and the trans Golgi network.
 In which organelle does the final stages of protein glycosylation occur?,The Golgi apparatus.
 What is the 'signal-stop' sequence used for in the ER?,To anchor proteins into the ER membrane during synthesis.
 Which organelle acts as a station for sorting endocytosed ligands for recycling or degradation?,The endosome.
