@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { HashRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import { ErrorBoundary } from './components/ErrorBoundary'
 import { AuthProvider } from './context/AuthContext'
+import { AuthGate } from './components/AuthGate'
+import { APP_TITLE } from './data/curriculum'
 
 const rootEl = document.getElementById('root')
 if (!rootEl) {
@@ -14,11 +15,11 @@ if (!rootEl) {
 createRoot(rootEl).render(
   <StrictMode>
     <ErrorBoundary>
-      <HashRouter>
-        <AuthProvider>
+      <AuthProvider>
+        <AuthGate appTitle={APP_TITLE}>
           <App />
-        </AuthProvider>
-      </HashRouter>
+        </AuthGate>
+      </AuthProvider>
     </ErrorBoundary>
   </StrictMode>,
 )

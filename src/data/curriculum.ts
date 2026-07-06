@@ -1,7 +1,8 @@
 /** Currículo — capítulo → tema → subtópico (conforme mapas mentais). */
 
 export const APP_TITLE = 'Biology'
-export const OVERVIEW_IMAGE = '/BiologyA.png'
+export const courseTitle = APP_TITLE
+export const OVERVIEW_IMAGE = '/BiologyVertical.png'
 
 export interface Leaf {
   id: string
@@ -270,4 +271,30 @@ export function getMediaForLeaf(
       questionnaire: DEMO_MEDIA.questionnaire,
     }
   )
+}
+
+export type LessonSelection = {
+  chapterId: string
+  groupId: string
+  leafId: string
+}
+
+export type ResolvedLesson = {
+  chapter: Chapter
+  group: TopicGroup
+  leaf: Leaf
+  media: MediaByLeaf
+}
+
+export function resolveLesson(selection: LessonSelection): ResolvedLesson | null {
+  const chapter = findChapter(selection.chapterId)
+  const group = findGroup(selection.chapterId, selection.groupId)
+  const leaf = findLeaf(selection.chapterId, selection.groupId, selection.leafId)
+  if (!chapter || !group || !leaf) return null
+  return {
+    chapter,
+    group,
+    leaf,
+    media: getMediaForLeaf(selection.chapterId, selection.groupId, selection.leafId),
+  }
 }
