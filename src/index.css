@@ -271,9 +271,29 @@ a:hover {
   text-align: center;
 }
 
-.overview-intro {
+.overview-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
   margin-bottom: 1.25rem;
+}
+
+.overview-infographic {
+  width: 100%;
+  max-width: 920px;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border-strong);
+  display: block;
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-soft);
+}
+
+.overview-intro {
+  width: 100%;
+  margin-bottom: 0;
   padding: 1rem 1.1rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);

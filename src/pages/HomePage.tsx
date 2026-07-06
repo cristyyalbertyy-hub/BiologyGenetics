@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { AppLayout } from '../components/AppLayout'
-import { chapters } from '../data/curriculum'
+import { APP_TITLE, chapters } from '../data/curriculum'
+
+const OVERVIEW_IMAGE = '/Biology.png'
 
 export function HomePage() {
   const [openChapters, setOpenChapters] = useState<Record<string, boolean>>({
@@ -24,28 +26,36 @@ export function HomePage() {
       hideHeaderOnMobile={false}
       footerTagline="Cell biology · Molecular biology · Cancer biology"
     >
-      <section className="overview-intro" aria-label="Course overview">
-        <p className="overview-lead">
-          Explore cell biology from fundamentals through molecular processes and
-          cancer biology. Open a chapter below, pick a topic, then choose video,
-          podcast, infographic, or questionnaire.
-        </p>
-        <ul className="overview-chapters">
-          {chapters.map((ch) => (
-            <li
-              key={ch.id}
-              className="overview-chapters__item"
-              style={{ borderLeftColor: ch.color }}
-            >
-              <strong>{ch.title}</strong>
-              <span>
-                {ch.groups.length} themes ·{' '}
-                {ch.groups.reduce((n, g) => n + g.leaves.length, 0)} topics
-              </span>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <div className="overview-panel">
+        <section className="overview-intro" aria-label="Course overview">
+          <p className="overview-lead">
+            Explore cell biology from fundamentals through molecular processes and
+            cancer biology. Open a chapter below, pick a topic, then choose video,
+            podcast, infographic, or questionnaire.
+          </p>
+          <ul className="overview-chapters">
+            {chapters.map((ch) => (
+              <li
+                key={ch.id}
+                className="overview-chapters__item"
+                style={{ borderLeftColor: ch.color }}
+              >
+                <strong>{ch.title}</strong>
+                <span>
+                  {ch.groups.length} themes ·{' '}
+                  {ch.groups.reduce((n, g) => n + g.leaves.length, 0)} topics
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <img
+          className="overview-infographic"
+          src={OVERVIEW_IMAGE}
+          alt={`${APP_TITLE} — course overview`}
+        />
+      </div>
 
       <nav className="tree-root" aria-label="Curriculum">
         {chapters.map((ch) => (
