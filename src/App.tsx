@@ -91,7 +91,7 @@ export default function App() {
       <img
         src={OVERVIEW_IMAGE}
         alt={`${APP_TITLE} — course overview`}
-        className="overview-infographic overview-infographic--vertical"
+        className="overview-infographic"
       />
       <p className="overview-hint muted">
         Open a coloured chapter on the left, then choose a topic to start.

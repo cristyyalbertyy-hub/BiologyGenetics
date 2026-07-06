@@ -698,55 +698,6 @@ code {
   box-shadow: var(--shadow-soft);
 }
 
-.overview-infographic--vertical {
-  width: auto;
-  max-width: min(100%, 720px);
-  height: auto;
-  max-height: none;
-  margin-inline: auto;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-}
-
-@media (min-width: 980px) {
-  .overview-panel:has(.overview-infographic--vertical) {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(380px, 520px);
-    grid-template-rows: auto auto;
-    align-items: start;
-    gap: 1rem 1.5rem;
-  }
-
-  .overview-panel:has(.overview-infographic--vertical) .overview-intro {
-    grid-column: 1;
-    grid-row: 1;
-    max-width: none;
-  }
-
-  .overview-panel:has(.overview-infographic--vertical) .overview-infographic--vertical {
-    grid-column: 2;
-    grid-row: 1 / -1;
-    justify-self: center;
-    width: 100%;
-    max-width: 100%;
-    max-height: calc(100vh - 140px);
-    object-fit: contain;
-  }
-
-  .overview-panel:has(.overview-infographic--vertical) .overview-hint {
-    grid-column: 1;
-    grid-row: 2;
-    text-align: left;
-    max-width: none;
-  }
-
-  .overview-panel:has(.overview-infographic--vertical) .mobile-browse-btn {
-    grid-column: 1;
-  }
-}
-
 .app-header__actions {
   position: absolute;
   right: 0;
