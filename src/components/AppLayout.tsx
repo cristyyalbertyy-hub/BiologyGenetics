@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { APP_TITLE } from '../data/curriculum'
 import { useAuth } from '../context/AuthContext'
 
-const HEADER_OVERVIEW_IMAGE = '/Biology.png'
+const HEADER_OVERVIEW_IMAGE = '/BiologyA.png'
 
 export type MobileLessonBarProps = {
   chapterTitle: string
