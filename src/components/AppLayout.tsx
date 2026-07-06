@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { APP_TITLE } from '../data/curriculum'
 import { useAuth } from '../context/AuthContext'
 
-const OVERVIEW_IMAGE = '/Biology.png'
+const HEADER_OVERVIEW_IMAGE = '/Biology.png'
 
 export type MobileLessonBarProps = {
   chapterTitle: string
@@ -44,7 +44,7 @@ export function AppLayout({
           >
             <span className="home-overview-btn__media">
               <img
-                src={OVERVIEW_IMAGE}
+                src={HEADER_OVERVIEW_IMAGE}
                 alt=""
                 onError={(e) => {
                   e.currentTarget.style.display = 'none'

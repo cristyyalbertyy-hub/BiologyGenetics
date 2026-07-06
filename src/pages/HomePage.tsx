@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { AppLayout } from '../components/AppLayout'
-import { APP_TITLE, chapters } from '../data/curriculum'
-
-const OVERVIEW_IMAGE = '/Biology.png'
+import { APP_TITLE, chapters, OVERVIEW_IMAGE } from '../data/curriculum'
 
 export function HomePage() {
   const [openChapters, setOpenChapters] = useState<Record<string, boolean>>({
@@ -51,7 +49,7 @@ export function HomePage() {
         </section>
 
         <img
-          className="overview-infographic"
+          className="overview-infographic overview-infographic--vertical"
           src={OVERVIEW_IMAGE}
           alt={`${APP_TITLE} — course overview`}
         />

@@ -1,6 +1,7 @@
 /** Currículo — capítulo → tema → subtópico (conforme mapas mentais). */
 
 export const APP_TITLE = 'Biology'
+export const OVERVIEW_IMAGE = '/BiologyVertical.png'
 
 export interface Leaf {
   id: string
