@@ -24,6 +24,9 @@ import {
   getFirebaseAuth,
   isFirebaseConfigured,
   ACCOUNT_URL,
+  persistStudio9LaunchEmail,
+  getStudio9DisplayEmail,
+  clearStudio9SessionMarkers,
 } from '../lib/firebase'
 import { fetchActiveEntitlement, type Entitlement } from '../lib/entitlements'
 
@@ -60,6 +63,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [entitlement, setEntitlement] = useState<Entitlement | null>(null)
   const [entitlementLoading, setEntitlementLoading] = useState(false)
   const [entitlementError, setEntitlementError] = useState<string | null>(null)
+  const [launchEmail, setLaunchEmail] = useState<string | null>(() => {
+    const fromUrl = new URLSearchParams(window.location.search).get('studio9_email')?.trim()
+    if (fromUrl) {
+      persistStudio9LaunchEmail(fromUrl)
+      return fromUrl
+    }
+    return getStudio9DisplayEmail()
+  })
 
   const refreshEntitlement = useCallback(async () => {
     if (!user) {
@@ -90,6 +101,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [user])
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    persistStudio9LaunchEmail(params.get('studio9_email'))
+    setLaunchEmail(getStudio9DisplayEmail())
+
     if (!isFirebaseConfigured) {
       setLoading(false)
       return
@@ -104,11 +119,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         await setPersistence(auth, browserLocalPersistence)
 
         const params = new URLSearchParams(window.location.search)
+        persistStudio9LaunchEmail(params.get('studio9_email'))
         const handoff = params.get('studio9_handoff')
         if (handoff) {
           sessionStorage.setItem('studio9_from_conta', '1')
           await signInWithCustomToken(auth, handoff)
           params.delete('studio9_handoff')
+          params.delete('studio9_email')
+          params.delete('studio9_open')
+          const rest = params.toString()
+          window.history.replaceState(
+            null,
+            '',
+            `${window.location.pathname}${rest ? `?${rest}` : ''}${window.location.hash || '#/app'}`,
+          )
+        } else if (params.has('studio9_email')) {
+          params.delete('studio9_email')
           const rest = params.toString()
           window.history.replaceState(
             null,
@@ -183,9 +209,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const logout = useCallback(async () => {
-    if (!isFirebaseConfigured) return
-    sessionStorage.removeItem('studio9_from_conta')
-    await signOut(getFirebaseAuth())
+    clearStudio9SessionMarkers()
+    setLaunchEmail(null)
+    if (isFirebaseConfigured) {
+      await signOut(getFirebaseAuth())
+    }
     setEntitlement(null)
     window.location.assign(ACCOUNT_URL)
   }, [])
@@ -194,7 +222,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     () => ({
       loading,
       user,
-      userEmail: user?.email ?? null,
+      userEmail: user?.email ?? launchEmail,
       entitlement,
       entitlementLoading,
       entitlementError,
@@ -207,6 +235,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     [
       loading,
       user,
+      launchEmail,
       entitlement,
       entitlementLoading,
       entitlementError,
