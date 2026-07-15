@@ -11,7 +11,7 @@ type Props = {
 }
 
 export function LessonContent({ lesson }: Props) {
-  const { chapter, group, leaf, media } = lesson
+  const { chapter, leaf, media } = lesson
   const [tab, setTab] = useState<MediaTab>('video')
   const { trackWatchComplete } = useMediaProgress(leaf.id)
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -26,7 +26,7 @@ export function LessonContent({ lesson }: Props) {
 
   useEffect(() => {
     setTab('video')
-  }, [chapter.id, group.id, leaf.id])
+  }, [chapter.id, leaf.id])
 
   useEffect(() => {
     if (!questionnaireIsCsv) {
@@ -91,10 +91,8 @@ export function LessonContent({ lesson }: Props) {
   return (
     <div className="lesson-view">
       <header className="subchapter-head">
-        <p className="eyebrow">{group.title}</p>
-        <h2>
-          {group.title} — {leaf.title}
-        </h2>
+        <p className="eyebrow">{chapter.title}</p>
+        <h2>{leaf.title}</h2>
       </header>
 
       <div className="media-tabs" role="tablist" aria-label="Content">
