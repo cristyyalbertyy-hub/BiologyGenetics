@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import { useAuth } from '../context/AuthContext'
+import { TUTOR_MODE_IDS, fetchTutor, type TutorMode, type TutorTurn } from '../lib/tutor'
 import {
-  TUTOR_MODES,
-  fetchTutor,
-  type TutorMode,
-  type TutorTurn,
-} from '../lib/tutor'
+  TUTOR_LANG_OPTIONS,
+  readTutorLang,
+  tutorCopy,
+  writeTutorLang,
+  type TutorLang,
+} from '../lib/tutorI18n'
 import { formatTutorHtml } from '../lib/tutorFormat'
 
 type Props = {
@@ -17,11 +19,16 @@ type Props = {
 export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
   const { user } = useAuth()
   const [enabled, setEnabled] = useState(false)
+  const [lang, setLang] = useState<TutorLang>('en')
   const [mode, setMode] = useState<TutorMode | null>(null)
   const [history, setHistory] = useState<TutorTurn[]>([])
   const [draft, setDraft] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+
+  useEffect(() => {
+    setLang(readTutorLang())
+  }, [])
 
   useEffect(() => {
     let active = true
@@ -54,6 +61,18 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
 
   if (!enabled) return null
 
+  const copy = tutorCopy(lang)
+
+  function changeLang(next: TutorLang) {
+    if (next === lang) return
+    writeTutorLang(next)
+    setLang(next)
+    setMode(null)
+    setHistory([])
+    setDraft('')
+    setError('')
+  }
+
   async function run(nextMode: TutorMode, message = '') {
     if (!user) return
     const continuing = Boolean(message) && mode === nextMode
@@ -64,7 +83,6 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
     if (!continuing) setHistory([])
     try {
       const token = await user.getIdToken()
-      const lang = (document.documentElement.lang || 'pt').slice(0, 2)
       const { ok, status, data } = await fetchTutor({
         id_token: token,
         mode: nextMode,
@@ -77,12 +95,12 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
         setHistory([
           ...conversation,
           ...(message ? [{ role: 'user' as const, content: message }] : []),
-          { role: 'assistant', content: String(data?.text ?? 'Pausa um pouco e volta daqui a uma hora.') },
+          { role: 'assistant', content: String(data?.text ?? copy.pause) },
         ])
         return
       }
       if (!ok || !data?.text) {
-        setError(String(data?.error ?? 'Pausa um pouco e volta daqui a uma hora.'))
+        setError(String(data?.error ?? copy.pause))
         return
       }
       const reply = String(data.text)
@@ -92,37 +110,51 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
       setHistory(nextHistory.slice(-12))
       setDraft('')
     } catch {
-      setError('Pausa um pouco e volta daqui a uma hora.')
+      setError(copy.pause)
     } finally {
       setLoading(false)
     }
   }
 
-  const placeholder = mode === 'test_me' ? 'Your answer' : 'Go deeper on this point'
+  const placeholder = mode === 'test_me' ? copy.answerPlaceholder : copy.followPlaceholder
 
   return (
     <section className="tutor-pro" aria-label="Studio9 Tutor">
       <header className="tutor-pro__head">
-        <p className="tutor-pro__eyebrow">Tutor</p>
-        <h3 className="tutor-pro__title">On this topic</h3>
+        <p className="tutor-pro__eyebrow">{copy.eyebrow}</p>
+        <h3 className="tutor-pro__title">{copy.title}</h3>
         <p className="tutor-pro__meta">
           {chapterTitle} · {topicTitle}
         </p>
+        <div className="tutor-pro__langs" role="group" aria-label={copy.language}>
+          <span className="tutor-pro__lang-label">{copy.language}</span>
+          {TUTOR_LANG_OPTIONS.map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              className={`tutor-pro__lang${lang === item.id ? ' is-active' : ''}`}
+              disabled={loading}
+              onClick={() => changeLang(item.id)}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
       </header>
       <div className="tutor-pro__modes">
-        {TUTOR_MODES.map((item) => (
+        {TUTOR_MODE_IDS.map((id) => (
           <button
-            key={item.id}
+            key={id}
             type="button"
-            className={`tutor-pro__mode${mode === item.id ? ' is-active' : ''}`}
+            className={`tutor-pro__mode${mode === id ? ' is-active' : ''}`}
             disabled={loading}
-            onClick={() => void run(item.id)}
+            onClick={() => void run(id)}
           >
-            {item.label}
+            {copy.modes[id]}
           </button>
         ))}
       </div>
-      {loading ? <p className="tutor-pro__status">Working…</p> : null}
+      {loading ? <p className="tutor-pro__status">{copy.working}</p> : null}
       {error ? <p className="tutor-pro__error">{error}</p> : null}
       {history.length ? (
         <div className="tutor-pro__thread">
@@ -159,7 +191,7 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
             aria-label={placeholder}
           />
           <button type="submit" className="tutor-pro__send">
-            Send
+            {copy.send}
           </button>
         </form>
       ) : null}

@@ -803,6 +803,48 @@ code {
   color: var(--muted);
 }
 
+.tutor-pro__langs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.55rem;
+}
+
+.tutor-pro__lang-label {
+  margin-right: 0.15rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.tutor-pro__lang {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.18rem 0.48rem;
+  cursor: pointer;
+}
+
+.tutor-pro__lang:hover:not(:disabled) {
+  background: #e8ede9;
+}
+
+.tutor-pro__lang.is-active {
+  color: #fff;
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.tutor-pro__lang:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
 .tutor-pro__modes {
   display: flex;
   flex-wrap: wrap;

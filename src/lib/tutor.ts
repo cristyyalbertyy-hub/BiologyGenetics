@@ -40,11 +40,11 @@ export async function fetchTutor(body: Record<string, unknown>) {
   return { ok: res.ok, status: res.status, data }
 }
 
-export const TUTOR_MODES: { id: TutorMode; label: string }[] = [
-  { id: 'explain_differently', label: 'Explain differently' },
-  { id: 'analogy', label: 'Analogy' },
-  { id: 'story', label: 'Story' },
-  { id: 'schematize', label: 'Schematize' },
-  { id: 'test_me', label: 'Test me' },
-  { id: 'find_my_gap', label: 'Find my gap' },
+export const TUTOR_MODE_IDS: TutorMode[] = [
+  'explain_differently',
+  'analogy',
+  'story',
+  'schematize',
+  'test_me',
+  'find_my_gap',
 ]
