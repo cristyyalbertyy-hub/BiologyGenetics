@@ -6,6 +6,7 @@ import {
   type TutorMode,
   type TutorTurn,
 } from '../lib/tutor'
+import { formatTutorHtml } from '../lib/tutorFormat'
 
 type Props = {
   topicId: string
@@ -17,7 +18,6 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
   const { user } = useAuth()
   const [enabled, setEnabled] = useState(false)
   const [mode, setMode] = useState<TutorMode | null>(null)
-  const [text, setText] = useState('')
   const [history, setHistory] = useState<TutorTurn[]>([])
   const [draft, setDraft] = useState('')
   const [loading, setLoading] = useState(false)
@@ -47,7 +47,6 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
 
   useEffect(() => {
     setMode(null)
-    setText('')
     setHistory([])
     setDraft('')
     setError('')
@@ -57,9 +56,12 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
 
   async function run(nextMode: TutorMode, message = '') {
     if (!user) return
+    const continuing = Boolean(message) && mode === nextMode
+    const conversation = continuing ? history : []
     setLoading(true)
     setError('')
     setMode(nextMode)
+    if (!continuing) setHistory([])
     try {
       const token = await user.getIdToken()
       const lang = (document.documentElement.lang || 'pt').slice(0, 2)
@@ -69,10 +71,14 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
         topic_id: topicId,
         lang,
         message,
-        history,
+        history: conversation,
       })
       if (data?.paused || status === 429) {
-        setText(String(data?.text ?? 'Pausa um pouco e volta daqui a uma hora.'))
+        setHistory([
+          ...conversation,
+          ...(message ? [{ role: 'user' as const, content: message }] : []),
+          { role: 'assistant', content: String(data?.text ?? 'Pausa um pouco e volta daqui a uma hora.') },
+        ])
         return
       }
       if (!ok || !data?.text) {
@@ -80,15 +86,10 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
         return
       }
       const reply = String(data.text)
-      setText(reply)
-      if (nextMode === 'test_me') {
-        const nextHistory: TutorTurn[] = [...history]
-        if (message) nextHistory.push({ role: 'user', content: message })
-        nextHistory.push({ role: 'assistant', content: reply })
-        setHistory(nextHistory.slice(-12))
-      } else {
-        setHistory([])
-      }
+      const nextHistory: TutorTurn[] = [...conversation]
+      if (message) nextHistory.push({ role: 'user', content: message })
+      nextHistory.push({ role: 'assistant', content: reply })
+      setHistory(nextHistory.slice(-12))
       setDraft('')
     } catch {
       setError('Pausa um pouco e volta daqui a uma hora.')
@@ -96,6 +97,8 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
       setLoading(false)
     }
   }
+
+  const placeholder = mode === 'test_me' ? 'Your answer' : 'Go deeper on this point'
 
   return (
     <section className="tutor-pro" aria-label="Studio9 Tutor">
@@ -121,23 +124,39 @@ export function TutorPro({ topicId, topicTitle, chapterTitle }: Props) {
       </div>
       {loading ? <p className="tutor-pro__status">Working…</p> : null}
       {error ? <p className="tutor-pro__error">{error}</p> : null}
-      {text ? <div className="tutor-pro__reply">{text}</div> : null}
-      {mode === 'test_me' && !loading ? (
+      {history.length ? (
+        <div className="tutor-pro__thread">
+          {history.map((turn, index) =>
+            turn.role === 'user' ? (
+              <p key={`${index}-user`} className="tutor-pro__user">
+                {turn.content}
+              </p>
+            ) : (
+              <div
+                key={`${index}-assistant`}
+                className="tutor-pro__reply"
+                dangerouslySetInnerHTML={{ __html: formatTutorHtml(turn.content) }}
+              />
+            ),
+          )}
+        </div>
+      ) : null}
+      {history.length && !loading ? (
         <form
           className="tutor-pro__reply-row"
           onSubmit={(event) => {
             event.preventDefault()
             const value = draft.trim()
-            if (!value) return
-            void run('test_me', value)
+            if (!value || !mode) return
+            void run(mode, value)
           }}
         >
           <input
             className="tutor-pro__input"
             value={draft}
             onChange={(event) => setDraft(event.target.value)}
-            placeholder="Your answer"
-            aria-label="Your answer"
+            placeholder={placeholder}
+            aria-label={placeholder}
           />
           <button type="submit" className="tutor-pro__send">
             Send

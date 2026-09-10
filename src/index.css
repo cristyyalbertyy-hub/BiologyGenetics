@@ -846,14 +846,81 @@ code {
   color: #8b2e2e;
 }
 
+.tutor-pro__thread {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.tutor-pro__user {
+  margin: 0;
+  justify-self: end;
+  max-width: 85%;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--navy);
+  background: #e8ede9;
+  border-radius: 12px;
+  padding: 0.55rem 0.75rem;
+}
+
 .tutor-pro__reply {
-  white-space: pre-wrap;
   font-size: 0.92rem;
   line-height: 1.55;
   color: var(--text);
   background: var(--surface);
   border-radius: 12px;
   padding: 0.85rem 0.95rem;
+}
+
+.tutor-pro__reply h2,
+.tutor-pro__reply h3,
+.tutor-pro__reply h4 {
+  margin: 0 0 0.4rem;
+  color: var(--navy);
+  font-size: 1rem;
+}
+
+.tutor-pro__reply p,
+.tutor-pro__reply ul,
+.tutor-pro__reply ol,
+.tutor-pro__reply table {
+  margin: 0 0 0.65rem;
+}
+
+.tutor-pro__reply p:last-child,
+.tutor-pro__reply ul:last-child,
+.tutor-pro__reply ol:last-child,
+.tutor-pro__reply table:last-child {
+  margin-bottom: 0;
+}
+
+.tutor-pro__reply ul,
+.tutor-pro__reply ol {
+  padding-left: 1.2rem;
+}
+
+.tutor-pro__reply table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+
+.tutor-pro__reply th,
+.tutor-pro__reply td {
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.45rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tutor-pro__reply th {
+  background: #eef2f8;
+}
+
+.tutor-pro__reply hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 0.7rem 0;
 }
 
 .tutor-pro__reply-row {
