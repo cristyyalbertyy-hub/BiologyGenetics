@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { ResolvedLesson } from '../data/curriculum'
 import { bindPlaybackProgress } from '../lib/playbackProgress'
 import { useMediaProgress } from '../hooks/useMediaProgress'
+import { TutorPro } from './TutorPro'
 
 type MediaTab = 'video' | 'podcast' | 'infographic' | 'questionnaire'
 type CsvQaRow = { question: string; answer: string }
@@ -224,6 +225,12 @@ export function LessonContent({ lesson }: Props) {
             <iframe title="Questionnaire" src={media.questionnaire} className="infographic" />
           ))}
       </div>
+
+      <TutorPro
+        topicId={leaf.id}
+        topicTitle={leaf.title}
+        chapterTitle={chapter.title}
+      />
     </div>
   )
 }
